@@ -1,0 +1,22 @@
+# dependencies
+node_modules/
+
+# build output
+dist/
+.astro/
+
+# env & logs
+.env
+.env.*
+*.log
+npm-debug.log*
+pnpm-debug.log*
+
+# wedged git backups (sandbox-protected, cannot delete)
+.git_wedged*/
+
+# os / editor
+.DS_Store
+.vscode/
+.idea/
+package-lock.json

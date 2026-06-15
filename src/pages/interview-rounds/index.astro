@@ -1,0 +1,71 @@
+---
+import Base from '../../layouts/Base.astro';
+
+const modules = import.meta.glob('../../data/interview-rounds/*.json', { eager: true });
+const rounds = Object.values(modules)
+  .map((mod: any) => mod.default ?? mod)
+  .sort((a: any, b: any) => a.order - b.order);
+---
+
+<Base
+  title="PM Interview Playbooks - Shubham Sharan"
+  description="The interview playbooks I share with the PMs I mentor - Product Sense, Execution, Strategy, Estimation, and Behavioural, from someone who has sat on both sides of the table."
+>
+  <section class="page-hero">
+    <div class="container">
+      <span class="eyebrow">Playbooks · From My Mentoring Sessions</span>
+      <h1>The playbooks I share with PMs I mentor</h1>
+      <p class="lede">
+        Twelve years of building products - and years of sitting on both sides of the interview
+        table, hiring PMs and coaching candidates into offers. These are the working playbooks I
+        hand to my mentees: what each round really tests, the mental models senior PMs actually
+        use, and what separates a strong answer from a weak one. Written from experience, shared in
+        public.
+      </p>
+      <div class="work-stats" style="margin-top:2rem">
+        <div class="work-stat">
+          <div class="stat-value">15K+</div>
+          <div class="stat-label">candidates mentored</div>
+        </div>
+        <div class="work-stat">
+          <div class="stat-value">95%</div>
+          <div class="stat-label">pass rate at Zistre</div>
+        </div>
+        <div class="work-stat">
+          <div class="stat-value">5</div>
+          <div class="stat-label">playbooks published</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding: 3.5rem 0 5.5rem">
+    <div class="container">
+      <div class="round-list">
+        {rounds.map((r: any) => (
+          <a class="round-row" href={`/interview-rounds/${r.slug}/`}>
+            <span class="round-num">{String(r.order).padStart(2, '0')}</span>
+            <span>
+              <h3>{r.title}</h3>
+              <p class="round-sub">{r.subtitle}</p>
+              <span class="tag-row" style="margin-top:0.8rem">
+                {r.tags.map((t: string) => <span class="tag">{t}</span>)}
+              </span>
+            </span>
+            <span class="round-meta">
+              <span class="muted" style="font-size:0.82rem">{r.meta.split('·')[0].trim()}</span>
+              <span class="cx-arrow" style="font-size:1.2rem">→</span>
+            </span>
+          </a>
+        ))}
+      </div>
+      <p class="case-note">
+        More playbooks publishing soon - Case Study / Take-Home is next.
+      </p>
+      <blockquote class="pullquote" style="margin-top:3rem;max-width:42em">
+        “They taught me how to think about problems and talk to users. Got a PM offer within 3
+        months.” <span class="muted" style="font-size:0.9rem">- a mentee, now PM</span>
+      </blockquote>
+    </div>
+  </section>
+</Base>

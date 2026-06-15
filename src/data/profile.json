@@ -1,0 +1,105 @@
+{
+  "name": "Shubham Sharan",
+  "siteTitle": "Shubham Sharan - Senior Product Manager",
+  "metaDescription": "Product leader with 12+ years building products from scratch. EdTech, B2B, HR tech & AI marketplaces. 100K+ users across 60+ countries. Senior PM at Huzzle.",
+  "eyebrow": "Senior Product Manager · Ex-Founder",
+  "heroTitle": "Hi, I'm Shubham.",
+  "heroParagraphs": [
+    "Twelve years across edtech, B2B services, and HR tech - as a founder, a head of product, and now a senior PM at Huzzle, an HR tech company building an AI talent marketplace. Most of what I've worked on, I built end-to-end."
+  ],
+  "stats": [
+    {
+      "value": "12+",
+      "label": "years building products"
+    },
+    {
+      "value": "60+",
+      "label": "countries reached"
+    },
+    {
+      "value": "100K+",
+      "label": "users across the products"
+    }
+  ],
+  "resumeUrl": "/files/Shubham-Sharan-Resume.pdf",
+  "about": {
+    "eyebrow": "About",
+    "title": "Engineer turned founder turned product leader",
+    "intro": "Right now I'm a senior PM at Huzzle, building AI matching for a two-sided talent marketplace. I got here through a longer route than most - and every stop taught a different lesson.",
+    "chapters": [
+      {
+        "step": "01",
+        "role": "Engineer",
+        "company": "Cognizant",
+        "lesson": "Where I learned how software actually gets built."
+      },
+      {
+        "step": "02",
+        "role": "Founder",
+        "company": "Go Digital Lab",
+        "lesson": "Three years of make-payroll-or-don't reality - how businesses actually work."
+      },
+      {
+        "step": "03",
+        "role": "Head of Product",
+        "company": "Zistre",
+        "lesson": "Four years scaling an edtech product across markets I'd never visited."
+      },
+      {
+        "step": "04",
+        "role": "Senior PM",
+        "company": "Huzzle",
+        "lesson": "Learning how AI changes the shape of a talent marketplace."
+      }
+    ],
+    "conviction": "Products are made of decisions, and the quality of the decisions depends on what you've actually seen.",
+    "outro": "Frameworks help. Vocabulary helps. But the work that compounds is the work of paying close attention - to users, to data, to the gap between what you think the product is and what it actually is. That's what I try to bring to every product, and what I try to write about when I'm not building one."
+  },
+  "cta": {
+    "title": "From Founder Chaos to Product Clarity.",
+    "subtitle": "I bring entrepreneurial thinking, data-driven decisions, and relentless execution to growing product teams."
+  },
+  "contact": {
+    "eyebrow": "Get in touch",
+    "title": "Let's talk.",
+    "subtitle": "Whether it's a product role, a collaboration, or just a conversation about building things - I'd love to hear from you.",
+    "email": "your@email.com",
+    "topics": [
+      "Job opportunity",
+      "Collaboration",
+      "Mentoring request",
+      "Just saying hi",
+      "Other"
+    ]
+  },
+  "socials": [
+    {
+      "label": "LinkedIn",
+      "url": "https://www.linkedin.com/in/sharanshub/"
+    }
+  ],
+  "nav": [
+    {
+      "label": "Work",
+      "href": "/#work"
+    },
+    {
+      "label": "Case Studies",
+      "href": "/#case-studies"
+    },
+    {
+      "label": "Frameworks",
+      "href": "/frameworks/"
+    },
+    {
+      "label": "Product Lifecycle",
+      "href": "/product-lifecycle/"
+    }
+  ],
+  "heroTagline": "I take products from the first user conversation to the first dollar of revenue.",
+  "heroPoints": [
+    "Every seat at the table - engineer, founder, head of product, senior PM",
+    "0 → 1 specialist: first user call, first version, first dollar",
+    "Products are made of decisions - good ones come from what you've seen"
+  ]
+}

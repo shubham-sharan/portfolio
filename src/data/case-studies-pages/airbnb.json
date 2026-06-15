@@ -1,0 +1,175 @@
+{
+  "slug": "airbnb",
+  "order": 2,
+  "eyebrow": "Case Study - Product Teardown · Independent Product Analysis",
+  "title": "Airbnb and the Art of Doing Things That Don't Scale",
+  "summary": "A company that grew out of air mattresses and novelty cereal by doing the most deliberately unscalable work imaginable - and whose hardest, most interesting problem became the reverse: how to keep the magic once everything had to scale.",
+  "meta": "Financials as of FY2025 · Audited figures from SEC filings; early-history facts attributed as reported · See sources.",
+  "tags": ["Product Teardown", "Marketplace", "Brand Strategy", "GTM & Marketing"],
+  "heroStats": [
+    { "value": "$12.2B", "label": "FY2025 revenue (+10% YoY)" },
+    { "value": "533M", "label": "Nights & experiences booked (2025)" },
+    { "value": "$91.3B", "label": "Gross booking value (2025)" },
+    { "value": "8M+", "label": "Active listings, 220+ countries" },
+    { "value": "$4.6B", "label": "Free cash flow (38% margin)" }
+  ],
+  "sections": [
+    {
+      "eyebrow": "The Setup",
+      "heading": "A startup that almost died several times.",
+      "paragraphs": [
+        "In 2007, two Rhode Island School of Design graduates, Brian Chesky and Joe Gebbia, couldn't make rent. A design conference had booked out San Francisco's hotels, so they put three air mattresses on their floor and called it \"Air Bed & Breakfast.\"",
+        "Engineer Nathan Blecharczyk joined as the third co-founder, and they relaunched in 2008 around the Denver Democratic National Convention. People used it - and then stopped. The idea of paying to sleep in a stranger's home struck most investors as absurd, and the company was broke. What happened next is the reason this is a case study and not a footnote."
+      ]
+    },
+    {
+      "eyebrow": "The Thesis",
+      "heading": "The unscalable playbook.",
+      "paragraphs": [
+        "Airbnb is the canonical example in Paul Graham's 2013 essay \"Do Things That Don't Scale.\" Each survival move was manual, labor-intensive, and impossible to run at size - and each one taught the founders something a dashboard never would.",
+        "**1. Sell cereal to stay alive.** Out of money in 2008, the founders designed election-themed cereal - \"Obama O's\" and \"Cap'n McCain's\" - and sold the limited boxes for $40 each, reportedly raising about $30,000. The stunt convinced Paul Graham to fund them: if you can get people to pay $40 for $4 of cereal, maybe you can get strangers to live together.",
+        "**2. Go to your users, one by one.** Graham's advice in 2009 was blunt: your users are in New York and you're in California - go meet them. The founders flew back and forth so constantly they showed up to Y Combinator dinners with rolling suitcases, recruiting hosts and fixing listings door to door.",
+        "**3. Become the photographers.** The manual work surfaced the real problem: listings had bad, phone-shot photos, so guests couldn't see what they were paying for. The founders rented a camera and photographed hosts' homes themselves - a fix that later became a scaled program, going from ~20 photographers in 2010 to over 2,000 freelancers by 2012. The hack became the roadmap.",
+        "**The pattern worth stealing.** The founders didn't guess what was wrong from afar; they did the work by hand until the problem was obvious, then productized the solution. \"Do things that don't scale\" isn't about staying small - it's about earning the insight that tells you what to scale."
+      ]
+    },
+    {
+      "eyebrow": "Marketplace",
+      "heading": "From a floor in San Francisco to a global marketplace.",
+      "compare": [
+        { "tag": "Then · 2008", "points": ["3 air mattresses on a living-room floor", "~$30,000 raised selling novelty cereal", "Founders photographing listings by hand", "Recruiting hosts door-to-door in NYC"] },
+        { "tag": "Now · 2025", "points": ["533M nights & experiences booked", "8M+ active listings, 5M+ hosts", "220+ countries and regions", "$12.2B revenue, $4.6B free cash flow"] }
+      ]
+    },
+    {
+      "eyebrow": "Brand Strategy",
+      "heading": "The milestones.",
+      "timeline": [
+        { "date": "2007", "title": "Air mattresses.", "body": "Chesky & Gebbia rent floor space during an SF design conference." },
+        { "date": "2008", "title": "Cereal saves the company.", "body": "\"Obama O's\" & \"Cap'n McCain's\" raise ~$30,000 around the Denver DNC." },
+        { "date": "2009", "title": "Y Combinator.", "body": "Paul Graham funds them: go to your users, do things that don't scale." },
+        { "date": "2009–10", "title": "Door-to-door & photography.", "body": "Founders meet hosts in NYC and shoot listings themselves; bookings improve." },
+        { "date": "2010–12", "title": "The hack scales.", "body": "Photography becomes a program: ~20 photographers grow to 2,000+ freelancers." },
+        { "date": "Dec 2020", "title": "IPO on NASDAQ (ABNB).", "body": "Goes public mid-pandemic after cutting 25% of staff and slashing marketing." },
+        { "date": "2022", "title": "First full-year GAAP profit.", "body": "Net income of $1.9B as travel rebounds." },
+        { "date": "Sep 2023", "title": "NYC Local Law 18.", "body": "A \"de facto ban\" wipes out ~90% of New York short-term listings.", "cautionary": true },
+        { "date": "2025", "title": "Marketplace at scale.", "body": "533M nights booked, ~$12.2B revenue, expansion into Services & Experiences." }
+      ]
+    },
+    {
+      "eyebrow": "GTM & Marketing",
+      "heading": "What scaled - and what the data can prove.",
+      "paragraphs": [
+        "The unscalable beginning produced a genuinely scaled business. Revenue collapsed in 2020 as travel stopped, then more than tripled off the bottom to roughly $12.2 billion."
+      ],
+      "chart": {
+        "type": "line",
+        "label": "Annual revenue, USD billions",
+        "max": 16,
+        "annotationIndex": 1,
+        "annotation": "COVID - IPO'd that Dec",
+        "points": [
+          { "label": "2019", "y": 4.8 },
+          { "label": "2020", "y": 3.4 },
+          { "label": "2021", "y": 6.0 },
+          { "label": "2022", "y": 8.4 },
+          { "label": "2023", "y": 9.9 },
+          { "label": "2024", "y": 11.1 },
+          { "label": "2025", "y": 12.2 }
+        ],
+        "caption": "Annual revenue, 2019–2025. The 2020 crater is COVID; the company IPO'd that December. Source: Airbnb SEC filings."
+      }
+    },
+    {
+      "heading": "The marketplace underneath the revenue.",
+      "paragraphs": [
+        "Underneath revenue is the marketplace itself - the network of guests and hosts that the door-to-door, trust-building work was always really about.",
+        "**What the data can - and can't - tell you.** The famous early hacks built culture and product DNA, but no filing lets you attribute revenue to the photography fix. The \"bookings improved\" claim is founder-recounted, not audited. The honest claim is that the unscalable work built trust and a brand - and the next section shows the one place that brand effect is cleanly measurable."
+      ],
+      "chart": {
+        "type": "bar",
+        "label": "Nights & experiences booked, millions",
+        "max": 600,
+        "points": [
+          { "label": "2022", "y": 393, "v": "393" },
+          { "label": "2023", "y": 448, "v": "448" },
+          { "label": "2024", "y": 491, "v": "491" },
+          { "label": "2025", "y": 533, "v": "533" }
+        ],
+        "caption": "Nights & experiences booked. Renamed \"Nights and Seats Booked\" in 2025 (same series). Source: Airbnb SEC shareholder letters."
+      }
+    },
+    {
+      "eyebrow": "Brand Strategy",
+      "heading": "2020: the bet that proved the brand was the engine.",
+      "paragraphs": [
+        "When COVID erased travel, Airbnb faced a real fork - and the choice it made is where the unscalable thesis pays off in hard numbers."
+      ],
+      "options": [
+        { "title": "Defend with paid marketing.", "body": "Keep spending on performance marketing to protect bookings through the downturn and recovery - the default move for a travel marketplace.", "chosen": false },
+        { "title": "Cut deep, bet on the brand.", "body": "Lay off 25% of staff (1,900 people), kill non-core bets (hotels, transport, luxury), and slash marketing - trusting that years of word-of-mouth would carry demand.", "chosen": true }
+      ]
+    },
+    {
+      "heading": "Demand barely moved.",
+      "paragraphs": [
+        "They chose B, and the data validated it. Airbnb cut combined marketing 58% - from $1.14B in 2019 to $482M in 2020 - taking it from 23.7% of revenue to 14.2%.",
+        "The revelation: demand barely moved. By the company's own account, it could take marketing to nearly zero and still keep about 95% of its traffic, and in Q4 2020 more than 90% of traffic was direct or unpaid. Paid acquisition had never been the real growth engine - the brand built by a decade of unscalable, trust-earning work was.",
+        "**The risk, stated honestly.** This looks like genius, but it's only correct because the brand existed. Cutting marketing in a downturn without that foundation can deepen the spiral. The decision didn't create the brand strength - it revealed it. That distinction is the whole lesson."
+      ],
+      "chart": {
+        "type": "bar",
+        "label": "Marketing as a share of revenue",
+        "max": 30,
+        "points": [
+          { "label": "2019", "y": 23.7, "v": "23.7%" },
+          { "label": "2020", "y": 14.2, "v": "14.2%" }
+        ],
+        "caption": "Marketing as a share of revenue. 23.7% (2019) → 14.2% (2020). Source: Airbnb annual report; Chesky remarks (CNBC)."
+      }
+    },
+    {
+      "eyebrow": "Marketplace",
+      "heading": "Two ways the magic can break.",
+      "paragraphs": [
+        "**1. Regulation.** The very thing that makes Airbnb - turning homes into hotels - is what cities restrict. New York's Local Law 18, enforced from September 2023, requires host registration and bars platforms from paying out unregistered listings; Airbnb called it a \"de facto ban,\" and short-term listings in the city fell by roughly 90%. The honest read: regulation is a serious, permanent, distributed risk - but NYC is one market, and a business spread across 220+ countries absorbed it and kept growing.",
+        "**2. Quality at scale.** This is the thesis turned against itself. Hand-curated quality is impossible across 8M+ listings, and by 2022–24 the consumer story had shifted to surprise cleaning fees, inconsistent stays, and \"a hotel is easier.\" Airbnb's answer is to re-engineer trust as a system - total-price display, removing bad listings, and \"Guest Favorites.\" Whether a systematized version of the founders' hand-built trust feels as good is the open question - and the most interesting unknown in the case."
+      ]
+    },
+    {
+      "eyebrow": "For Product Managers",
+      "heading": "Six transferable lessons.",
+      "lessons": [
+        { "num": "01", "title": "Do things that don't scale.", "body": "Manual, high-touch early work surfaces the real problem (bad photos) faster than any survey." },
+        { "num": "02", "title": "The hack is the roadmap.", "body": "What you do by hand - photographing listings - becomes what you productize next." },
+        { "num": "03", "title": "Brand is a compounding asset.", "body": "A decade of word-of-mouth showed up as 90%+ direct traffic when paid marketing hit zero." },
+        { "num": "04", "title": "Separate revealing from creating.", "body": "The 2020 cut didn't build brand strength; it exposed it. Know which your decision is doing." },
+        { "num": "05", "title": "Scaling the unscalable is the real work.", "body": "Hand-curated quality can't survive 8M listings; you must rebuild trust as a system." },
+        { "num": "06", "title": "Resilience is a strategy.", "body": "Founded in a recession, IPO'd in a pandemic. An adaptable model lets you make bold cuts." }
+      ]
+    },
+    {
+      "eyebrow": "Think",
+      "heading": "Discussion questions.",
+      "questions": [
+        "The photography hack worked at 50 listings. How do you preserve hand-curated quality at 8 million?",
+        "Was the 2020 marketing cut genius, or survivorship bias - would it have worked without a decade of brand-building?",
+        "How should Airbnb weigh growth against regulatory and community backlash in cities like New York?",
+        "Which of Airbnb's \"scalable\" processes today should arguably be done unscalably again?",
+        "Is the early \"magic\" recoverable at scale, or is some erosion the unavoidable cost of growth?"
+      ]
+    },
+    {
+      "eyebrow": "Verified",
+      "heading": "Sources.",
+      "sources": [
+        "**Financials & metrics - audited (strongest).** Airbnb SEC filings: Form S-1 (Dec 2020) and 10-K / 8-K shareholder letters, 2019–2025, SEC EDGAR, CIK 0001559720. FY2025 totals from the Q4/FY2025 8-K shareholder letter filed Feb 12, 2026.",
+        "**The 2020 decision - report + filing.** Marketing 23.7% → 14.2% and $1.14B → $482M: Airbnb annual report and Chesky/CNBC remarks. Layoffs of 1,900 (25% of 7,500): CNBC, Ad Age. Direct/unpaid traffic share (90%+ in Q4 2020): Airbnb S-1.",
+        "**\"Do things that don't scale\" - reported.** Paul Graham's essay; Chesky via Masters of Scale and CNBC (cereal ~$30,000); photography-program scale (~20 → 2,000+ by 2012) as reported in startup histories.",
+        "**Regulation - primary + reported.** NYC Local Law 18 (enforced Sep 5, 2023): NYC Mayor's Office of Special Enforcement. ~80–90%+ listings decline: multiple analyses.",
+        "**Reliability note.** Origin-story details are founder-recounted or press-reported - attribute to the source, not a filing. FY2023 net income ($4.8B) was inflated by a one-time deferred-tax benefit; use revenue, GBV, and free cash flow for trend analysis."
+      ]
+    }
+  ],
+  "next": { "label": "Duolingo", "slug": "duolingo" }
+}

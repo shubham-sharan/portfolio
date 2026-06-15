@@ -1,0 +1,123 @@
+---
+import Base from '../../layouts/Base.astro';
+import { marked } from 'marked';
+import { chartSvg } from '../../lib/chart';
+
+export async function getStaticPaths() {
+  const modules = import.meta.glob('../../data/case-studies-pages/*.json', { eager: true });
+  const pages = Object.values(modules)
+    .map((m: any) => m.default ?? m)
+    .sort((a: any, b: any) => a.order - b.order);
+  return pages.map((page: any) => ({ params: { slug: page.slug }, props: { page } }));
+}
+
+const { page } = Astro.props;
+const inline = (s: string) => marked.parseInline(s) as string;
+---
+
+<Base title={`${page.title} - Case Study - Shubham Sharan`} description={page.summary}>
+  <section class="page-hero">
+    <div class="container">
+      <a class="breadcrumb" href="/#case-studies">← All case studies</a>
+      <span class="eyebrow">{page.eyebrow}</span>
+      <h1>{page.title}</h1>
+      <p class="lede">{page.summary}</p>
+      <p class="meta">{page.meta}</p>
+      <div class="tag-row" style="margin-top:1.4rem">
+        {page.tags.map((t: string) => <span class="tag">{t}</span>)}
+      </div>
+      {page.heroStats && (
+        <div class="cs-herostats">
+          {page.heroStats.map((s: any) => (
+            <div class="cs-herostat">
+              <span class="cs-herostat-value">{s.value}</span>
+              <span class="cs-herostat-label">{s.label}</span>
+            </div>
+          ))}
+        </div>
+      )}
+    </div>
+  </section>
+
+  {page.sections.map((sec: any) => (
+    <section class="wp-section">
+      <div class="container cs-narrow">
+        {sec.eyebrow && <span class="eyebrow">{sec.eyebrow}</span>}
+        {sec.heading && <h2>{sec.heading}</h2>}
+        {sec.paragraphs?.map((p: string) => <p class="wp-p" set:html={inline(p)} />)}
+
+        {sec.chart && (
+          <figure class="cs-chart">
+            <Fragment set:html={chartSvg(sec.chart)} />
+            <figcaption>{sec.chart.caption}</figcaption>
+          </figure>
+        )}
+
+        {sec.compare && (
+          <div class="cs-compare">
+            {sec.compare.map((col: any) => (
+              <div class="cs-compare-col">
+                <span class="cs-compare-tag">{col.tag}</span>
+                <ul>{col.points.map((p: string) => <li>{p}</li>)}</ul>
+              </div>
+            ))}
+          </div>
+        )}
+
+        {sec.timeline && (
+          <ol class="cs-timeline">
+            {sec.timeline.map((t: any) => (
+              <li class={t.cautionary ? 'caution' : ''}>
+                <span class="cs-tl-date">{t.date}</span>
+                <span class="cs-tl-body"><strong>{t.title}</strong>{t.body && <span>{t.body}</span>}</span>
+              </li>
+            ))}
+          </ol>
+        )}
+
+        {sec.options && (
+          <div class="cs-options">
+            {sec.options.map((o: any) => (
+              <div class={`cs-option${o.chosen ? ' chosen' : ''}`}>
+                <span class="cs-option-tag">{o.chosen ? 'What they chose' : 'Option'}</span>
+                <h4>{o.title}</h4>
+                <p>{o.body}</p>
+              </div>
+            ))}
+          </div>
+        )}
+
+        {sec.lessons && (
+          <div class="cs-lessons">
+            {sec.lessons.map((l: any) => (
+              <div class="cs-lesson">
+                <span class="cs-lesson-n">{l.num}</span>
+                <h4>{l.title}</h4>
+                <p>{l.body}</p>
+              </div>
+            ))}
+          </div>
+        )}
+
+        {sec.questions && (
+          <ol class="cs-questions">
+            {sec.questions.map((q: string) => <li>{q}</li>)}
+          </ol>
+        )}
+
+        {sec.sources && (
+          <ul class="cs-sources">
+            {sec.sources.map((s: string) => <li set:html={inline(s)} />)}
+          </ul>
+        )}
+      </div>
+    </section>
+  ))}
+
+  <div class="container cs-narrow">
+    <nav class="pager">
+      <a href="/#case-studies">← All case studies</a>
+      <a href={`/case-studies/${page.next.slug}/`}>Next · {page.next.label} →</a>
+    </nav>
+  </div>
+</Base>

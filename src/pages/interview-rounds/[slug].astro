@@ -1,0 +1,92 @@
+---
+import Base from '../../layouts/Base.astro';
+import { marked } from 'marked';
+
+export async function getStaticPaths() {
+  const modules = import.meta.glob('../../data/interview-rounds/*.json', { eager: true });
+  const rounds = Object.values(modules)
+    .map((mod: any) => mod.default ?? mod)
+    .sort((a: any, b: any) => a.order - b.order);
+
+  return rounds.map((round: any, i: number) => ({
+    params: { slug: round.slug },
+    props: {
+      round,
+      all: rounds.map((r: any) => ({ slug: r.slug, title: r.title, order: r.order })),
+      prev: i > 0 ? rounds[i - 1] : null,
+      next: i < rounds.length - 1 ? rounds[i + 1] : null,
+    },
+  }));
+}
+
+const { round, all, prev, next } = Astro.props;
+const num = String(round.order).padStart(2, '0');
+
+// Render markdown, give every h2 an anchor id, and collect a table of contents.
+function slugify(t: string) {
+  return t.toLowerCase().replace(/&[a-z#0-9]+;/g, '').replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
+}
+const toc: { id: string; title: string }[] = [];
+let html = marked.parse(round.body.join('\n')) as string;
+html = html.replace(/<h2>([^<]+)<\/h2>/g, (_m, t) => {
+  const id = slugify(t);
+  toc.push({ id, title: t });
+  return `<h2 id="${id}">${t}</h2>`;
+});
+---
+
+<Base title={`${round.title} - Interview Rounds - Shubham Sharan`} description={round.subtitle}>
+  <section class="page-hero">
+    <div class="container">
+      <a class="breadcrumb" href="/interview-rounds/">← All playbooks</a>
+      <span class="eyebrow">Playbook {num} · From My Mentoring Sessions</span>
+      <h1>{round.title}</h1>
+      <p class="lede">{round.subtitle}</p>
+      <p class="meta">{round.meta}</p>
+      <div class="tag-row">
+        {round.tags.map((t: string) => <span class="tag">{t}</span>)}
+      </div>
+
+      <!-- Step navigator: every round, current highlighted -->
+      <nav class="steps-nav" aria-label="Interview rounds">
+        {all.map((r) => (
+          <a
+            class={`step-pill${r.slug === round.slug ? ' current' : ''}`}
+            href={`/interview-rounds/${r.slug}/`}
+            aria-current={r.slug === round.slug ? 'page' : undefined}
+          >
+            <span class="step-num">{String(r.order).padStart(2, '0')}</span>
+            {r.title}
+          </a>
+        ))}
+      </nav>
+    </div>
+  </section>
+
+  <div class="container">
+    <!-- On this page -->
+    <nav class="toc-box" aria-label="On this page">
+      <p class="toolkit-label" style="margin-bottom:0.6rem">On this page</p>
+      <ol>
+        {toc.map((item) => (
+          <li><a href={`#${item.id}`}>{item.title}</a></li>
+        ))}
+      </ol>
+    </nav>
+
+    <article class="prose" set:html={html} />
+
+    <nav class="pager">
+      {prev ? (
+        <a href={`/interview-rounds/${prev.slug}/`}>← {String(prev.order).padStart(2, '0')} · {prev.title}</a>
+      ) : (
+        <a href="/interview-rounds/">← All playbooks</a>
+      )}
+      {next ? (
+        <a href={`/interview-rounds/${next.slug}/`}>{String(next.order).padStart(2, '0')} · {next.title} →</a>
+      ) : (
+        <a href="/interview-rounds/">All playbooks →</a>
+      )}
+    </nav>
+  </div>
+</Base>

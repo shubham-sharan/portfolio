@@ -1,0 +1,151 @@
+{
+  "_howto": "Two axes: `themes` = layout + typography + radius; `colors` = full palette. Set defaults via `activeTheme` and `activeColor` ('auto' = the theme's defaultColor). Visitors can flip both live via the picker (bottom-right); choices persist in localStorage. Add a theme or palette by copying a block (and optionally a `[data-theme=\"…\"]` section in global.css).",
+  "activeTheme": "brutal",
+  "activeColor": "auto",
+  "themes": {
+    "brutal": {
+      "label": "Brutal",
+      "description": "Neo-brutalist poster: 3px borders, hard offset shadows, oversized type.",
+      "defaultColor": "crimson",
+      "fonts": {
+        "display": "Bricolage Grotesque",
+        "displayFallback": "'Helvetica Neue', Arial, sans-serif",
+        "body": "Inter",
+        "bodyFallback": "-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+      },
+      "radius": "0px",
+      "btnRadius": "0px"
+    },
+    "deck": {
+      "label": "Deck",
+      "description": "Every section is a full-screen presentation slide with scroll-snap and slide numbers.",
+      "defaultColor": "evergreen",
+      "fonts": {
+        "display": "Space Grotesk",
+        "displayFallback": "'Helvetica Neue', Arial, sans-serif",
+        "body": "Inter",
+        "bodyFallback": "-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+      },
+      "radius": "14px",
+      "btnRadius": "999px"
+    }
+  },
+  "colors": {
+    "crimson": {
+      "label": "Crimson (light)",
+      "swatch": "#E21D47",
+      "values": {
+        "bg": "#faf6f3",
+        "bgSoft": "#f3ece7",
+        "card": "#ffffff",
+        "ink": "#141414",
+        "inkSoft": "#2e2b2a",
+        "muted": "#6f6661",
+        "line": "#141414",
+        "accent": "#E21D47",
+        "selection": "#ffd9e1",
+        "bandBg": "#ffd9e1",
+        "bandInk": "#141414",
+        "bandMuted": "#6f6661",
+        "heading": "#000000",
+        "subhead": "#4d4440",
+        "secondary": "#ffd9e1",
+        "secondaryInk": "#141414"
+      },
+      "swatch2": "#ffd9e1"
+    },
+    "evergreen": {
+      "label": "Evergreen & Gold (light)",
+      "swatch": "#0B7A55",
+      "swatch2": "#F2C14E",
+      "values": {
+        "bg": "#f9f9f5",
+        "bgSoft": "#eff0e8",
+        "card": "#ffffff",
+        "ink": "#1a241f",
+        "inkSoft": "#41504a",
+        "muted": "#71807a",
+        "line": "#dde1d6",
+        "accent": "#0B7A55",
+        "selection": "#d9f0e4",
+        "secondary": "#F2C14E",
+        "secondaryInk": "#1a241f",
+        "bandBg": "#F2C14E",
+        "bandInk": "#1a241f",
+        "bandMuted": "#7a6428",
+        "heading": "#132019",
+        "subhead": "#4b5e55"
+      }
+    },
+    "acid": {
+      "label": "Acid Cream",
+      "swatch": "#5b2eea",
+      "values": {
+        "bg": "#f6f1e7",
+        "bgSoft": "#efe8d8",
+        "card": "#fffdf5",
+        "ink": "#131313",
+        "inkSoft": "#2d2b26",
+        "muted": "#6e6a5f",
+        "line": "#131313",
+        "accent": "#5b2eea",
+        "selection": "#ffe88a",
+        "bandBg": "#ffd02f",
+        "bandInk": "#131313",
+        "bandMuted": "#5a531f",
+        "heading": "#000000",
+        "subhead": "#4a463c",
+        "secondary": "#ffd02f",
+        "secondaryInk": "#131313"
+      },
+      "swatch2": "#ffd02f"
+    },
+    "keynote": {
+      "label": "Keynote (light)",
+      "swatch": "#1f4cff",
+      "values": {
+        "bg": "#fafbfd",
+        "bgSoft": "#f0f3f8",
+        "card": "#ffffff",
+        "ink": "#101321",
+        "inkSoft": "#3a4255",
+        "muted": "#6a7387",
+        "line": "#e2e6ee",
+        "accent": "#1f4cff",
+        "selection": "#dce4ff",
+        "bandBg": "#101321",
+        "bandInk": "#fafbfd",
+        "bandMuted": "#8d96ab",
+        "heading": "#0c0f1c",
+        "subhead": "#4b5570",
+        "secondary": "#101321",
+        "secondaryInk": "#fafbfd"
+      },
+      "swatch2": "#101321"
+    },
+    "carbon": {
+      "label": "Carbon & Magenta",
+      "swatch": "#ff4d9d",
+      "values": {
+        "bg": "#0c0c0e",
+        "bgSoft": "#141417",
+        "card": "#18181c",
+        "ink": "#ececf0",
+        "inkSoft": "#c6c4ce",
+        "muted": "#86828f",
+        "line": "#26262c",
+        "accent": "#ff4d9d",
+        "selection": "#4a1530",
+        "bandBg": "#2dd4bf",
+        "bandInk": "#0c0c0e",
+        "bandMuted": "#0f5e55",
+        "heading": "#ffffff",
+        "subhead": "#a39daf",
+        "secondary": "#2dd4bf",
+        "secondaryInk": "#0c0c0e"
+      },
+      "swatch2": "#2dd4bf"
+    }
+  },
+  "googleFontsHref": "https://fonts.googleapis.com/css2?family=Inter:wght@400..700&family=Space+Grotesk:wght@400..700&family=Bricolage+Grotesque:opsz,wght@12..96,400..800&display=swap"
+}

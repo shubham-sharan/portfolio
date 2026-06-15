@@ -1,0 +1,118 @@
+{
+  "eyebrow": "How I think about product work",
+  "title": "Product Lifecycle",
+  "subtitle": "Seven stages of building a product, and the concepts I use at each.",
+  "intro": "Every product I have worked on - at Zistre, Huzzle, or independently - moves through the same seven stages. The stages aren't strictly sequential; products move backwards and forwards through them constantly. But the work at each stage is distinct. The concepts and frameworks below are the ones I have found genuinely useful, named so they can be referred to and applied.",
+  "outro": "The lifecycle is one entry point. The Frameworks library lists every concept above as a flat, searchable index - useful when you know what you're looking for.",
+  "stages": [
+    {
+      "number": "01",
+      "name": "Conceive",
+      "quote": "What should we build?",
+      "description": "Identifying real user problems, market gaps, and opportunities before building anything. The goal at this stage is to fall in love with the problem, not the solution - and to validate that the problem is worth solving before committing engineering and design resources to it.",
+      "concepts": [
+        "Problem Discovery vs Solution Obsession",
+        "Customer Persona Creation",
+        "User Interviews & Research",
+        "Hypothesis Creation & Validation",
+        "Market & Competitor Analysis",
+        "Opportunity Sizing & Market Potential",
+        "Jobs To Be Done",
+        "Value Proposition Design",
+        "Product Vision Alignment"
+      ]
+    },
+    {
+      "number": "02",
+      "name": "Plan",
+      "quote": "Is this the right thing to build - and how will we build it well?",
+      "description": "Validating ideas, aligning teams, and strategising the product path before moving into execution. The focus is on translating the validated problem into a buildable plan - defining what's in scope, what's out, how success will be measured, and how teams will work together to ship it.",
+      "concepts": [
+        "MVP Definition & Scope Setting",
+        "Feature Prioritisation Techniques",
+        "Writing Good OKRs",
+        "Stakeholder Alignment & Buy-In",
+        "Product Roadmapping",
+        "Defining Success Metrics",
+        "Assumption Mapping & Risk Reduction",
+        "Setting Product Goals",
+        "Creating a Pre-Launch Plan"
+      ]
+    },
+    {
+      "number": "03",
+      "name": "Develop",
+      "quote": "Let's build it right - with clarity, speed, and collaboration.",
+      "description": "Turning validated ideas into a working product through specs, collaboration, trade-offs, and execution. This is where the PM's role shifts from defining what to build to enabling the team to build it well - writing clear requirements, removing blockers, managing scope, and protecting quality.",
+      "concepts": [
+        "Writing a Great PRD",
+        "User Stories & Acceptance Criteria",
+        "Agile, Scrum & Kanban",
+        "Scope Creep Handling",
+        "Engineer & Designer Collaboration",
+        "Tracking & Unblocking Progress",
+        "Managing Technical Debt",
+        "Design Handoff",
+        "QA Planning",
+        "User Acceptance Testing",
+        "Accessibility",
+        "Instrumentation"
+      ]
+    },
+    {
+      "number": "04",
+      "name": "Qualify",
+      "quote": "Does this product meet quality, usability, and user expectations - before it goes live?",
+      "description": "Ensuring what you've built is functionally correct, usable, accessible, and aligned with user needs. This stage is the bridge between development and launch - a structured pre-launch validation that what you've built will hold up in the real world.",
+      "concepts": [
+        "Usability Testing for PMs",
+        "User Acceptance Testing",
+        "Bug Triage & Severity Prioritisation",
+        "Pre-Launch Go/No-Go Decision Framework",
+        "Beta Testing & Early Feedback Loops",
+        "Regression Testing & Rollback Plans"
+      ]
+    },
+    {
+      "number": "05",
+      "name": "Launch",
+      "quote": "Let's bring this product into the world - confidently, clearly, and cross-functionally.",
+      "description": "Internal readiness, external communication, user onboarding, and first-response monitoring. Launch is not just shipping code - it's orchestrating product, engineering, design, marketing, sales, support, and analytics to land the product successfully in users' hands.",
+      "concepts": [
+        "Coordinating a Cross-Functional Launch",
+        "Customer Communication & Feature Announcement",
+        "Feature Flagging & Gradual Rollouts",
+        "First-Response Metrics & Live Monitoring",
+        "Onboarding Experience for New Features",
+        "Internal Enablement: Sales, Support, and Ops"
+      ]
+    },
+    {
+      "number": "06",
+      "name": "Deliver",
+      "quote": "What happens after launch? Let's ensure adoption, learning, and iteration.",
+      "description": "Moving from shipping to sustained impact through adoption, retention, feedback loops, and data-driven iteration. A launch is only successful if users actually use the product over time - this stage is about compounding what works and fixing what doesn't.",
+      "concepts": [
+        "Measuring Adoption & Retention",
+        "Collecting & Synthesising User Feedback",
+        "Post-Launch Experimentation & A/B Testing",
+        "Identifying & Addressing Drop-Offs",
+        "Continuous Improvement Roadmapping",
+        "North Star Metric Review & Long-Term Success"
+      ]
+    },
+    {
+      "number": "07",
+      "name": "Retire",
+      "quote": "Is it time to sunset, pivot, or evolve this product?",
+      "description": "Making product decisions with clarity and data - even when it means letting go. Not every feature or product deserves indefinite life. This stage is about detecting low adoption, high cost, strategic misalignment, or tech debt that justifies deprecation - and managing the transition responsibly.",
+      "concepts": [
+        "Identifying When to Sunset a Product or Feature",
+        "Evaluating Pivot vs Sunset vs Maintain",
+        "Communicating a Product Sunset to Users",
+        "Data Migration & Transition Planning",
+        "Capturing Learnings & Postmortem Insights"
+      ]
+    }
+  ]
+}

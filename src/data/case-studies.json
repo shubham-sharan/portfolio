@@ -1,0 +1,112 @@
+{
+  "eyebrow": "Case Studies",
+  "title": "Case Studies",
+  "subtitle": "Real problems at real companies. Using public data.",
+  "footnote": "More case studies publishing monthly.",
+  "cards": [
+    {
+      "kicker": "Pricing",
+      "title": "\"GetYourGuide\" is built around the activity. Travellers think in trips.",
+      "tags": ["Strategic Repositioning", "Travel Tech", "Growth Strategy"],
+      "href": "/case-studies/get-your-guide/"
+    },
+    {
+      "kicker": "AI Strategy",
+      "title": "Duolingo - Betting on AI Without Breaking the Streak",
+      "tags": ["AI Monetization", "Pricing & Packaging", "Competitive Strategy"],
+      "href": "/case-studies/duolingo/"
+    },
+    {
+      "kicker": "Product Teardown",
+      "title": "Airbnb and the Art of Doing Things That Don't Scale",
+      "tags": ["Marketplace", "Brand Strategy", "GTM & Marketing"],
+      "href": "/case-studies/airbnb/"
+    }
+  ],
+  "getYourGuide": {
+    "eyebrow": "Product Problem-Solving · Case Study",
+    "title": "From Activities to Trips",
+    "subtitle": "GetYourGuide is built around activities. Travellers think in trips.",
+    "meta": "June 2026 · 12 pages · ~25 min read",
+    "tags": ["Marketplace Strategy", "Product Architecture", "Discovery", "Travel Tech", "IPO Positioning"],
+    "summaryHeading": "The case in one paragraph",
+    "summary": "GetYourGuide enters 2026 from a position of strength - €1B in revenue, the first profitable year in its history, and a market debut on the horizon. But the product is built around the activity as its basic unit, while the traveller's unit of intent is the trip. This case maps the architectural gap and what closing it would require.",
+    "pdfUrl": ""
+  },
+  "edtech": {
+    "backLabel": "Back to work",
+    "tags": ["EdTech", "B2C", "Learning Platform", "Growth"],
+    "role": "Founder & Product Lead",
+    "title": "Zistre - A Platform for Global Test Preparation.",
+    "subtitle": "CCAT · Predictive Index · Wonderlic · Watson Glaser · SHL · GRE · TOEFL - outcome-driven assessment prep for global learners.",
+    "heroStats": [
+      { "value": "15000+", "label": "candidates served" },
+      { "value": "95%", "label": "success rate" },
+      { "value": "6", "label": "course verticals" },
+      { "value": "Month 4", "label": "profitable" }
+    ],
+    "sections": [
+      {
+        "eyebrow": "Overview",
+        "heading": "The problem",
+        "paragraphs": [
+          "Existing test-prep platforms were optimized for content volume, not candidate outcomes. Students were drowning in practice questions but never learning HOW to think through problems. Most platforms treated every learner the same - regardless of their starting level, learning pace, or target assessment. The result: high churn, low completion rates, and candidates who could memorize answers but couldn't transfer skills to new question types."
+        ]
+      },
+      {
+        "heading": "The insight",
+        "paragraphs": [
+          "After talking to 100+ candidates who had failed their target assessments, a clear pattern emerged: the problem wasn't knowledge - it was thinking. Candidates needed structured frameworks for approaching unfamiliar problems, not more content to memorize. This insight became the foundation of the entire product."
+        ]
+      },
+      {
+        "eyebrow": "Solution",
+        "heading": "What I built",
+        "paragraphs": [
+          "An outcome-driven assessment prep platform covering 6 major test categories: CCAT, Wonderlic, Watson Glaser, SHL, GRE, and TOEFL. Not a course library - a product designed around measurable candidate outcomes."
+        ],
+        "features": [
+          { "title": "Outcome-focused curriculum", "body": "Courses structured around thinking frameworks, not content dumps. Each module taught a transferable problem-solving approach." },
+          { "title": "1:1 mentoring built into the product", "body": "Every candidate received personalized guidance. I used their practice scores and completion data to adapt the approach in real-time." },
+          { "title": "Adaptive difficulty progression", "body": "Content difficulty adjusted based on candidate performance, ensuring they were always learning at their edge - not too easy, not overwhelming." },
+          { "title": "Multi-format assessment coverage", "body": "Six different test categories, each with unique question types and strategies - from logical reasoning (CCAT) to verbal comprehension (GRE/TOEFL)." }
+        ]
+      },
+      {
+        "eyebrow": "My Role",
+        "heading": "What I owned",
+        "paragraphs": ["Everything. This was my product from day one."],
+        "list": [
+          "Market research & opportunity identification",
+          "Product strategy & vision",
+          "Curriculum design & content creation",
+          "Platform development & technical decisions",
+          "User acquisition (Google Ads + SEO)",
+          "Conversion rate optimization",
+          "1:1 student mentoring (15000+ candidates)",
+          "Revenue management & P&L",
+          "Pricing strategy & packaging",
+          "Continuous iteration based on outcome data"
+        ]
+      },
+      {
+        "eyebrow": "Results",
+        "heading": "The impact",
+        "impactStats": [
+          { "value": "95%", "label": "of candidates passed their target assessment" },
+          { "value": "15000+", "label": "candidates served globally" },
+          { "value": "Month 4", "label": "reached profitability" },
+          { "value": "60+", "label": "countries reached" }
+        ]
+      },
+      {
+        "eyebrow": "Reflections",
+        "heading": "What I learned",
+        "paragraphs": [
+          "The biggest lesson: outcomes beat features. Every product decision was measured against one question - does this help candidates pass? Not 'does this look good' or 'will this increase time-on-site.' Just: does it work? That discipline shaped everything from curriculum design to pricing.",
+          "The second lesson: personal mentoring doesn't scale - but the insights from it do. By personally guiding 15000+ candidates, I built an intuition for learning patterns that no analytics dashboard could provide. Those patterns then informed the product design, making the platform better for everyone, including candidates I never spoke to directly."
+        ]
+      }
+    ]
+  }
+}

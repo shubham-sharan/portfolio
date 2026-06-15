@@ -1,0 +1,26 @@
+{
+  "eyebrow": "Toolkit",
+  "title": "Skills & tools",
+  "subtitle": "The frameworks, tools, and systems I use to uncover customer needs, prioritize effectively, and deliver products that create measurable business impact. Built on a foundation of strategy, execution, analytics, experimentation, and cross-functional leadership.",
+  "whatIDo": {
+    "label": "What I do",
+    "items": [
+      "Product Strategy", "User Research", "Roadmapping", "Prioritization (RICE/ICE)",
+      "A/B Testing", "Growth & Acquisition", "Google Ads & SEO", "Data Analysis",
+      "Pricing Strategy", "Team Leadership", "Stakeholder Management", "Curriculum Design",
+      "Prompt Engineering", "AI Product Building"
+    ]
+  },
+  "tools": {
+    "label": "Tools I use",
+    "items": ["Lovable", "Figma", "Notion", "Google Ads", "Amplitude", "Jira", "Miro", "Canva", "Webflow"]
+  },
+  "growth": {
+    "label": "Continuous growth",
+    "items": [
+      { "name": "Python (basic)", "status": "Level 1" },
+      { "name": "SQL (learning)", "status": "In Progress" },
+      { "name": "ChatGPT / Claude", "status": "Advanced" }
+    ]
+  }
+}

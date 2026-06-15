@@ -1,0 +1,40 @@
+---
+import Base from '../../layouts/Base.astro';
+import data from '../../data/case-studies.json';
+
+const cs = data.getYourGuide;
+---
+
+<Base title={`${cs.title} - Case Study - Shubham Sharan`} description={cs.subtitle}>
+  <section class="page-hero">
+    <div class="container">
+      <a class="breadcrumb" href="/#case-studies">← Portfolio · Product Problem-Solving</a>
+      <span class="eyebrow">{cs.eyebrow}</span>
+      <h1>{cs.title}</h1>
+      <p class="lede">{cs.subtitle}</p>
+      <p class="meta">{cs.meta}</p>
+      <div class="tag-row">
+        {cs.tags.map((t) => <span class="tag">{t}</span>)}
+      </div>
+    </div>
+  </section>
+
+  <div class="container">
+    <article class="prose">
+      <span class="eyebrow">{cs.summaryHeading}</span>
+      <p class="lede" style="font-size:1.25rem">{cs.summary}</p>
+      {cs.pdfUrl && (
+        <p style="margin-top:2.4rem">
+          <a class="btn btn-solid" href={cs.pdfUrl} target="_blank" rel="noopener">
+            Download the case study (PDF) →
+          </a>
+        </p>
+      )}
+      {!cs.pdfUrl && <p class="case-note">Full case study PDF coming soon.</p>}
+    </article>
+    <nav class="pager">
+      <a href="/#case-studies">← Back to case studies</a>
+      <a href="/contact/">Get in touch →</a>
+    </nav>
+  </div>
+</Base>

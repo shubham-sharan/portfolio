@@ -1,0 +1,155 @@
+---
+import Base from '../../layouts/Base.astro';
+import { marked } from 'marked';
+
+export async function getStaticPaths() {
+  const modules = import.meta.glob('../../data/work-pages/*.json', { eager: true });
+  const pages = Object.values(modules)
+    .map((m: any) => m.default ?? m)
+    .sort((a: any, b: any) => a.order - b.order);
+  return pages.map((page: any) => ({ params: { slug: page.slug }, props: { page } }));
+}
+
+const { page } = Astro.props;
+const inline = (s: string) => marked.parseInline(s) as string;
+---
+
+<Base title={`${page.title} - Shubham Sharan`} description={page.summary}>
+  <!-- HERO -->
+  <section class="page-hero">
+    <div class="container">
+      <a class="breadcrumb" href="/#work">← Back to Work</a>
+      <span class="eyebrow">{page.eyebrow}</span>
+      <h1>{page.title}</h1>
+      <p class="lede">{page.summary}</p>
+      <div class="wp-hero-actions">
+        <span class="wp-role">{page.roleLabel}</span>
+        {page.visitUrl && (
+          <a class="text-link" href={page.visitUrl} target="_blank" rel="noopener">Visit live ↗</a>
+        )}
+      </div>
+
+      <dl class="wp-facts">
+        {page.facts.map((f: any) => (
+          <div>
+            <dt>{f.label}</dt>
+            <dd>{f.value}</dd>
+          </div>
+        ))}
+      </dl>
+
+      <div class="wp-herostats">
+        {page.heroStats.map((s: any) => (
+          <div class="wp-herostat">
+            {s.dir && s.dir !== 'flat' && (
+              <span class={`impact-arrow ${s.dir}`}>{s.dir === 'up' ? '▲' : '▼'}</span>
+            )}
+            <span class="wp-herostat-value">{s.value}</span>
+            <span class="wp-herostat-label">{s.label}</span>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTIONS -->
+  {page.sections.map((sec: any) => (
+    <section class="wp-section">
+      <div class="container">
+        {sec.eyebrow && <span class="eyebrow">{sec.eyebrow}</span>}
+        <h2>{sec.heading}</h2>
+        {sec.paragraphs?.map((p: string) => <p class="wp-p" set:html={inline(p)} />)}
+
+        {sec.facts && (
+          <dl class="wp-facts wp-facts-inline">
+            {sec.facts.map((f: any) => (
+              <div><dt>{f.label}</dt><dd>{f.value}</dd></div>
+            ))}
+          </dl>
+        )}
+
+        {sec.list && (
+          <ul class="wp-list">
+            {sec.list.map((item: string) => <li set:html={inline(item)} />)}
+          </ul>
+        )}
+
+        {sec.steps && (
+          <ol class="wp-steps">
+            {sec.steps.map((st: any) => (
+              <li>
+                <span class="wp-step-n">{st.n}</span>
+                <span><strong>{st.title}</strong><span class="wp-step-body">{st.body}</span></span>
+              </li>
+            ))}
+          </ol>
+        )}
+
+        {sec.tiers && (
+          <div class="wp-tiers">
+            {sec.tiers.map((t: any) => (
+              <div class={`wp-tier${t.recommended ? ' rec' : ''}`}>
+                {t.recommended && <span class="wp-tier-badge">Recommended</span>}
+                <h4>{t.name}</h4>
+                <p class="wp-tier-price">{t.price}</p>
+                <ul>{t.points.map((p: string) => <li>{p}</li>)}</ul>
+              </div>
+            ))}
+          </div>
+        )}
+
+        {sec.decisions && (
+          <div class="wp-decisions">
+            {sec.decisions.map((d: any) => (
+              <div class="wp-decision">
+                <span class="wp-decision-n">/ {d.num}</span>
+                <h4>{d.title}</h4>
+                <p><span class="wp-tag-label">Why</span> {d.why}</p>
+                <p><span class="wp-tag-label">Tradeoff</span> {d.tradeoff}</p>
+              </div>
+            ))}
+          </div>
+        )}
+
+        {sec.impact && (
+          <div class="impact-cards wp-impact">
+            {sec.impact.map((m: any) => (
+              <div class="impact-stat">
+                {m.dir !== 'flat' && (
+                  <span class={`impact-arrow ${m.dir}`}>{m.dir === 'up' ? '▲' : '▼'}</span>
+                )}
+                <span class="impact-value">{m.value}</span>
+                <span class="impact-cap">{m.label}</span>
+              </div>
+            ))}
+          </div>
+        )}
+
+        {sec.extraParagraphs?.map((p: string) => <p class="wp-p" set:html={inline(p)} />)}
+
+        {sec.extraList && (
+          <ul class="wp-list">
+            {sec.extraList.map((item: string) => <li set:html={inline(item)} />)}
+          </ul>
+        )}
+      </div>
+    </section>
+  ))}
+
+  <!-- REFLECTION -->
+  <section class="wp-section wp-reflection">
+    <div class="container">
+      <span class="eyebrow">Reflections</span>
+      <h2>{page.reflection.heading}</h2>
+      {page.reflection.paragraphs.map((p: string) => <p class="wp-p" set:html={inline(p)} />)}
+    </div>
+  </section>
+
+  <!-- PAGER -->
+  <div class="container">
+    <nav class="pager">
+      <a href="/#work">← All work</a>
+      <a href={`/work/${page.next.slug}/`}>Next project · {page.next.label} →</a>
+    </nav>
+  </div>
+</Base>

@@ -1,0 +1,120 @@
+{
+  "slug": "go-digital-lab",
+  "order": 3,
+  "eyebrow": "Experience - Digital Agency",
+  "title": "Go Digital Lab - Digital Product & Marketing Agency",
+  "summary": "Founded and led a full-service digital agency for four years - delivering software, web, marketing, and analytics for 50+ clients across four continents. Where I learned to prioritize under constraint, lead cross-functional teams, and run delivery on data.",
+  "roleLabel": "Founder & Head of Operations",
+  "visitUrl": "",
+  "facts": [
+    { "label": "Role", "value": "Founder & Head of Operations" },
+    { "label": "Timeline", "value": "Oct 2015 – Dec 2019" },
+    { "label": "Team", "value": "[N]+ (design, dev, content, marketing)" },
+    { "label": "Clients", "value": "50+" },
+    { "label": "Reach", "value": "Europe · US · Australia · India" },
+    { "label": "Method", "value": "Agile" }
+  ],
+  "heroStats": [
+    { "value": "50+", "label": "Clients" },
+    { "value": "4", "label": "Continents" },
+    { "value": "[N]+", "label": "Team led" },
+    { "value": "[X]+", "label": "Projects delivered" }
+  ],
+  "sections": [
+    {
+      "eyebrow": "Overview",
+      "heading": "What Go Digital Lab was, and what I did",
+      "paragraphs": [
+        "Go Digital Lab was a full-service digital agency I founded and ran from 2015 to 2019 - delivering software development, web and app builds, digital and performance marketing, and data analytics and dashboards. Over four years we served 50+ clients, including multi-million-dollar companies, across real estate, education, professional services, and travel & events - spanning Europe, the US, Australia, and India.",
+        "As founder and head of operations, I led a multidisciplinary team of designers, developers, content creators, and marketers, owned client delivery end to end, and ran the business on Agile. This is where the instincts behind my product work were formed."
+      ],
+      "facts": [
+        { "label": "Type", "value": "Full-service digital agency" },
+        { "label": "Services", "value": "Software, web/app, marketing, performance, analytics" },
+        { "label": "Method", "value": "Agile" },
+        { "label": "Sectors", "value": "Real estate, education, professional services, travel & events" },
+        { "label": "Reach", "value": "4 continents" }
+      ]
+    },
+    {
+      "eyebrow": "The Problem",
+      "heading": "One shared team, many clients, four time zones.",
+      "paragraphs": [
+        "Running a services business at that scale meant constant tension: one shared team, many clients, competing deadlines, four time zones. The job was to deliver consistently without overextending the team or the margins. Three problems defined the work - and each taught a lesson I now use every day in product."
+      ]
+    },
+    {
+      "eyebrow": "My Role",
+      "heading": "How I operated",
+      "paragraphs": [
+        "I operated as both owner and delivery lead - accountable for the client outcome and for the team that produced it. I set priorities, ran Agile delivery across concurrent engagements, and built the process and ownership that let the agency run without every decision routing through me."
+      ],
+      "list": [
+        "Portfolio prioritization",
+        "Agile delivery across concurrent clients",
+        "Cross-functional team leadership",
+        "Client & stakeholder management",
+        "Metrics, analytics & reporting",
+        "Process & operations"
+      ]
+    },
+    {
+      "eyebrow": "Challenge 01 - Prioritization",
+      "heading": "Prioritizing a competing portfolio",
+      "paragraphs": [
+        "The hardest call every week was what got built first. With one shared team serving 50+ clients, demand always exceeded capacity. I ran continuous prioritization and capacity trade-offs - weighing deadlines, client value, and team bandwidth - and used Agile sprints to allocate work in focused cycles rather than spreading everyone thin.",
+        "**Outcome:** [X]% of projects delivered on schedule and team utilization held near [X]%, without burnout.",
+        "**The product parallel:** Sequencing scarce resources against competing demands - and saying no - is the skill I lean on most as a PM today."
+      ]
+    },
+    {
+      "eyebrow": "Challenge 02 - Data-Informed Delivery",
+      "heading": "Running delivery on data",
+      "paragraphs": [
+        "I made measurement the backbone of delivery. We defined what success looked like for each engagement, tracked project health against it, and - through our own analytics and dashboard service - gave clients transparent reporting on outcomes and ROI rather than a list of activity.",
+        "**Outcome:** Lifted on-time delivery to [X]% and gave clients clear, real-time visibility that improved retention to [X]%.",
+        "**The product parallel:** Defining success metrics up front and deciding from data instead of opinion is exactly how I run products."
+      ]
+    },
+    {
+      "eyebrow": "Challenge 03 - Cross-Functional Leadership",
+      "heading": "Leading a cross-functional team",
+      "paragraphs": [
+        "I led designers, developers, content creators, and marketers as a single delivery engine - and deliberately built the agency so it didn't all route through me. Clear ownership per discipline, Agile ceremonies, and documented playbooks let the team scale beyond my direct involvement.",
+        "**Outcome:** Grew the team to [N]+ across four disciplines and sustained [X]% repeat business on the strength of consistent delivery.",
+        "**The product parallel:** Leading a multidisciplinary team through influence and process - not authority - is the core of senior product work."
+      ]
+    },
+    {
+      "eyebrow": "Operator Thinking",
+      "heading": "Key decisions & tradeoffs",
+      "decisions": [
+        { "num": "01", "title": "Shared team over dedicated pods", "why": "Maximize utilization across 50+ clients.", "tradeoff": "Accepted context-switching cost; mitigated with clear per-client ownership." },
+        { "num": "02", "title": "Agile and iterative over fixed-scope", "why": "Adapt to changing client needs.", "tradeoff": "Less upfront predictability; managed with change control." },
+        { "num": "03", "title": "Invest in process to remove the founder bottleneck", "why": "Scale delivery beyond me.", "tradeoff": "Short-term cost of documentation and delegation; paid off in resilience." }
+      ]
+    },
+    {
+      "eyebrow": "Impact",
+      "heading": "What it added up to",
+      "impact": [
+        { "dir": "flat", "value": "50+", "label": "Clients" },
+        { "dir": "flat", "value": "4", "label": "Continents" },
+        { "dir": "flat", "value": "[N]+", "label": "Team led" },
+        { "dir": "flat", "value": "[X]+", "label": "Projects delivered" },
+        { "dir": "flat", "value": "[X]%", "label": "Repeat business" },
+        { "dir": "flat", "value": "4 yrs", "label": "Operating" }
+      ],
+      "extraParagraphs": [
+        "Four years of running delivery for a global client base taught me the operator's version of product management: prioritize ruthlessly, measure everything, and build a team that doesn't need you in every room."
+      ]
+    }
+  ],
+  "reflection": {
+    "heading": "What I took from it",
+    "paragraphs": [
+      "Go Digital Lab is where my product instincts started. Before I owned a roadmap, I owned a portfolio of competing priorities, a P&L, and a team - and learned that the job is less about having the answers and more about sequencing the work, reading the data, and trusting the people you've set up to deliver."
+    ]
+  },
+  "next": { "label": "Huzzle", "slug": "huzzle" }
+}

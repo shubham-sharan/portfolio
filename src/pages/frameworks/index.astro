@@ -1,0 +1,92 @@
+---
+import Base from '../../layouts/Base.astro';
+import data from '../../data/frameworks-index.json';
+
+const count = data.concepts.length;
+---
+
+<Base title="Frameworks - Shubham Sharan">
+  <section class="page-hero">
+    <div class="container">
+      <span class="eyebrow">{data.eyebrow}</span>
+      <h1>{data.title}</h1>
+      <p class="lede">{data.subtitle}</p>
+      <p class="lede" style="margin-top:1.2rem">{data.intro}</p>
+      <p style="margin-top:1.6rem">
+        <a class="text-link" href="/product-lifecycle/">View the Product Lifecycle →</a>
+      </p>
+
+      <input type="search" id="fw-search" class="search-input" placeholder="Search a concept…" />
+      <div class="filter-bar" id="fw-filters">
+        <button class="filter-btn active" data-stage="All">All</button>
+        {data.stages.map((s) => <button class="filter-btn" data-stage={s}>{s}</button>)}
+      </div>
+      <p class="results-count"><span id="fw-count">{count}</span> of {count} concepts</p>
+    </div>
+  </section>
+
+  <section style="padding: 3.5rem 0 5.5rem">
+    <div class="container">
+      <div class="concept-grid" id="fw-grid">
+        {data.concepts.map((c) => (
+          <article class="concept-card" data-stage={c.stage} data-title={c.title.toLowerCase()}>
+            <h3>{c.title}</h3>
+            <p>{c.blurb}</p>
+            <span class="concept-stage">{c.stage}</span>
+            {c.slug && <a href={`/frameworks/${c.slug}/`}>Read the reference page →</a>}
+          </article>
+        ))}
+      </div>
+      <p class="case-note">{data.footnote}</p>
+      <p style="margin-top:2rem">
+        <a class="text-link" href="/product-lifecycle/">← Back to Product Lifecycle</a>
+      </p>
+    </div>
+  </section>
+
+  <script>
+    const search = document.getElementById('fw-search') as HTMLInputElement;
+    const filters = document.getElementById('fw-filters')!;
+    const cards = [...document.querySelectorAll<HTMLElement>('#fw-grid .concept-card')];
+    const countEl = document.getElementById('fw-count')!;
+    let stage = 'All';
+
+    function apply() {
+      const q = search.value.trim().toLowerCase();
+      let shown = 0;
+      for (const card of cards) {
+        const ok =
+          (stage === 'All' || card.dataset.stage === stage) &&
+          (!q || card.dataset.title!.includes(q) || card.textContent!.toLowerCase().includes(q));
+        card.style.display = ok ? '' : 'none';
+        if (ok) shown++;
+      }
+      countEl.textContent = String(shown);
+    }
+
+    search.addEventListener('input', apply);
+    filters.addEventListener('click', (e) => {
+      const btn = (e.target as HTMLElement).closest<HTMLElement>('.filter-btn');
+      if (!btn) return;
+      filters.querySelectorAll('.filter-btn').forEach((b) => b.classList.remove('active'));
+      btn.classList.add('active');
+      stage = btn.dataset.stage!;
+      apply();
+    });
+
+    // Deep links: /frameworks/?q=… and /frameworks/?stage=…
+    const params = new URLSearchParams(location.search);
+    const qParam = params.get('q');
+    const stageParam = params.get('stage');
+    if (stageParam) {
+      const btn = filters.querySelector<HTMLElement>(`[data-stage="${stageParam}"]`);
+      if (btn) {
+        filters.querySelectorAll('.filter-btn').forEach((b) => b.classList.remove('active'));
+        btn.classList.add('active');
+        stage = stageParam;
+      }
+    }
+    if (qParam) search.value = qParam;
+    if (qParam || stageParam) apply();
+  </script>
+</Base>

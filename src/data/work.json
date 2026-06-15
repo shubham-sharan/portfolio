@@ -1,0 +1,101 @@
+{
+  "eyebrow": "Work",
+  "title": "The Work",
+  "subtitle": "Edtech, marketplaces, AI, and an agency.",
+  "items": [
+    {
+      "index": "01",
+      "role": "Senior Product Manager",
+      "company": "Huzzle",
+      "descriptor": "HR Tech · AI Talent Marketplace",
+      "summary": "Leading product for AI matching at Huzzle, an HR tech company running a two-sided talent marketplace - connecting candidates with employers across the UK, US, and EU.",
+      "tags": [
+        "HR Tech",
+        "AI Matching",
+        "AI Interviewer",
+        "Pricing Strategy"
+      ],
+      "stats": [
+        {
+          "value": "11 days",
+          "label": "Avg. time to a perfect hire"
+        },
+        {
+          "value": "300K+",
+          "label": "Pre-vetted talent pool"
+        },
+        {
+          "value": "3",
+          "label": "Markets (UK · US · EU)"
+        }
+      ],
+      "impactLabel": "Impact: before vs. after the AI rollout",
+      "productUrl": "https://www.huzzle.com/",
+      "slug": "huzzle"
+    },
+    {
+      "index": "02",
+      "role": "Founder & Head of Product",
+      "company": "Zistre",
+      "descriptor": "Pre-Employment Test Prep",
+      "summary": "Built a profitable, zero-capital test-prep platform serving candidates preparing for cognitive ability and English-proficiency exams across 60+ countries.",
+      "tags": [
+        "Product Strategy",
+        "Multi-Market Pricing",
+        "Funnel Design"
+      ],
+      "stats": [
+        {
+          "value": "15K+",
+          "label": "Users"
+        },
+        {
+          "value": "95%",
+          "label": "Pass rate"
+        },
+        {
+          "value": "6",
+          "label": "Verticals"
+        },
+        {
+          "value": "Mo. 4",
+          "label": "Profitable"
+        }
+      ],
+      "caseStudyUrl": "/case-study/edtech-platform/",
+      "productUrl": "https://zistre.com/",
+      "slug": "zistre"
+    },
+    {
+      "index": "03",
+      "role": "Founder & Head of Operations",
+      "company": "Go Digital Lab",
+      "descriptor": "B2B Digital Services Agency",
+      "summary": "Founded and ran a B2B services agency working with 50+ clients across India, the US, and Europe - building the digital infrastructure, measurement, and growth systems clients needed to operate.",
+      "tags": [
+        "B2B Services",
+        "Web, Growth & Analytics",
+        "Cross-Market Operations"
+      ],
+      "stats": [
+        {
+          "value": "15+",
+          "label": "Team"
+        },
+        {
+          "value": "50+",
+          "label": "Clients"
+        },
+        {
+          "value": "4 yr",
+          "label": "Operating"
+        },
+        {
+          "value": "3",
+          "label": "Continents"
+        }
+      ],
+      "slug": "go-digital-lab"
+    }
+  ]
+}

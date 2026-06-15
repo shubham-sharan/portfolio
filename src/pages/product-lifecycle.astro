@@ -1,0 +1,121 @@
+---
+import Base from '../layouts/Base.astro';
+import lifecycle from '../data/lifecycle.json';
+import frameworksIndex from '../data/frameworks-index.json';
+
+// Match lifecycle concepts to the frameworks library for blurbs + deep links.
+const byTitle = new Map(
+  frameworksIndex.concepts.map((c: any) => [c.title.toLowerCase(), c])
+);
+function conceptInfo(title: string) {
+  const c = byTitle.get(title.toLowerCase());
+  return {
+    title,
+    blurb: c?.blurb ?? '',
+    href: c?.slug ? `/frameworks/${c.slug}/` : `/frameworks/?q=${encodeURIComponent(title)}`,
+    published: !!c?.slug,
+  };
+}
+---
+
+<Base
+  title="Product Lifecycle - Shubham Sharan"
+  description="Seven stages of building a product, and the concepts I use at each - from Conceive to Retire."
+>
+  <section class="page-hero">
+    <div class="container">
+      <span class="eyebrow">{lifecycle.eyebrow}</span>
+      <h1>{lifecycle.title}</h1>
+      <p class="lede">{lifecycle.subtitle}</p>
+      <p class="lede" style="margin-top:1.2rem">{lifecycle.intro}</p>
+    </div>
+  </section>
+
+  <section style="padding: 3.5rem 0 5.5rem">
+    <div class="container lc-layout">
+      <!-- Sticky stage stepper with scroll-spy + progress line -->
+      <aside class="lc-rail" aria-label="Stages">
+        <div class="lc-rail-card">
+          <p class="toolkit-label" style="margin-bottom:0.4rem">The journey</p>
+          <ol class="lc-rail-list" id="lc-rail-list">
+            {lifecycle.stages.map((s) => (
+              <li>
+                <a href={`#stage-${s.number}`} data-stage={s.number}>
+                  <span class="lc-node">{s.number}</span>
+                  <span class="lc-rail-text">
+                    <strong>{s.name}</strong>
+                    <small>{s.concepts.length} concepts</small>
+                  </span>
+                </a>
+              </li>
+            ))}
+          </ol>
+          <a class="text-link lc-rail-foot" href="/frameworks/">Frameworks library →</a>
+        </div>
+      </aside>
+
+      <!-- Stages -->
+      <div class="lc-main">
+        {lifecycle.stages.map((stage) => (
+          <article class="lc-stage" id={`stage-${stage.number}`} data-stage={stage.number}>
+            <header class="lc-stage-head">
+              <span class="lc-stage-num">{stage.number}<em>/ 07</em></span>
+              <div>
+                <h2>{stage.name}</h2>
+                <p class="stage-quote">“{stage.quote}”</p>
+              </div>
+            </header>
+            <p class="stage-desc">{stage.description}</p>
+            <p class="toolkit-label" style="margin-bottom:0.9rem">
+              Concepts at this stage · {stage.concepts.length}
+            </p>
+            <div class="lc-concepts">
+              {stage.concepts.map((title) => {
+                const c = conceptInfo(title);
+                return (
+                  <a class="lc-concept" href={c.href}>
+                    <strong>{c.title} {c.published && <span class="lc-live">● guide</span>}</strong>
+                    {c.blurb && <span>{c.blurb}</span>}
+                  </a>
+                );
+              })}
+            </div>
+          </article>
+        ))}
+
+        <div class="lc-outro">
+          <p class="lede">{lifecycle.outro}</p>
+          <p style="margin-top:1.4rem">
+            <a class="btn btn-solid" href="/frameworks/">Browse the Frameworks library</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    // Scroll-spy: highlight the rail entry for the stage in view,
+    // mark earlier stages as done, and fill the progress line.
+    const list = document.getElementById('lc-rail-list')!;
+    const links = [...document.querySelectorAll<HTMLElement>('.lc-rail-list a')];
+    const stages = [...document.querySelectorAll<HTMLElement>('.lc-stage')];
+    const spy = new IntersectionObserver(
+      (entries) => {
+        for (const e of entries) {
+          if (e.isIntersecting) {
+            const n = (e.target as HTMLElement).dataset.stage;
+            const idx = links.findIndex((l) => l.dataset.stage === n);
+            links.forEach((l, i) => {
+              l.classList.toggle('active', i === idx);
+              l.classList.toggle('done', i < idx);
+            });
+            const frac = links.length > 1 ? idx / (links.length - 1) : 0;
+            list.style.setProperty('--lc-progress', String(frac));
+          }
+        }
+      },
+      { rootMargin: '-25% 0px -65% 0px' }
+    );
+    stages.forEach((s) => spy.observe(s));
+  </script>
+</Base>

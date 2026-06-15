@@ -1,0 +1,34 @@
+---
+import Base from '../../layouts/Base.astro';
+import { marked } from 'marked';
+
+export async function getStaticPaths() {
+  const modules = import.meta.glob('../../data/frameworks/*.json', { eager: true });
+  return Object.values(modules).map((mod: any) => {
+    const article = mod.default ?? mod;
+    return { params: { slug: article.slug }, props: { article } };
+  });
+}
+
+const { article } = Astro.props;
+const html = marked.parse(article.body.join('\n'));
+---
+
+<Base title={`${article.title} - Frameworks - Shubham Sharan`} description={article.description}>
+  <section class="page-hero">
+    <div class="container">
+      <a class="breadcrumb" href="/frameworks/">← Frameworks library</a>
+      <span class="eyebrow">Framework · {article.stage}</span>
+      <h1>{article.title}</h1>
+      <p class="lede">{article.description}</p>
+    </div>
+  </section>
+
+  <div class="container">
+    <article class="prose" set:html={html} />
+    <nav class="pager">
+      <a href="/frameworks/">← Back to Frameworks library</a>
+      <a href="/product-lifecycle/">View the Product Lifecycle →</a>
+    </nav>
+  </div>
+</Base>

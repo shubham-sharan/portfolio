@@ -1,0 +1,131 @@
+{
+  "slug": "zistre",
+  "order": 2,
+  "eyebrow": "Experience - EdTech / Test Prep",
+  "title": "Zistre - Scaling a Global Test-Prep Platform",
+  "summary": "Co-founded and led product for a pre-employment test-prep platform serving 100K+ candidates across 62+ countries. I owned the three bets that turned global traffic into revenue - the right product, priced for every market, on a frictionless path to purchase.",
+  "roleLabel": "Co-founder & Senior Product Manager",
+  "visitUrl": "https://zistre.com/",
+  "facts": [
+    { "label": "Role", "value": "Co-founder & Senior PM" },
+    { "label": "Company", "value": "Zistre" },
+    { "label": "Scope", "value": "Product · Growth · Monetization" },
+    { "label": "Reach", "value": "62+ countries" },
+    { "label": "Scale", "value": "100K+ candidates" }
+  ],
+  "heroStats": [
+    { "value": "100K+", "label": "Candidates served" },
+    { "value": "62+", "label": "Countries" },
+    { "value": "+X%", "label": "Conversion uplift", "dir": "up" },
+    { "value": "+X%", "label": "Revenue growth", "dir": "up" }
+  ],
+  "sections": [
+    {
+      "eyebrow": "Overview",
+      "heading": "What Zistre is, and what I did here",
+      "paragraphs": [
+        "Zistre is a pre-employment test-prep platform that helps candidates and working professionals prepare for cognitive and behavioral assessments - CCAT, Wonderlic, Predictive Index, Watson Glaser, SHL, and personality tests - with GRE and TOEFL prep offered through a dedicated subdomain. Candidates rely on it to clear assessments used for promotions and as live interview rounds. To date it has served 100K+ candidates across 62+ countries.",
+        "As co-founder and Senior PM, I set product strategy and owned the growth and monetization roadmap end to end - under real startup constraints, with a lean team - collaborating directly with curriculum developers, engineering, and candidates."
+      ],
+      "facts": [
+        { "label": "Industry", "value": "EdTech / Test Prep" },
+        { "label": "Model", "value": "Global D2C courses + tests" },
+        { "label": "Assessments", "value": "CCAT, Wonderlic, PI, Watson Glaser, SHL (GRE/TOEFL via subdomain)" },
+        { "label": "Stack touchpoints", "value": "Stripe, Razorpay, AI chat" },
+        { "label": "Focus", "value": "Conversion & monetization" }
+      ]
+    },
+    {
+      "eyebrow": "The Problem",
+      "heading": "Strong global demand. A funnel that leaked revenue.",
+      "paragraphs": [
+        "The question that defined my work: how do we convert healthy global demand into revenue with a small team? Traffic was strong and evenly spread, but the defaults leaked money - a long one-month course few wanted, a single global price, a multi-step checkout, and a free-trial offer that quietly lost buyers.",
+        "I treated the funnel as the product and made three deliberate bets, sequencing them by where we were losing the most revenue first."
+      ]
+    },
+    {
+      "eyebrow": "My Role",
+      "heading": "How I operated",
+      "paragraphs": [
+        "I operated as both owner and builder: as co-founder I chose which bets were worth making; as Senior PM I instrumented each stage of the funnel, prioritized by highest leakage, and shipped with a lean engineering team. Every change was a measured bet, not a guess - I read behavior, acted, and held each decision to the data."
+      ],
+      "list": [
+        "LLM & Agent Product Design",
+        "GTM & Pricing Strategy",
+        "Payments architecture",
+        "Experimentation & A/B Testing",
+        "Upsell & monetization",
+        "Cross-functional delivery (curriculum, engineering)"
+      ]
+    },
+    {
+      "eyebrow": "Bet 01 - Packaging & Product-Market Fit",
+      "heading": "The right product",
+      "paragraphs": [
+        "Our highest-converting product came from rejecting our first instinct. We launched with a comprehensive one-month course; uptake was weak. The insight that reshaped the business: candidates take these assessments on short notice - for a promotion or a live interview round - so they need to be ready in days, not weeks. I repackaged the entire offer around urgency."
+      ],
+      "list": [
+        "Made a 4–7 day \"emergency\" prep course the flagship product, matched to how candidates actually buy → conversion +X%, revenue +X%",
+        "Added 1:1 mentorship as a paid upsell once candidates began requesting personalized help → higher-margin revenue + +X% AOV"
+      ]
+    },
+    {
+      "eyebrow": "Bet 02 - Global Monetization",
+      "heading": "Priced for every market",
+      "paragraphs": [
+        "A single USD price was leaving money on the table across most of our footprint. Traffic split roughly evenly between developed and developing markets, but conversion in price-sensitive regions lagged far behind. I rebuilt pricing and payments around one truth: a buyer in Lagos and a buyer in London need different prices, currencies, and payment rails."
+      ],
+      "list": [
+        "Market-based pricing - e.g., a course at $29 in developed markets sold at $19 in price-sensitive ones (India, Bangladesh, Pakistan, parts of Africa) → conversion there +X%",
+        "Currency localization for familiarity at the decision point - GBP, EUR, SGD, AUD, INR, USD → lower price friction, +X%",
+        "Re-architected the payment stack - Stripe for global coverage, Razorpay retained for South & Southeast Asia where its fees were lowest - replacing PayPal (poor forex, limited coverage) and Razorpay-everywhere (high failure rates outside the region) → payment success +X%",
+        "Abandoned-payment recovery - automated follow-ups with targeted discount/coupon codes to candidates who failed or dropped at the payment page → recovered X% of drop-offs"
+      ]
+    },
+    {
+      "eyebrow": "Bet 03 - Conversion",
+      "heading": "A frictionless path to purchase",
+      "paragraphs": [
+        "Every step between intent and purchase was a place to lose a buyer, so I treated the funnel itself as the product - measuring each stage and removing whatever the data said was leaking, even when the fix was counterintuitive."
+      ],
+      "list": [
+        "Collapsed a multi-page checkout into a single page after funnel data pinpointed drop-off at the intermediate course page → checkout drop-off ▼ X%",
+        "Removed the signup wall with automatic account creation at purchase - capturing only an email, provisioning the account, and emailing a temporary password to reset on first login → ▼ X% purchase friction",
+        "Removed the free tests via landing-page experimentation. Candidates were clicking \"Free Test,\" deferring it, and never returning; cutting the free offer lifted conversion - counterintuitive, but the funnel was unambiguous → conversion +X%",
+        "Replaced that reassurance with a 30-day full-refund guarantee, so candidates bought with confidence instead of stalling → +X%",
+        "Added pre-purchase support - an AI chat assistant for in-the-moment questions and an optional free 15-minute session with an expert for a human walkthrough → +X% on purchase intent"
+      ]
+    },
+    {
+      "eyebrow": "Product Thinking",
+      "heading": "Key decisions & tradeoffs",
+      "decisions": [
+        { "num": "01", "title": "Urgency over comprehensiveness (short course as flagship)", "why": "Matched real candidate timelines - they buy days before the test, not weeks.", "tradeoff": "Bet that depth-seeking buyers were the minority; validated by conversion." },
+        { "num": "02", "title": "Removed the free tests", "why": "Funnel data showed they delayed and lost buyers.", "tradeoff": "Gave up a lead-capture hook; mitigated with the 30-day refund." },
+        { "num": "03", "title": "Stripe + Razorpay split", "why": "Best global coverage with lowest regional fees.", "tradeoff": "Operational cost of two integrations; justified by recovered revenue." }
+      ]
+    },
+    {
+      "eyebrow": "Impact",
+      "heading": "What it added up to",
+      "impact": [
+        { "dir": "flat", "value": "100K+", "label": "Candidates" },
+        { "dir": "flat", "value": "62+", "label": "Countries" },
+        { "dir": "up", "value": "+X%", "label": "Conversion" },
+        { "dir": "up", "value": "+X%", "label": "Revenue" },
+        { "dir": "up", "value": "+X%", "label": "Payment success" },
+        { "dir": "down", "value": "X%", "label": "Checkout drop-off" }
+      ],
+      "extraParagraphs": [
+        "The bets compounded: the right product brought the right buyers, market pricing and payments converted them globally, and a frictionless funnel captured the revenue."
+      ]
+    }
+  ],
+  "reflection": {
+    "heading": "What I took from it",
+    "paragraphs": [
+      "Founding and running product at once taught me to trust the funnel over instinct - removing a \"free\" perk to raise conversion is a call you only make by reading behavior honestly. With a lean team, the discipline wasn't doing everything; it was sequencing - fix the highest-leakage stage first, prove it with data, then move to the next. The compounding of those bets, not any one feature, is what scaled the business."
+    ]
+  },
+  "next": { "label": "Go Digital Lab", "slug": "go-digital-lab" }
+}

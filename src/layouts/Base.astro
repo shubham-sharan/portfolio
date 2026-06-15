@@ -1,0 +1,194 @@
+---
+import profile from '../data/profile.json';
+import themeConfig from '../data/theme.json';
+import '../styles/global.css';
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const { title = profile.siteTitle, description = profile.metaDescription } = Astro.props;
+const year = new Date().getFullYear();
+
+const { activeTheme, activeColor, themes, colors, googleFontsHref } = themeConfig as any;
+
+const defaultColor =
+  activeColor && activeColor !== 'auto' ? activeColor : themes[activeTheme].defaultColor;
+
+// html[data-theme="…"] → fonts + radii (html prefix beats :root fallbacks in the cascade)
+const themeCss = Object.entries(themes)
+  .map(([key, t]: [string, any]) => {
+    return `html[data-theme="${key}"]{
+--serif:'${t.fonts.display}',${t.fonts.displayFallback};
+--sans:'${t.fonts.body}',${t.fonts.bodyFallback};
+--radius:${t.radius};--btn-radius:${t.btnRadius};
+}`;
+  })
+  .join('\n');
+
+// html[data-color="…"] → full palette
+const colorCss = Object.entries(colors)
+  .map(([key, c]: [string, any]) => {
+    const v = c.values;
+    return `html[data-color="${key}"]{
+--bg:${v.bg};--bg-soft:${v.bgSoft};--card:${v.card};
+--ink:${v.ink};--ink-soft:${v.inkSoft};--muted:${v.muted};--line:${v.line};
+--accent:${v.accent};--selection:${v.selection};
+--secondary:${v.secondary ?? v.bandBg};--secondary-ink:${v.secondaryInk ?? v.bandInk};
+--heading:${v.heading};--subhead:${v.subhead};
+--band-bg:${v.bandBg};--band-ink:${v.bandInk};--band-muted:${v.bandMuted};
+}`;
+  })
+  .join('\n');
+
+const themeList = Object.entries(themes).map(([key, t]: [string, any]) => ({
+  key,
+  label: t.label,
+  defaultColor: t.defaultColor,
+}));
+const colorList = Object.entries(colors).map(([key, c]: [string, any]) => ({
+  key,
+  label: c.label,
+  swatch: c.swatch,
+  swatch2: c.swatch2 ?? c.swatch,
+}));
+---
+
+<!doctype html>
+<html lang="en" data-theme={activeTheme} data-color={defaultColor}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90' font-family='Georgia'>S.</text></svg>" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href={googleFontsHref} />
+    <style is:inline set:html={themeCss + '\n' + colorCss}></style>
+    <script is:inline>
+      // Apply saved design + color before first paint to avoid flashes.
+      try {
+        const t = localStorage.getItem('portfolio-theme');
+        const c = localStorage.getItem('portfolio-color');
+        if (t) document.documentElement.dataset.theme = t;
+        if (c) document.documentElement.dataset.color = c;
+      } catch (e) {}
+    </script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <a class="wordmark" href="/">{profile.name}</a>
+        <button class="nav-toggle" aria-label="Menu" aria-expanded="false">Menu</button>
+        <nav class="site-nav" id="site-nav">
+          {profile.nav.map((item) => <a href={item.href}>{item.label}</a>)}
+          <a class="nav-cta" href="/contact/">Let's talk</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <slot />
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <span>© {year} {profile.name}. All rights reserved.</span>
+        <div class="footer-links">
+          {profile.socials.map((s) => <a href={s.url}>{s.label}</a>)}
+        </div>
+      </div>
+    </footer>
+
+    <!-- Design + Color pickers: flip live, decide later. Remove this block to ship one design. -->
+    <div class="theme-dock" aria-label="Design and color options">
+      <div class="dock-row">
+        <span class="theme-dock-label">Design</span>
+        {themeList.map((t) => (
+          <button class="theme-pick" data-pick-theme={t.key} data-default-color={t.defaultColor} title={t.label}>
+            {t.label}
+          </button>
+        ))}
+      </div>
+      <div class="dock-row">
+        <span class="theme-dock-label">Color</span>
+        {colorList.map((c) => (
+          <button
+            class="color-pick"
+            data-pick-color={c.key}
+            title={c.label}
+            aria-label={c.label}
+            style={`--swatch:${c.swatch};--swatch2:${c.swatch2}`}
+          ></button>
+        ))}
+      </div>
+    </div>
+
+    <script>
+      const toggle = document.querySelector('.nav-toggle');
+      const nav = document.getElementById('site-nav');
+      toggle?.addEventListener('click', () => {
+        const open = nav?.classList.toggle('open');
+        toggle.setAttribute('aria-expanded', String(!!open));
+      });
+
+      const observer = new IntersectionObserver(
+        (entries) => {
+          for (const e of entries) {
+            if (e.isIntersecting) {
+              e.target.classList.add('in');
+              observer.unobserve(e.target);
+            }
+          }
+        },
+        { threshold: 0.12 }
+      );
+      document.querySelectorAll('.reveal').forEach((el) => observer.observe(el));
+
+      // Design + Color pickers
+      const root = document.documentElement;
+      const themePicks = document.querySelectorAll<HTMLElement>('[data-pick-theme]');
+      const colorPicks = document.querySelectorAll<HTMLElement>('[data-pick-color]');
+
+      function mark() {
+        themePicks.forEach((b) =>
+          b.classList.toggle('active', b.dataset.pickTheme === root.dataset.theme)
+        );
+        colorPicks.forEach((b) =>
+          b.classList.toggle('active', b.dataset.pickColor === root.dataset.color)
+        );
+      }
+
+      themePicks.forEach((b) =>
+        b.addEventListener('click', () => {
+          root.dataset.theme = b.dataset.pickTheme!;
+          // A design choice also applies its default palette…
+          root.dataset.color = b.dataset.defaultColor!;
+          try {
+            localStorage.setItem('portfolio-theme', root.dataset.theme!);
+            localStorage.setItem('portfolio-color', root.dataset.color!);
+          } catch (e) {}
+          mark();
+        })
+      );
+
+      // …while a color choice overrides just the palette.
+      colorPicks.forEach((b) =>
+        b.addEventListener('click', () => {
+          root.dataset.color = b.dataset.pickColor!;
+          try {
+            localStorage.setItem('portfolio-color', root.dataset.color!);
+          } catch (e) {}
+          mark();
+        })
+      );
+
+      mark();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,176 @@
+{
+  "slug": "duolingo",
+  "order": 1,
+  "eyebrow": "Case Study - Product Teardown · Independent Product Analysis",
+  "title": "How Duolingo Bet on AI Without Breaking Its Streak",
+  "summary": "A study in sequencing - and in honest attribution. Duolingo grew on its gamification engine and viral marketing; AI's real job was to deepen monetization through a premium tier, not to drive the user-growth curve. What the public data can and can't prove about that is exactly the point.",
+  "meta": "Data current as of Q1 2026 · Every figure traceable to public SEC filings · See sources.",
+  "tags": ["AI Strategy", "AI Monetization", "Pricing & Packaging", "Competitive Strategy"],
+  "heroStats": [
+    { "value": "$1.04B", "label": "FY2025 revenue (+39% YoY)" },
+    { "value": "52.7M", "label": "Q4'25 daily active users (+30%)" },
+    { "value": "12.2M", "label": "Paid subscribers (+28%)" },
+    { "value": "$414M", "label": "FY2025 net income" },
+    { "value": "73.0%", "label": "Gross margin (Q1'26)" }
+  ],
+  "sections": [
+    {
+      "eyebrow": "The Setup",
+      "heading": "A working game, not a rescue mission.",
+      "paragraphs": [
+        "Before analyzing the AI bet, be precise about what was already working - because the AI features were built on top of this, not to save it. Duolingo runs a freemium model: a free, ad-supported core course, a convenience tier (Super), and a premium tier (Max) where the AI features live. Its real moat is engagement engineering - streaks, XP, leagues, and a mascot with outsized personality - which produces the daily habit the whole business compounds on.",
+        "It was also an \"AI company\" long before generative AI: Birdbrain, its machine-learning model, had been personalizing lesson difficulty for years. So GPT-4 didn't introduce AI - it filled two specific gaps a static app couldn't: open-ended conversation practice and contextual feedback on mistakes."
+      ]
+    },
+    {
+      "eyebrow": "The Data",
+      "heading": "The growth - and what AI did and didn't do.",
+      "paragraphs": [
+        "Revenue more than quadrupled across the IPO-to-now window, crossing $1B in 2025. It's tempting to credit Duolingo Max, which launched in March 2023 - right in the steepest part of the curve. This is exactly where discipline matters."
+      ],
+      "chart": {
+        "type": "line",
+        "label": "Annual revenue, USD millions",
+        "max": 1200,
+        "annotationIndex": 2,
+        "annotation": "Max launches",
+        "points": [
+          { "label": "2021", "y": 251 },
+          { "label": "2022", "y": 369 },
+          { "label": "2023", "y": 531 },
+          { "label": "2024", "y": 748 },
+          { "label": "2025", "y": 1040 }
+        ],
+        "caption": "Annual revenue. Source: Duolingo SEC Form 8-K shareholder letters."
+      }
+    },
+    {
+      "heading": "What the data can - and can't - tell you.",
+      "paragraphs": [
+        "Duolingo does not break out Max revenue, and the curve started climbing well before Max existed. The company credits its headline user growth mainly to engagement and marketing - Q1 2025's +49% DAU was lifted by the viral \"Dead Duo\" campaign, not by AI features. AI's measurable fingerprint is narrower but real: revenue per paid subscriber rose roughly 6–7% year over year through 2025 as users shifted into higher-priced tiers like Max. So the defensible claim is **\"AI deepened monetization of an already-growing base,\"** not \"AI drove the growth.\"",
+        "The user trend itself carries a second caution: growth is strong but decelerating every quarter as the comparisons get harder. That deceleration is the direct trigger for the strategic decision analyzed below."
+      ],
+      "chart": {
+        "type": "line",
+        "label": "DAU year-over-year growth",
+        "max": 60,
+        "points": [
+          { "label": "Q1'25", "y": 49, "v": "49%" },
+          { "label": "Q2'25", "y": 40, "v": "40%" },
+          { "label": "Q3'25", "y": 34, "v": "34%" },
+          { "label": "Q4'25", "y": 30, "v": "30%" },
+          { "label": "Q1'26", "y": 21, "v": "21%" }
+        ],
+        "caption": "Strong in absolute terms, but cooling. Source: Duolingo SEC 8-K filings."
+      }
+    },
+    {
+      "heading": "AI shows up cleanly in one place: cost.",
+      "paragraphs": [
+        "Generative-AI features aren't free to run, and the filings show the pressure plainly - then show it being absorbed as per-unit inference costs fell and subscribers shifted into higher-priced tiers.",
+        "The lesson in one line: an AI feature can launch margin-dilutive and become margin-accretive as usage scales - but only if it also pulls users up the pricing ladder."
+      ],
+      "chart": {
+        "type": "line",
+        "label": "Gross margin",
+        "min": 71,
+        "max": 73.5,
+        "points": [
+          { "label": "Q2'25", "y": 71.7, "v": "71.7%" },
+          { "label": "Q3'25", "y": 72.1, "v": "72.1%" },
+          { "label": "Q4'25", "y": 72.5, "v": "72.5%" },
+          { "label": "Q1'26", "y": 73.0, "v": "73.0%" }
+        ],
+        "caption": "Q1'26 expansion attributed primarily to \"continued reductions in per-unit AI costs.\" Source: Duolingo SEC 8-K filings."
+      }
+    },
+    {
+      "eyebrow": "The Journey",
+      "heading": "From CAPTCHA to GPT-4, one milestone at a time.",
+      "timeline": [
+        { "date": "2011", "title": "Founded.", "body": "Von Ahn & Hacker start Duolingo; gamified free language learning." },
+        { "date": "Jul 2021", "title": "IPO on NASDAQ.", "body": "Lists as DUOL; revenue $250.8M for the year." },
+        { "date": "Pre-2023", "title": "\"Birdbrain\" ML.", "body": "Machine learning personalizes difficulty - AI before generative AI." },
+        { "date": "Mar 14, 2023", "title": "Duolingo Max launches.", "body": "GPT-4 powers Explain My Answer & Roleplay in a new top tier." },
+        { "date": "2024", "title": "Video Call with Lily.", "body": "Live spoken practice with an AI character - closing the \"can't speak yet\" gap." },
+        { "date": "Apr 28, 2025", "title": "\"AI-first\" memo → backlash.", "body": "Public memo on replacing contractors with AI sparks user outrage and cancellations.", "cautionary": true },
+        { "date": "May 2025", "title": "The walk-back.", "body": "CEO reframes AI as \"augmentation, not replacement\"; no full-time layoffs." },
+        { "date": "Jan 2026", "title": "Explain My Answer goes free.", "body": "The commoditized feature is freed; conversation features stay paid." },
+        { "date": "2026", "title": "Pivot: users over margin.", "body": "Guides to slower profit growth; moves Video Call down to the Super tier to widen reach." }
+      ]
+    },
+    {
+      "eyebrow": "The Threat",
+      "heading": "The moat question: what happens when tutoring is free?",
+      "paragraphs": [
+        "This is the uncomfortable part of the bet, and the reason the case is worth studying rather than celebrating.",
+        "The same class of model that powers Duolingo Max is freely available to anyone through ChatGPT - which by early 2026 reportedly reached around 900 million weekly users and processed billions of prompts a day. A patient, always-available conversational tutor, in almost any language, is now a free and generic commodity. If \"conversation practice\" is your premium feature, what stops a learner from getting a version of it for $0 somewhere else?",
+        "Duolingo's implicit answer is that the model was never the moat. The defensible layer is the habit (the streak), the structured curriculum that tells a beginner what to learn next, the brand, and distribution to 50M+ daily users - none of which a raw chatbot provides. So far the numbers suggest the moat is holding for Duolingo's segment: users and revenue kept climbing right through the rise of consumer AI.",
+        "But that is a bet, not a proof. The cautionary parallel is Figma - whose market value fell sharply in 2026 as AI-native tools attacked its core, even though its fundamentals looked strong. Whether gamified structure and habit outlast free intelligence is the single most important unknown in this case, and any honest version of it has to leave that question open."
+      ]
+    },
+    {
+      "eyebrow": "The Decision",
+      "heading": "The real bet of 2026: reach over margin.",
+      "paragraphs": [
+        "Strip away the AI narrative and the sharpest product decision is about pricing and growth - with a genuine counterfactual. Entering 2026, DAU growth was decelerating hard (+49% to +21% in five quarters) even as the business was its most profitable ever. Management faced a real fork."
+      ],
+      "options": [
+        { "title": "Harvest the margin.", "body": "Keep pushing users toward Max, protect premium pricing, and let profit and margins keep expanding from their ~30% adjusted-EBITDA level.", "chosen": false },
+        { "title": "Buy the reach.", "body": "Reduce friction in the free experience and move a flagship AI feature - Video Call - down from Max into the cheaper Super tier, trading near-term premium ARPU for broader engagement.", "chosen": true }
+      ],
+      "extra": true
+    },
+    {
+      "heading": "The logic, and the risk.",
+      "paragraphs": [
+        "The 2026 guidance makes the tradeoff explicit and costly: bookings growth guided to roughly 10–12% and revenue to 15–18% (down from 30%+), with adjusted EBITDA margin easing to about 25%. The stated goal is to re-accelerate users toward a target of 100 million DAU by 2028.",
+        "**The logic.** In a habit business, daily engagement compounds: a larger, stickier free base is worth more over time than a smaller, more-monetized one today - and that calculus gets stronger precisely because free conversational AI makes a friction-heavy, paywalled funnel riskier than it used to be.",
+        "**The risk.** Deliberately slowing your most profitable engine is only correct if user growth actually re-accelerates. If it doesn't, you've traded margin for nothing and arrive at 2028 both slower-growing and less profitable. That is the bet worth debating."
+      ]
+    },
+    {
+      "eyebrow": "The Tension",
+      "heading": "When the product strategy and the org message came apart.",
+      "paragraphs": [
+        "The AI product bet was defensible. The AI organizational message was not. On April 28, 2025, the CEO posted an all-hands memo declaring Duolingo \"AI-first\" and saying the company would gradually stop using contractors for work AI could handle. The reaction was swift: users publicly threatened to cancel and delete the app, and the backlash spread across X, LinkedIn, and TikTok.",
+        "The same fact set reads completely differently as a product message versus an org message. \"We used AI to expand our course catalog\" is a customer win. \"We'll replace contractors with AI\" is a threat to people - and customers identified with the people. Tone is a feature; transparency without empathy backfired.",
+        "Within a week the CEO walked it back, reframing AI as augmentation; he later told the New York Times the backlash had \"slightly dampened\" customer growth, that no full-time employees were laid off, and by April 2026 the company had dropped the AI-usage performance metric entirely. Crucially, the controversy did not derail the fundamentals - a reminder that reputation events and business metrics run on different clocks, and that a strong retention loop buys room to recover."
+      ]
+    },
+    {
+      "eyebrow": "For Product Managers",
+      "heading": "Six transferable lessons.",
+      "lessons": [
+        { "num": "01", "title": "Fix the loop first.", "body": "AI is leverage on retention, not a substitute for it. Duolingo had the streak before it had GPT-4." },
+        { "num": "02", "title": "The model isn't the moat.", "body": "A foundation model is rentable by anyone. Habit, curriculum, brand, and distribution are not." },
+        { "num": "03", "title": "Free the commodity, charge for the moat.", "body": "Explain My Answer went free; the harder-to-copy conversation features stayed in Max." },
+        { "num": "04", "title": "Model AI as a margin curve.", "body": "Expect early dilution, instrument per-unit cost, and let scale and tiering turn it accretive." },
+        { "num": "05", "title": "AI comms are product comms.", "body": "Your customers read your \"AI strategy.\" Tone is part of the message." },
+        { "num": "06", "title": "Trade margin for reach - deliberately.", "body": "The 2026 pivot is defensible, but only legible if you state the tradeoff out loud." }
+      ]
+    },
+    {
+      "eyebrow": "Think",
+      "heading": "Discussion questions.",
+      "questions": [
+        "Was freeing \"Explain My Answer\" the right call, or did it weaken Max's value proposition?",
+        "Moving Video Call from Max to Super widens reach but cannibalizes Max's differentiation. How would you decide?",
+        "How should the \"AI-first\" gains have been framed without triggering the backlash?",
+        "At what point does decelerating DAU growth (49% → 21% over five quarters) become a concern rather than a comparison artifact?",
+        "Does Duolingo's moat - habit, curriculum, brand - actually survive free conversational AI, or is it the next Figma?"
+      ]
+    },
+    {
+      "eyebrow": "Everything Verified",
+      "heading": "Sources.",
+      "sources": [
+        "**Financials & user metrics - audited (strongest).** Duolingo SEC Form 8-K shareholder letters (FY2021–FY2025, Q1 2026), SEC EDGAR, CIK 0001562088. Includes revenue, DAU, ARPU mix-shift (+6–7%), the \"Dead Duo\" campaign note, gross margin, and FY2026 guidance.",
+        "**Product announcements - primary.** Duolingo Max launch (Mar 14, 2023, GPT-4). Partnership rationale & Birdbrain: openai.com/index/duolingo.",
+        "**The \"AI-first\" episode - reported.** Original memo (Apr 28, 2025, LinkedIn); walk-back coverage (The Verge, PR Daily, Entrepreneur); \"slightly dampened\" growth and no layoffs (Fortune / New York Times, Aug 2025); metric dropped (Fortune, Apr 2026).",
+        "**Competitive context - reported (treat as directional).** ChatGPT scale (~900M weekly users, early 2026); Figma 2026 market drawdown. Not audited Duolingo figures; used only to frame the threat."
+      ]
+    }
+  ],
+  "next": { "label": "Airbnb", "slug": "airbnb" }
+}
