@@ -36,12 +36,12 @@
   "edtech": {
     "backLabel": "Back to work",
     "tags": ["EdTech", "B2C", "Learning Platform", "Growth"],
-    "role": "Founder & Product Lead",
+    "role": "Co-Founder & Head of Product",
     "title": "Zistre - A Platform for Global Test Preparation.",
     "subtitle": "CCAT · Predictive Index · Wonderlic · Watson Glaser · SHL · GRE · TOEFL - outcome-driven assessment prep for global learners.",
     "heroStats": [
-      { "value": "15000+", "label": "candidates served" },
-      { "value": "95%", "label": "success rate" },
+      { "value": "100K+", "label": "candidates served" },
+      { "value": "62+", "label": "countries" },
       { "value": "6", "label": "course verticals" },
       { "value": "Month 4", "label": "profitable" }
     ],

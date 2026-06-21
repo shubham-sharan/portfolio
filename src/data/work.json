@@ -35,10 +35,10 @@
     },
     {
       "index": "02",
-      "role": "Founder & Head of Product",
+      "role": "Co-Founder & Head of Product",
       "company": "Zistre",
       "descriptor": "Pre-Employment Test Prep",
-      "summary": "Built a profitable, zero-capital test-prep platform serving candidates preparing for cognitive ability and English-proficiency exams across 60+ countries.",
+      "summary": "Co-founded a profitable, zero-capital test-prep platform serving 100K+ candidates preparing for cognitive ability and English-proficiency exams across 60+ countries.",
       "tags": [
         "Product Strategy",
         "Multi-Market Pricing",
@@ -46,20 +46,20 @@
       ],
       "stats": [
         {
-          "value": "15K+",
-          "label": "Users"
+          "value": "100K+",
+          "label": "Candidates"
         },
         {
-          "value": "95%",
-          "label": "Pass rate"
+          "value": "62+",
+          "label": "Countries"
         },
         {
-          "value": "6",
-          "label": "Verticals"
+          "value": "+40%",
+          "label": "Conversion uplift"
         },
         {
-          "value": "Mo. 4",
-          "label": "Profitable"
+          "value": "+30%",
+          "label": "AOV uplift"
         }
       ],
       "caseStudyUrl": "/case-study/edtech-platform/",
