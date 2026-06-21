@@ -68,18 +68,18 @@
     },
     {
       "index": "03",
-      "role": "Founder & Head of Operations",
+      "role": "Co-Founder & Head of Operations",
       "company": "Go Digital Lab",
-      "descriptor": "B2B Digital Services Agency",
-      "summary": "Founded and ran a B2B services agency working with 50+ clients across India, the US, and Europe - building the digital infrastructure, measurement, and growth systems clients needed to operate.",
+      "descriptor": "Full-Service Digital Consultancy",
+      "summary": "Co-founded and ran a full-service digital consultancy working with 50+ B2B and B2C clients across the US, Europe, Australia, and India - building the digital infrastructure, measurement, and growth systems clients needed to operate.",
       "tags": [
-        "B2B Services",
+        "B2B + B2C Services",
         "Web, Growth & Analytics",
         "Cross-Market Operations"
       ],
       "stats": [
         {
-          "value": "15+",
+          "value": "20+",
           "label": "Team"
         },
         {
@@ -87,11 +87,11 @@
           "label": "Clients"
         },
         {
-          "value": "4 yr",
+          "value": "5.5 yr",
           "label": "Operating"
         },
         {
-          "value": "3",
+          "value": "4",
           "label": "Continents"
         }
       ],

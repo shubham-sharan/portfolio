@@ -3,13 +3,13 @@
   "order": 3,
   "eyebrow": "Experience - Digital Agency",
   "title": "Go Digital Lab - Digital Product & Marketing Agency",
-  "summary": "Founded and led a full-service digital agency for four years - delivering software, web, marketing, and analytics for 50+ clients across four continents. Where I learned to prioritize under constraint, lead cross-functional teams, and run delivery on data.",
-  "roleLabel": "Founder & Head of Operations",
+  "summary": "Co-founded and led a full-service digital consultancy for five and a half years - delivering software, web, marketing, and analytics for 50+ B2B and B2C clients across four continents. Where I learned to prioritize under constraint, lead cross-functional teams, and run delivery on data.",
+  "roleLabel": "Co-Founder & Head of Operations",
   "visitUrl": "",
   "facts": [
-    { "label": "Role", "value": "Founder & Head of Operations" },
-    { "label": "Timeline", "value": "Oct 2015 – Dec 2019" },
-    { "label": "Team", "value": "[N]+ (design, dev, content, marketing)" },
+    { "label": "Role", "value": "Co-Founder & Head of Operations" },
+    { "label": "Timeline", "value": "Oct 2015 – Apr 2021" },
+    { "label": "Team", "value": "20+ (design, dev, content, marketing)" },
     { "label": "Clients", "value": "50+" },
     { "label": "Reach", "value": "Europe · US · Australia · India" },
     { "label": "Method", "value": "Agile" }
@@ -17,16 +17,16 @@
   "heroStats": [
     { "value": "50+", "label": "Clients" },
     { "value": "4", "label": "Continents" },
-    { "value": "[N]+", "label": "Team led" },
-    { "value": "[X]+", "label": "Projects delivered" }
+    { "value": "20+", "label": "Team led" },
+    { "value": "70+", "label": "Projects delivered" }
   ],
   "sections": [
     {
       "eyebrow": "Overview",
       "heading": "What Go Digital Lab was, and what I did",
       "paragraphs": [
-        "Go Digital Lab was a full-service digital agency I founded and ran from 2015 to 2019 - delivering software development, web and app builds, digital and performance marketing, and data analytics and dashboards. Over four years we served 50+ clients, including multi-million-dollar companies, across real estate, education, professional services, and travel & events - spanning Europe, the US, Australia, and India.",
-        "As founder and head of operations, I led a multidisciplinary team of designers, developers, content creators, and marketers, owned client delivery end to end, and ran the business on Agile. This is where the instincts behind my product work were formed."
+        "Go Digital Lab was a full-service digital consultancy I co-founded and ran from 2015 to 2021 - delivering software development, web and app builds, digital and performance marketing, and data analytics and dashboards. Over five and a half years we served 50+ B2B and B2C clients, including public limited companies, across real estate, education, professional services, and travel & events - spanning Europe, the US, Australia, and India.",
+        "As co-founder and head of operations, I led a multidisciplinary team of designers, developers, content creators, and marketers, owned client delivery end to end, and ran the business on Agile. This is where the instincts behind my product work were formed."
       ],
       "facts": [
         { "label": "Type", "value": "Full-service digital agency" },
@@ -63,7 +63,7 @@
       "heading": "Prioritizing a competing portfolio",
       "paragraphs": [
         "The hardest call every week was what got built first. With one shared team serving 50+ clients, demand always exceeded capacity. I ran continuous prioritization and capacity trade-offs - weighing deadlines, client value, and team bandwidth - and used Agile sprints to allocate work in focused cycles rather than spreading everyone thin.",
-        "**Outcome:** [X]% of projects delivered on schedule and team utilization held near [X]%, without burnout.",
+        "**Outcome:** 70+ engagements delivered across the agency's life, with 8–10 concurrent projects at any moment - the capacity cap was what kept quality consistent and the team intact.",
         "**The product parallel:** Sequencing scarce resources against competing demands - and saying no - is the skill I lean on most as a PM today."
       ]
     },
@@ -72,7 +72,7 @@
       "heading": "Running delivery on data",
       "paragraphs": [
         "I made measurement the backbone of delivery. We defined what success looked like for each engagement, tracked project health against it, and - through our own analytics and dashboard service - gave clients transparent reporting on outcomes and ROI rather than a list of activity.",
-        "**Outcome:** Lifted on-time delivery to [X]% and gave clients clear, real-time visibility that improved retention to [X]%.",
+        "**Outcome:** Analytics-driven reporting turned every engagement into a renewal conversation - and contributed to **25% repeat business** across 50+ clients.",
         "**The product parallel:** Defining success metrics up front and deciding from data instead of opinion is exactly how I run products."
       ]
     },
@@ -81,7 +81,7 @@
       "heading": "Leading a cross-functional team",
       "paragraphs": [
         "I led designers, developers, content creators, and marketers as a single delivery engine - and deliberately built the agency so it didn't all route through me. Clear ownership per discipline, Agile ceremonies, and documented playbooks let the team scale beyond my direct involvement.",
-        "**Outcome:** Grew the team to [N]+ across four disciplines and sustained [X]% repeat business on the strength of consistent delivery.",
+        "**Outcome:** Grew the team to 20+ across four disciplines and sustained 25% repeat business on the strength of consistent delivery.",
         "**The product parallel:** Leading a multidisciplinary team through influence and process - not authority - is the core of senior product work."
       ]
     },
@@ -100,13 +100,13 @@
       "impact": [
         { "dir": "flat", "value": "50+", "label": "Clients" },
         { "dir": "flat", "value": "4", "label": "Continents" },
-        { "dir": "flat", "value": "[N]+", "label": "Team led" },
-        { "dir": "flat", "value": "[X]+", "label": "Projects delivered" },
-        { "dir": "flat", "value": "[X]%", "label": "Repeat business" },
-        { "dir": "flat", "value": "4 yrs", "label": "Operating" }
+        { "dir": "flat", "value": "20+", "label": "Team led" },
+        { "dir": "flat", "value": "70+", "label": "Projects delivered" },
+        { "dir": "flat", "value": "25%", "label": "Repeat business" },
+        { "dir": "flat", "value": "5.5 yrs", "label": "Operating" }
       ],
       "extraParagraphs": [
-        "Four years of running delivery for a global client base taught me the operator's version of product management: prioritize ruthlessly, measure everything, and build a team that doesn't need you in every room."
+        "Five and a half years of running delivery for a global client base taught me the operator's version of product management: prioritize ruthlessly, measure everything, and build a team that doesn't need you in every room."
       ]
     }
   ],
