@@ -2,10 +2,11 @@
   "name": "Shubham Sharan",
   "siteTitle": "Shubham Sharan - Senior AI Product Manager",
   "metaDescription": "Product leader with 12+ years building products from scratch. EdTech, B2B, HR tech & AI marketplaces. 100K+ users across 60+ countries. Senior AI PM at Huzzle.",
-  "eyebrow": "Senior AI Product Manager · Ex-Founder",
-  "heroTitle": "Hi, I'm Shubham.",
+  "eyebrow": "Senior AI Product Manager · Ex-Founder · 12+ Years of Experience",
+  "heroTitle": "Hi, I am Shubham.",
   "heroParagraphs": [
-    "Twelve years across edtech, B2B services, and HR tech - as a founder, a head of product, and now a senior AI PM at Huzzle, an HR tech company building an AI talent marketplace. Most of what I've worked on, I built end-to-end."
+    "I have spent the last 12 years building products - as a founder, head of product, and now as a Senior AI Product Manager at Huzzle. Across edtech, B2B services, and AI marketplaces, I have built products from the ground up: from the first user conversation to the first version of the product and the first dollar of revenue.",
+    "That's the lens I bring to everything: products are made of decisions, and better decisions come from having sat on all sides of the table."
   ],
   "stats": [
     {
@@ -76,6 +77,10 @@
   "socials": [],
   "nav": [
     {
+      "label": "Home",
+      "href": "/"
+    },
+    {
       "label": "Work",
       "href": "/#work"
     },
@@ -84,18 +89,18 @@
       "href": "/#case-studies"
     },
     {
-      "label": "Frameworks",
-      "href": "/frameworks/"
-    },
-    {
-      "label": "Product Lifecycle",
-      "href": "/product-lifecycle/"
+      "label": "Resources",
+      "children": [
+        { "label": "Frameworks", "href": "/frameworks/" },
+        { "label": "Product Lifecycle", "href": "/product-lifecycle/" },
+        { "label": "Interview Playbook", "href": "/interview-rounds/" }
+      ]
     }
   ],
-  "heroTagline": "I take products from the first user conversation to the first dollar of revenue.",
+  "heroTagline": "",
   "heroPoints": [
-    "Every seat at the table - engineer, founder, head of product, senior AI PM",
-    "0 → 1 specialist: first user call, first version, first dollar",
-    "Products are made of decisions - good ones come from what you've seen"
+    "Every seat at the table - founder, head of product, senior AI product manager",
+    "0 → 1 specialist - first user call, first product, first revenue",
+    "Products are made of decisions - experience makes those decisions better"
   ]
 }

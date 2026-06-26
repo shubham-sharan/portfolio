@@ -55,9 +55,9 @@
       "swatch2": "#f7d4c4"
     },
     "evergreen": {
-      "label": "Evergreen & Gold (light)",
+      "label": "Evergreen & Clay (light)",
       "swatch": "#0B7A55",
-      "swatch2": "#F2C14E",
+      "swatch2": "#D98555",
       "values": {
         "bg": "#f9f9f5",
         "bgSoft": "#eff0e8",
@@ -68,11 +68,11 @@
         "line": "#dde1d6",
         "accent": "#0B7A55",
         "selection": "#d9f0e4",
-        "secondary": "#F2C14E",
+        "secondary": "#D98555",
         "secondaryInk": "#1a241f",
-        "bandBg": "#F2C14E",
+        "bandBg": "#D98555",
         "bandInk": "#1a241f",
-        "bandMuted": "#7a6428",
+        "bandMuted": "#7a4a2a",
         "heading": "#132019",
         "subhead": "#4b5e55"
       }

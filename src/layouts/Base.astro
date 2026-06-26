@@ -86,7 +86,18 @@ const colorList = Object.entries(colors).map(([key, c]: [string, any]) => ({
         <a class="wordmark" href="/">{profile.name}</a>
         <button class="nav-toggle" aria-label="Menu" aria-expanded="false">Menu</button>
         <nav class="site-nav" id="site-nav">
-          {profile.nav.map((item) => <a href={item.href}>{item.label}</a>)}
+          {profile.nav.map((item: any) => (
+            item.children
+              ? (
+                <div class="nav-group">
+                  <button class="nav-group-btn" aria-haspopup="true" aria-expanded="false">{item.label}<span class="nav-caret" aria-hidden="true">▾</span></button>
+                  <div class="nav-dropdown">
+                    {item.children.map((c: any) => <a href={c.href}>{c.label}</a>)}
+                  </div>
+                </div>
+              )
+              : <a href={item.href}>{item.label}</a>
+          ))}
           <a class="nav-cta" href="/contact/">Let's talk</a>
         </nav>
       </div>

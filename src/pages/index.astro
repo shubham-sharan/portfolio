@@ -34,7 +34,7 @@ for (const m of Object.values(wpModules) as any[]) {
       <div>
         <span class="eyebrow">{profile.eyebrow}</span>
         <h1>{profile.heroTitle}</h1>
-        <p class="hero-tagline">{profile.heroTagline}</p>
+        {profile.heroTagline && <p class="hero-tagline">{profile.heroTagline}</p>}
         {profile.heroParagraphs.map((p) => <p class="hero-body">{p}</p>)}
         <ul class="hero-points">
           {profile.heroPoints.map((pt) => <li>{pt}</li>)}
@@ -174,7 +174,7 @@ for (const m of Object.values(wpModules) as any[]) {
     <div class="container">
       <div class="section-head">
         <span class="eyebrow">The PM Library</span>
-        <h2>Tools I share, not just use</h2>
+        <h2>Lessons from building products</h2>
         <p class="lede">
           A public library of the frameworks, lifecycle concepts, and interview guides I've written
           - the working vocabulary behind the decisions.
@@ -203,30 +203,32 @@ for (const m of Object.values(wpModules) as any[]) {
     </div>
   </section>
 
-  <!-- TOOLKIT: condensed -->
+  <!-- TOOLKIT: card grid -->
   <section id="toolkit" class="rule" style="background: var(--bg-soft)">
     <div class="container">
-      <div class="toolkit-grid">
-        <div>
-          <span class="eyebrow">{skills.eyebrow}</span>
-          <h2 style="font-size: clamp(1.8rem, 4vw, 2.5rem); margin-bottom: 1rem">Stack & systems</h2>
-          <p class="lede" style="margin-bottom: 2.2rem">{skills.subtitle}</p>
-          <p class="toolkit-label">{skills.tools.label}</p>
+      <div class="toolkit-head">
+        <span class="eyebrow">{skills.eyebrow}</span>
+        <h2 class="toolkit-title">{skills.title}</h2>
+        <p class="lede">{skills.subtitle}</p>
+      </div>
+      <div class="tk-cards">
+        <article class="tk-card">
+          <div class="tk-card-head"><span class="tk-num">01</span>{skills.tools.label}</div>
           <div class="chip-row">
             {skills.tools.items.map((s) => <span class="chip">{s}</span>)}
           </div>
-        </div>
-        <div class="reveal">
-          <p class="toolkit-label">{skills.growth.label}</p>
-          <ul class="growth-list">
+        </article>
+        <article class="tk-card">
+          <div class="tk-card-head"><span class="tk-num">02</span>{skills.growth.label}</div>
+          <ul class="cert-list">
             {skills.growth.items.map((g) => (
               <li>
-                <span>{g.name}</span>
-                <span class="growth-status">{g.status}</span>
+                <span class="cert-name">{g.name}</span>
+                <span class="cert-issuer">{g.status}</span>
               </li>
             ))}
           </ul>
-        </div>
+        </article>
       </div>
     </div>
   </section>

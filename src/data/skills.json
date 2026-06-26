@@ -1,26 +1,42 @@
 {
   "eyebrow": "Toolkit",
-  "title": "Skills & tools",
-  "subtitle": "The frameworks, tools, and systems I use to uncover customer needs, prioritize effectively, and deliver products that create measurable business impact. Built on a foundation of strategy, execution, analytics, experimentation, and cross-functional leadership.",
+  "title": "Tools & certifications",
+  "subtitle": "The capabilities, tools, and certifications behind my product work - spanning strategy, discovery, experimentation, analytics, pricing, and AI product development, backed by hands-on delivery across the stack.",
   "whatIDo": {
     "label": "What I do",
     "items": [
-      "Product Strategy", "User Research", "Roadmapping", "Prioritization (RICE/ICE)",
-      "A/B Testing", "Growth & Acquisition", "Google Ads & SEO", "Data Analysis",
-      "Pricing Strategy", "Team Leadership", "Stakeholder Management", "Curriculum Design",
-      "Prompt Engineering", "AI Product Building"
+      "Market research & competitive analysis",
+      "Go-to-market strategy",
+      "Stakeholder management",
+      "Cross-functional leadership",
+      "Prioritization (RICE)",
+      "Product requirements & specs (PRDs)",
+      "Product roadmapping",
+      "Product discovery & user research (JTBD)",
+      "A/B testing & experimentation",
+      "Agile/Scrum delivery",
+      "Product analytics",
+      "OKRs & North Star metrics",
+      "AI product strategy",
+      "AI/LLM product development",
+      "Prompt & Context engineering",
+      "Conversion rate optimization (CRO)",
+      "Pricing strategy"
     ]
   },
   "tools": {
     "label": "Tools I use",
-    "items": ["Lovable", "Figma", "Notion", "Google Ads", "Mixpanel", "Linear", "Hotjar", "Canva", "Google Analytics"]
+    "items": [
+      "Figma", "Linear", "Google Analytics", "Mixpanel", "Hotjar", "Google Ads",
+      "Google Search Console", "Data Studio", "SQL", "Notion", "Canva", "Claude",
+      "ChatGPT", "OpenAI & Anthropic APIs", "Perplexity", "Lovable", "HeyGen"
+    ]
   },
   "growth": {
-    "label": "Continuous growth",
+    "label": "Certifications",
     "items": [
-      { "name": "Python (basic)", "status": "Level 1" },
-      { "name": "SQL (learning)", "status": "In Progress" },
-      { "name": "ChatGPT / Claude", "status": "Advanced" }
+      { "name": "Product Management", "status": "IBM" },
+      { "name": "Entrepreneurship Specialization", "status": "UPenn" }
     ]
   }
 }
