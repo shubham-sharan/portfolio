@@ -1,11 +1,11 @@
 {
   "name": "Shubham Sharan",
-  "siteTitle": "Shubham Sharan - Senior Product Manager",
-  "metaDescription": "Product leader with 12+ years building products from scratch. EdTech, B2B, HR tech & AI marketplaces. 100K+ users across 60+ countries. Senior PM at Huzzle.",
-  "eyebrow": "Senior Product Manager · Ex-Founder",
+  "siteTitle": "Shubham Sharan - Senior AI Product Manager",
+  "metaDescription": "Product leader with 12+ years building products from scratch. EdTech, B2B, HR tech & AI marketplaces. 100K+ users across 60+ countries. Senior AI PM at Huzzle.",
+  "eyebrow": "Senior AI Product Manager · Ex-Founder",
   "heroTitle": "Hi, I'm Shubham.",
   "heroParagraphs": [
-    "Twelve years across edtech, B2B services, and HR tech - as a founder, a head of product, and now a senior PM at Huzzle, an HR tech company building an AI talent marketplace. Most of what I've worked on, I built end-to-end."
+    "Twelve years across edtech, B2B services, and HR tech - as a founder, a head of product, and now a senior AI PM at Huzzle, an HR tech company building an AI talent marketplace. Most of what I've worked on, I built end-to-end."
   ],
   "stats": [
     {
@@ -25,7 +25,7 @@
   "about": {
     "eyebrow": "About",
     "title": "Engineer turned founder turned product leader",
-    "intro": "Right now I'm a senior PM at Huzzle, building AI matching for a two-sided talent marketplace. I got here through a longer route than most - and every stop taught a different lesson.",
+    "intro": "Right now I'm a senior AI PM at Huzzle, building AI matching for a two-sided talent marketplace. I got here through a longer route than most - and every stop taught a different lesson.",
     "chapters": [
       {
         "step": "01",
@@ -47,7 +47,7 @@
       },
       {
         "step": "04",
-        "role": "Senior PM",
+        "role": "Senior AI PM",
         "company": "Huzzle",
         "lesson": "Learning how AI changes the shape of a talent marketplace."
       }
@@ -63,7 +63,8 @@
     "eyebrow": "Get in touch",
     "title": "Let's talk.",
     "subtitle": "Whether it's a product role, a collaboration, or just a conversation about building things - I'd love to hear from you.",
-    "email": "your@email.com",
+    "email": "hello@shubhamsharan.co",
+    "phone": "+91-7387772426",
     "topics": [
       "Job opportunity",
       "Collaboration",
@@ -72,12 +73,7 @@
       "Other"
     ]
   },
-  "socials": [
-    {
-      "label": "LinkedIn",
-      "url": "https://www.linkedin.com/in/sharanshub/"
-    }
-  ],
+  "socials": [],
   "nav": [
     {
       "label": "Work",
@@ -98,7 +94,7 @@
   ],
   "heroTagline": "I take products from the first user conversation to the first dollar of revenue.",
   "heroPoints": [
-    "Every seat at the table - engineer, founder, head of product, senior PM",
+    "Every seat at the table - engineer, founder, head of product, senior AI PM",
     "0 → 1 specialist: first user call, first version, first dollar",
     "Products are made of decisions - good ones come from what you've seen"
   ]

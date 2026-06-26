@@ -43,16 +43,16 @@
         "muted": "#6f6661",
         "line": "#141414",
         "accent": "#E21D47",
-        "selection": "#ffd9e1",
-        "bandBg": "#ffd9e1",
+        "selection": "#f7d4c4",
+        "bandBg": "#f7d4c4",
         "bandInk": "#141414",
         "bandMuted": "#6f6661",
         "heading": "#000000",
         "subhead": "#4d4440",
-        "secondary": "#ffd9e1",
+        "secondary": "#f7d4c4",
         "secondaryInk": "#141414"
       },
-      "swatch2": "#ffd9e1"
+      "swatch2": "#f7d4c4"
     },
     "evergreen": {
       "label": "Evergreen & Gold (light)",

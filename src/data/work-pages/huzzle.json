@@ -4,12 +4,12 @@
   "eyebrow": "Experience - Talent Marketplace",
   "title": "Huzzle - Rebuilding Recruitment Around AI",
   "summary": "Leading the shift from human-run interviews to an AI-native hiring pipeline at a marketplace that places the top 2% of global talent - cutting cost-per-hire and time-to-placement, and opening a new revenue line.",
-  "roleLabel": "Senior Product Manager",
+  "roleLabel": "Senior AI Product Manager",
   "visitUrl": "https://www.huzzle.com/",
   "facts": [
     {
       "label": "Role",
-      "value": "Senior Product Manager"
+      "value": "Senior AI Product Manager"
     },
     {
       "label": "Joined",
@@ -37,7 +37,7 @@
       "dir": "up"
     },
     {
-      "value": "+53%",
+      "value": "+50%",
       "label": "Revenue per placement",
       "dir": "up"
     }
@@ -48,7 +48,7 @@
       "heading": "What Huzzle is, and what I do here",
       "paragraphs": [
         "Huzzle is an agentic, AI-native talent marketplace that sources, vets, and places the top 2% of global talent across 60+ roles in sales, operations, marketing, product, and engineering - handling interviewing, hiring, and cross-border payroll end to end. An AI recruiter runs the whole lifecycle autonomously, so clients make a perfect hire in around 11 days. Candidates apply once, complete a single AI-led interview, and get matched to roles with companies across the UK, US, and EU.",
-        "I joined the Talent Marketplace team in April 2024 as a Senior Product Manager, working directly with the CTO, Head of Engineering, and UX designer on the core product decisions that shaped how candidates are screened, matched, and monetized. I owned where product, AI, and the business model meet - building AI features that also improved per-placement profitability."
+        "I joined the Talent Marketplace team in April 2024 as a Senior AI Product Manager, working directly with the CTO, Head of Engineering, and UX designer on the core product decisions that shaped how candidates are screened, matched, and monetized. I owned where product, AI, and the business model meet - building AI features that also improved per-placement profitability."
       ],
       "facts": [
         {
@@ -186,7 +186,7 @@
         }
       ],
       "extraParagraphs": [
-        "Result: the new pricing lifted revenue per placement by more than 50%."
+        "Result: the new pricing lifted revenue per placement by 50%."
       ]
     }
   ],

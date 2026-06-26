@@ -5,7 +5,7 @@
   "items": [
     {
       "index": "01",
-      "role": "Senior Product Manager",
+      "role": "Senior AI Product Manager",
       "company": "Huzzle",
       "descriptor": "HR Tech · AI Talent Marketplace",
       "summary": "Leading product for AI matching at Huzzle, an HR tech company running a two-sided talent marketplace - connecting candidates with employers across the UK, US, and EU.",
@@ -50,7 +50,7 @@
           "label": "Candidates"
         },
         {
-          "value": "62+",
+          "value": "60+",
           "label": "Countries"
         },
         {

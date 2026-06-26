@@ -3,19 +3,19 @@
   "order": 2,
   "eyebrow": "Experience - EdTech / Test Prep",
   "title": "Zistre - Scaling a Global Test-Prep Platform",
-  "summary": "Co-founded and led product for a pre-employment test-prep platform serving 100K+ candidates across 62+ countries. I owned the three bets that turned global traffic into revenue - the right product, priced for every market, on a frictionless path to purchase.",
+  "summary": "Co-founded and led product for a pre-employment test-prep platform serving 100K+ candidates across 60+ countries. I owned the three bets that turned global traffic into revenue - the right product, priced for every market, on a frictionless path to purchase.",
   "roleLabel": "Co-founder & Head of Product",
   "visitUrl": "https://zistre.com/",
   "facts": [
     { "label": "Role", "value": "Co-founder & Head of Product" },
     { "label": "Company", "value": "Zistre" },
     { "label": "Scope", "value": "Product · Growth · Monetization" },
-    { "label": "Reach", "value": "62+ countries" },
+    { "label": "Reach", "value": "60+ countries" },
     { "label": "Scale", "value": "100K+ candidates" }
   ],
   "heroStats": [
     { "value": "100K+", "label": "Candidates served" },
-    { "value": "62+", "label": "Countries" },
+    { "value": "60+", "label": "Countries" },
     { "value": "+40%", "label": "Conversion uplift", "dir": "up" },
     { "value": "+30%", "label": "Avg. revenue per user", "dir": "up" }
   ],
@@ -24,7 +24,7 @@
       "eyebrow": "Overview",
       "heading": "What Zistre is, and what I did here",
       "paragraphs": [
-        "Zistre is a pre-employment test-prep platform that helps candidates and working professionals prepare for cognitive and behavioral assessments - CCAT, Wonderlic, Predictive Index, Watson Glaser, SHL, and personality tests - with GRE and TOEFL prep offered through a dedicated subdomain. Candidates rely on it to clear assessments used for promotions and as live interview rounds. To date it has served 100K+ candidates across 62+ countries.",
+        "Zistre is a pre-employment test-prep platform that helps candidates and working professionals prepare for cognitive and behavioral assessments - CCAT, Wonderlic, Predictive Index, Watson Glaser, SHL, and personality tests - along with GRE and TOEFL prep. Candidates rely on it to clear assessments used for promotions and as live interview rounds. To date it has served 100K+ candidates across 60+ countries.",
         "As co-founder and Product Head, I set product strategy and owned the growth and monetization roadmap end to end - under real startup constraints, with a lean team - collaborating directly with curriculum developers, engineering, and candidates."
       ],
       "facts": [

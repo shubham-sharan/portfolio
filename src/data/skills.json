@@ -13,7 +13,7 @@
   },
   "tools": {
     "label": "Tools I use",
-    "items": ["Lovable", "Figma", "Notion", "Google Ads", "Amplitude", "Jira", "Miro", "Canva", "Webflow"]
+    "items": ["Lovable", "Figma", "Notion", "Google Ads", "Mixpanel", "Linear", "Hotjar", "Canva", "Google Analytics"]
   },
   "growth": {
     "label": "Continuous growth",
