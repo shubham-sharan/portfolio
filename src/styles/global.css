@@ -1089,6 +1089,8 @@ html[data-theme="deck"] { scroll-snap-type: y proximity; }
 /* brutal CTA band: framed panel, calmer than a color wall */
 [data-theme="brutal"] .cta-band { border-top: 3px solid var(--ink); border-bottom: 3px solid var(--ink); padding: 5rem 0; }
 [data-theme="brutal"] .cta-band h2 { font-size: clamp(1.9rem, 4.5vw, 3rem); }
+/* eyebrow chip has an accent background in brutal, so keep its text white (not accent-on-accent) */
+[data-theme="brutal"] .cta-band .eyebrow { color: #ffffff; }
 
 /* ------------------------------------------------------------
    CTA v2 - split sign-off (statement left, actions right)
