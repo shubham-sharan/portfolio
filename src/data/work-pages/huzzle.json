@@ -18,6 +18,10 @@
     {
       "label": "Markets",
       "value": "UK · US · EU"
+    },
+    {
+      "label": "Segment",
+      "value": "B2B"
     }
   ],
   "heroStats": [

@@ -11,7 +11,8 @@
     { "label": "Company", "value": "Zistre" },
     { "label": "Scope", "value": "Product · Growth · Monetization" },
     { "label": "Reach", "value": "60+ countries" },
-    { "label": "Scale", "value": "100K+ candidates" }
+    { "label": "Scale", "value": "100K+ candidates" },
+    { "label": "Segment", "value": "B2C" }
   ],
   "heroStats": [
     { "value": "100K+", "label": "Candidates served" },
