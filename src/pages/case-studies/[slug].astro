@@ -36,6 +36,13 @@ const inline = (s: string) => marked.parseInline(s) as string;
           ))}
         </div>
       )}
+      {page.ctas && (
+        <div class="cs-cta-row">
+          {page.ctas.map((c: any) => (
+            <a class="text-link" href={c.href} target={c.external ? '_blank' : undefined} rel={c.external ? 'noopener' : undefined}>{c.label}</a>
+          ))}
+        </div>
+      )}
     </div>
   </section>
 
@@ -45,6 +52,14 @@ const inline = (s: string) => marked.parseInline(s) as string;
         {sec.eyebrow && <span class="eyebrow">{sec.eyebrow}</span>}
         {sec.heading && <h2>{sec.heading}</h2>}
         {sec.paragraphs?.map((p: string) => <p class="wp-p" set:html={inline(p)} />)}
+
+        {sec.list && (
+          <ul class="wp-list">
+            {sec.list.map((li: string) => <li set:html={inline(li)} />)}
+          </ul>
+        )}
+
+        {sec.outro?.map((p: string) => <p class="wp-p" set:html={inline(p)} />)}
 
         {sec.chart && (
           <figure class="cs-chart">
@@ -115,6 +130,19 @@ const inline = (s: string) => marked.parseInline(s) as string;
   ))}
 
   <div class="container cs-narrow">
+    {page.ctas && (
+      <div class="cs-cta-row cs-cta-row--end">
+        {page.ctas.map((c: any) => (
+          <a class="text-link" href={c.href} target={c.external ? '_blank' : undefined} rel={c.external ? 'noopener' : undefined}>{c.label}</a>
+        ))}
+      </div>
+    )}
+    {page.disclaimer && (
+      <aside class="cs-disclaimer">
+        <span class="cs-disclaimer-icon" aria-hidden="true">ⓘ</span>
+        <p set:html={inline(page.disclaimer)} />
+      </aside>
+    )}
     <nav class="pager">
       <a href="/#case-studies">← All case studies</a>
       <a href={`/case-studies/${page.next.slug}/`}>Next · {page.next.label} →</a>

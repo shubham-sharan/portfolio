@@ -1,0 +1,81 @@
+{
+  "slug": "cycle-fleet-media",
+  "order": 0,
+  "eyebrow": "Case Study - Product Proposal · Independent Project",
+  "title": "Fleet Media: a new revenue line for CYCLE",
+  "summary": "An independent product proposal — research, business model, and working prototype — built for a Product Manager application.",
+  "meta": "July 2026 · Deck + spec + working prototype · ~15 min read",
+  "tags": ["Product Strategy", "0→1", "Marketplace / Platform Thinking", "Financial Modeling", "Prototyping", "Stakeholder Communication"],
+  "ctas": [
+    { "label": "View the live prototype →", "href": "https://cycle.shubhamsharan.co/", "external": true },
+    { "label": "Read the full proposal (PDF) →", "href": "/files/CYCLE-Fleet-Media.pdf", "external": true }
+  ],
+  "disclaimer": "**Independent project.** This case study, its proposal, and its prototype are not affiliated with, endorsed by, or produced in partnership with CYCLE. All company facts (fleet size, distance ridden, countries of operation) are CYCLE's own published figures. All revenue estimates, projections, and product figures are my own independent modeling, built entirely from public information, for demonstration purposes.",
+  "sections": [
+    {
+      "eyebrow": "The Opportunity",
+      "heading": "The opportunity",
+      "paragraphs": [
+        "CYCLE operates roughly 14,000 e-bikes across six European countries, covering more than 200 million kilometres a year in the densest parts of major cities. That fleet is also, structurally, an out-of-home advertising network — moving, GPS-tracked, and constantly present in exactly the streets advertisers want to reach. It just isn't being sold as one.",
+        "This isn't a novel idea dressed up as insight. It's a proven playbook: Uber's advertising business is already at roughly a $2 billion annualised run-rate, and Lyft already sells ad panels directly on its bikeshare fleet. DoorDash has run bike-fleet ad campaigns too. CYCLE has the core asset that made those businesses work — a large, always-moving urban fleet with opted-in riders — and none of the media layer yet.",
+        "I also found a detail worth naming directly: CYCLE's own website already invites brands to \"advertise on bikes without renting a fleet\" — today, that's a manual, case-by-case request. The proposal, Fleet Media, is the product that turns that into a real, scalable revenue line: self-serve, targeted, and measured."
+      ]
+    },
+    {
+      "eyebrow": "The Business Case",
+      "heading": "From idea to business case",
+      "paragraphs": [
+        "I built a 17-slide proposal covering:"
+      ],
+      "list": [
+        "**The market case** — the global out-of-home ad market, growing from roughly $29B to $63B by 2032, against a backdrop of rising digital ad costs and ad-blocking.",
+        "**The unit economics** — a bottom-up model showing €18–45 net revenue per brandable bike per month, translating to €0.5M–€2.7M in annual incremental revenue depending on fleet coverage and fill rate, at 60–80% gross margin.",
+        "**Brand-safety and legal groundwork** — including a review of how advertising law treats vehicles across CYCLE's markets (Germany, Austria, Netherlands, UK), showing that a delivery bike carrying ads while genuinely delivering is treated as ordinary vehicle livery in most jurisdictions, not as a regulated advertising vehicle.",
+        "**A phased rollout plan** — from a two-city pilot through to full-scale rollout, each phase designed to validate a specific assumption before committing more investment."
+      ],
+      "outro": [
+        "Every number in the deck is labeled by source: CYCLE's own published figures, industry benchmarks, or my own modelling assumptions — and I was explicit about which was which throughout, including in the deck itself."
+      ]
+    },
+    {
+      "eyebrow": "The Spec",
+      "heading": "Turning the idea into a spec",
+      "paragraphs": [
+        "A slide deck tells you what and why. It doesn't tell you how the software would actually work. So I also wrote a full business and functional logic document — the kind of artifact that sits between a pitch and a PRD:"
+      ],
+      "list": [
+        "The data model (advertisers, campaigns, creatives, bikes, assignments, impression records)",
+        "The core formulas (how impressions, reach, and effective CPM are calculated from budget, city, and bike count)",
+        "The campaign lifecycle as a state machine (draft → review → live → completed → invoiced)",
+        "The matching engine logic for allocating ad campaigns to eligible bikes",
+        "Where AI genuinely adds value — targeting recommendations, dynamic pricing, creative generation, and exposure estimation from GPS data"
+      ]
+    },
+    {
+      "eyebrow": "The Prototype",
+      "heading": "Building the proof: a working prototype",
+      "paragraphs": [
+        "Rather than leave the idea on paper, I built a functioning three-screen prototype so a founder could click through the actual experience:"
+      ],
+      "list": [
+        "**Landing page** — the pitch to a brand: what Fleet Media is and why it works.",
+        "**Campaign planner** — pick a city, budget, and dates; watch estimated impressions, reach, and cost update live, with a lightweight AI recommendation based on brand category.",
+        "**Live dashboard** — a campaign in progress: a map of active bikes, a ticking impressions counter, spend tracking, and a day-by-day performance chart."
+      ],
+      "outro": [
+        "The prototype carries its own on-page disclaimer as well, labeling it clearly as an independent concept with illustrative sample data."
+      ]
+    },
+    {
+      "eyebrow": "The Takeaway",
+      "heading": "What this project demonstrates",
+      "list": [
+        "**Research discipline** — building a credible business case entirely from public sources, and being explicit about the difference between a fact and an assumption.",
+        "**Structured product thinking** — moving cleanly from market opportunity, to business model, to functional spec, to a working artifact.",
+        "**Marketplace/platform reasoning** — designing for four sides of a system (advertiser, platform, delivery partner, rider) so that the model works for everyone, not just the buyer.",
+        "**Bias to ship** — not stopping at a deck, but building something a founder could actually click through."
+      ]
+    }
+  ],
+  "next": { "label": "Duolingo", "slug": "duolingo" }
+}

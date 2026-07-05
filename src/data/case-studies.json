@@ -5,6 +5,16 @@
   "footnote": "More case studies publishing monthly.",
   "cards": [
     {
+      "kicker": "Product Strategy",
+      "title": "CYCLE's fleet is already an ad network.",
+      "summary": "CYCLE operates 14,000 e-bikes across six countries, covering 200M km a year in the densest parts of major European cities — the same always-moving urban footprint that turned Uber and Lyft's ad businesses into billion-dollar revenue lines. Built as an unsolicited proposal for CYCLE's Product Manager role, this case study includes a full business case, a functional spec, and a working prototype for turning that fleet into a self-serve advertising network.",
+      "meta": "July 2026 · Deck + spec + working prototype · ~15 min read",
+      "tags": ["New Revenue Models", "Marketplace Design", "0→1 Prototype"],
+      "accent": "#E3F3EB",
+      "href": "/case-studies/cycle-fleet-media/",
+      "demoHref": "https://cycle.shubhamsharan.co/"
+    },
+    {
       "kicker": "Pricing",
       "title": "\"GetYourGuide\" is built around the activity. Travellers think in trips.",
       "tags": ["Strategic Repositioning", "Travel Tech", "Growth Strategy"],
