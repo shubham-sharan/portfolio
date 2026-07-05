@@ -157,8 +157,9 @@ for (const m of Object.values(wpModules) as any[]) {
         </div>
       </div>
 
-      <div class="case-carousel">
-        <div class="case-carousel-track">
+      <div class="case-carousel" data-carousel>
+        <button type="button" class="carousel-arrow carousel-arrow--prev" aria-label="Previous case studies">←</button>
+        <div class="case-carousel-viewport">
           {otherCases.map((c) => (
             <a class="case-card" href={c.href}>
               <span class="case-kicker">{c.kicker}</span>
@@ -180,6 +181,7 @@ for (const m of Object.values(wpModules) as any[]) {
             </a>
           ))}
         </div>
+        <button type="button" class="carousel-arrow carousel-arrow--next" aria-label="Next case studies">→</button>
       </div>
       <p class="case-note">{caseStudies.footnote}</p>
     </div>
@@ -322,4 +324,41 @@ for (const m of Object.values(wpModules) as any[]) {
       </div>
     </div>
   </section>
+
+  <script>
+    document.querySelectorAll('[data-carousel]').forEach((root) => {
+      const vp = root.querySelector('.case-carousel-viewport');
+      const prev = root.querySelector('.carousel-arrow--prev');
+      const next = root.querySelector('.carousel-arrow--next');
+      if (!vp) return;
+      const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+      let paused = reduce;
+      let manualUntil = 0;
+      const cardStep = () => {
+        const card = vp.querySelector('.case-card');
+        return card ? card.getBoundingClientRect().width + 24 : 320;
+      };
+      const tick = () => {
+        if (!paused && performance.now() > manualUntil) {
+          vp.scrollLeft += 0.5;
+          const half = vp.scrollWidth / 2;
+          if (vp.scrollLeft >= half) vp.scrollLeft -= half;
+        }
+        requestAnimationFrame(tick);
+      };
+      requestAnimationFrame(tick);
+      root.addEventListener('mouseenter', () => { if (!reduce) paused = true; });
+      root.addEventListener('mouseleave', () => { if (!reduce) paused = false; });
+      const nudge = (dir) => {
+        const half = vp.scrollWidth / 2;
+        if (!half) return;
+        manualUntil = performance.now() + 900;
+        const x = vp.scrollLeft % half;
+        vp.scrollLeft = dir < 0 ? x + half : x;
+        vp.scrollBy({ left: dir * cardStep(), behavior: 'smooth' });
+      };
+      prev && prev.addEventListener('click', () => nudge(-1));
+      next && next.addEventListener('click', () => nudge(1));
+    });
+  </script>
 </Base>
