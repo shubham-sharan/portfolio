@@ -85,7 +85,10 @@
     },
     {
       "label": "Work",
-      "href": "/#work"
+      "children": [
+        { "label": "Experience", "href": "/#work" },
+        { "label": "View Resume", "href": "/files/Shubham-Sharan-Resume.pdf", "external": true }
+      ]
     },
     {
       "label": "Case Studies",

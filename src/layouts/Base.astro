@@ -92,7 +92,7 @@ const colorList = Object.entries(colors).map(([key, c]: [string, any]) => ({
                 <div class="nav-group">
                   <button class="nav-group-btn" aria-haspopup="true" aria-expanded="false">{item.label}<span class="nav-caret" aria-hidden="true">▾</span></button>
                   <div class="nav-dropdown">
-                    {item.children.map((c: any) => <a href={c.href}>{c.label}</a>)}
+                    {item.children.map((c: any) => <a href={c.href} target={c.external ? '_blank' : undefined} rel={c.external ? 'noopener' : undefined}>{c.label}</a>)}
                   </div>
                 </div>
               )
