@@ -30,6 +30,7 @@ const c = profile.contact;
       <div class="contact-alt">
         <p>Or email me directly at <a href={`mailto:${c.email}`}>{c.email}</a></p>
         <p>Call: <a href={`tel:${c.phone.replace(/[^+\d]/g, '')}`}>{c.phone}</a></p>
+        <p>Book an appointment: <a href={profile.calendlyUrl} target="_blank" rel="noopener">Schedule a 30-min call →</a></p>
       </div>
     </div>
   </div>

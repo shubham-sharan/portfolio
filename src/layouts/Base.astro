@@ -111,7 +111,7 @@ const colorList = Object.entries(colors).map(([key, c]: [string, any]) => ({
       <div class="container">
         <span>© {year} {profile.name}. All rights reserved.</span>
         <div class="footer-links">
-          {profile.socials.map((s) => <a href={s.url}>{s.label}</a>)}
+          {profile.socials.map((s) => <a href={s.url} target="_blank" rel="noopener">{s.label}</a>)}
         </div>
       </div>
     </footer>

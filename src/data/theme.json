@@ -1,7 +1,7 @@
 {
   "_howto": "Two axes: `themes` = layout + typography + radius; `colors` = full palette. Set defaults via `activeTheme` and `activeColor` ('auto' = the theme's defaultColor). Visitors can flip both live via the picker (bottom-right); choices persist in localStorage. Add a theme or palette by copying a block (and optionally a `[data-theme=\"…\"]` section in global.css).",
-  "activeTheme": "brutal",
-  "activeColor": "auto",
+  "activeTheme": "deck",
+  "activeColor": "crimson",
   "themes": {
     "brutal": {
       "label": "Brutal",
