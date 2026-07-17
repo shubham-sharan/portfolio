@@ -102,6 +102,14 @@
         { "label": "Product Lifecycle", "href": "/product-lifecycle/" },
         { "label": "Interview Playbook", "href": "/interview-rounds/" }
       ]
+    },
+    {
+      "label": "Connect",
+      "children": [
+        { "label": "Book a call", "href": "https://calendly.com/sharan-shub/30min", "external": true },
+        { "label": "LinkedIn", "href": "https://www.linkedin.com/in/sharanshub/", "external": true },
+        { "label": "Topmate", "href": "https://topmate.io/sharan_shubham", "external": true }
+      ]
     }
   ],
   "heroTagline": "",
