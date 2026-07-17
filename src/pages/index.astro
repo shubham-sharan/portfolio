@@ -317,11 +317,7 @@ for (const m of Object.values(wpModules) as any[]) {
       </div>
       <div class="cta-side">
         <a class="btn btn-solid" href="/contact/">Get in touch</a>
-        <a class="btn btn-ghost" href={profile.calendlyUrl} target="_blank" rel="noopener">Book a call</a>
         <a class="btn btn-ghost" href={profile.resumeUrl} target="_blank" rel="noopener">Download resume</a>
-        {profile.socials.map((s) => (
-          <a class="text-link cta-social" href={s.url} target="_blank" rel="noopener">{s.label} ↗</a>
-        ))}
       </div>
     </div>
   </section>

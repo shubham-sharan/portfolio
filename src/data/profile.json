@@ -14,12 +14,12 @@
       "label": "years building products"
     },
     {
-      "value": "60+",
-      "label": "countries reached"
+      "value": "$5M+",
+      "label": "client revenue driven"
     },
     {
-      "value": "100K+",
-      "label": "users across the products"
+      "value": "85%",
+      "label": "placement rate at Huzzle"
     }
   ],
   "resumeUrl": "/files/Shubham-Sharan-Resume.pdf",
@@ -76,6 +76,7 @@
     ]
   },
   "socials": [
+    { "label": "LinkedIn", "url": "https://www.linkedin.com/in/sharanshub/" },
     { "label": "Topmate", "url": "https://topmate.io/sharan_shubham" }
   ],
   "nav": [

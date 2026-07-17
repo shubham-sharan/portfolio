@@ -161,6 +161,10 @@ h1, h2, h3, .display {
   color: var(--ink) !important;
 }
 .nav-cta:hover { background: var(--ink) !important; color: var(--bg) !important; }
+.nav-social { display: inline-flex; align-items: center; justify-content: center; color: var(--ink-soft); padding: 0.35rem; border-radius: var(--btn-radius); transition: color 0.15s ease, background 0.15s ease, border-color 0.15s ease; }
+.nav-social:hover { color: var(--accent); }
+[data-theme="brutal"] .nav-social { border: 2px solid transparent; border-radius: 0; }
+[data-theme="brutal"] .nav-social:hover { background: var(--selection); border-color: var(--ink); color: var(--ink); }
 .nav-toggle { display: none; }
 
 /* --- buttons --- */
@@ -507,7 +511,9 @@ section { padding: 6.5rem 0; }
 .site-footer { border-top: 1px solid var(--line); padding: 2.2rem 0; font-size: 0.85rem; color: var(--muted); }
 .site-footer .container { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 1rem; }
 .site-footer a:hover { color: var(--ink); }
-.footer-links { display: flex; gap: 1.4rem; }
+.footer-links { display: flex; gap: 1.1rem; align-items: center; }
+.footer-social { display: inline-flex; align-items: center; justify-content: center; color: var(--muted); transition: color 0.15s ease; }
+.footer-social:hover { color: var(--accent); }
 
 /* --- article / prose pages --- */
 .page-hero { padding: 5.5rem 0 3.5rem; border-bottom: 1px solid var(--line); }
