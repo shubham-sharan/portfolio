@@ -225,6 +225,8 @@ section { padding: 6.5rem 0; }
   color: var(--muted);
 }
 .now-stats .stat-value { font-size: 1.3rem; }
+.now-socials { display: flex; gap: 1.3rem; margin-top: 1.3rem; padding-top: 1.2rem; border-top: 1px solid var(--line); }
+.now-socials .text-link { font-size: 0.92rem; font-weight: 600; }
 
 .stat-value { font-family: var(--serif); font-size: clamp(2.2rem, 4vw, 3.2rem); font-weight: 700; line-height: 1; color: var(--heading); }
 .stat-label { color: var(--muted); font-size: 0.9rem; margin-top: 0.5rem; }
@@ -648,9 +650,12 @@ section { padding: 6.5rem 0; }
 .contact-form input:focus,
 .contact-form select:focus,
 .contact-form textarea:focus { outline: 2px solid var(--accent); outline-offset: 1px; border-color: transparent; }
-.contact-alt { margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--line); font-size: 0.95rem; color: var(--muted); }
-.contact-alt a { color: var(--accent); font-weight: 600; }
-.contact-alt a:hover { text-decoration: underline; }
+.contact-alt { margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--line); font-size: 0.98rem; color: var(--ink-soft); display: grid; grid-template-columns: 1fr 1fr; gap: 0.9rem 2.4rem; max-width: 640px; }
+.contact-alt p { display: flex; align-items: center; gap: 0.75rem; margin: 0; }
+@media (max-width: 600px) { .contact-alt { grid-template-columns: 1fr; } }
+.contact-ico { flex-shrink: 0; color: var(--muted); }
+.contact-alt a { color: var(--ink); font-weight: 500; }
+.contact-alt a:hover { color: var(--accent); text-decoration: underline; }
 .social-row { display: flex; gap: 1.4rem; margin-top: 0.8rem; }
 
 /* --- 404 --- */
@@ -1252,7 +1257,9 @@ html[data-theme="deck"] { scroll-snap-type: y proximity; }
   width: 100%;
 }
 .cta-side .btn { text-align: center; }
-.cta-social { font-size: 0.9rem; align-self: center; margin-top: 0.3rem; }
+.cta-socials { display: flex; gap: 1.4rem; justify-content: center; margin-top: 0.6rem; }
+.cta-social { font-size: 0.95rem; color: var(--band-ink); font-weight: 600; }
+.cta-social:hover { border-color: var(--band-ink); }
 
 [data-theme="deck"] .cta-band .eyebrow { color: color-mix(in srgb, var(--accent) 70%, var(--band-ink)); }
 
