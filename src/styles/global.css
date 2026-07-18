@@ -354,6 +354,8 @@ section { padding: 6.5rem 0; }
 .case-card h3 { font-size: 1.35rem; margin: 0.9rem 0 1.2rem; flex-grow: 1; }
 .case-card .tag-row { margin-bottom: 1.5rem; }
 .case-card .text-link { margin-top: auto; }
+.case-card-ctas { display: flex; flex-direction: column; gap: 0.5rem; margin-top: auto; }
+.case-card-ctas .text-link { margin-top: 0; }
 .case-note { margin-top: 2.5rem; color: var(--muted); font-size: 0.95rem; }
 
 /* --- resources --- */

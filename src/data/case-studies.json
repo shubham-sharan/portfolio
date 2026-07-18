@@ -19,7 +19,8 @@
       "title": "Babbel can write lessons with AI in seconds. Trust is the bottleneck.",
       "tags": ["EdTech", "Human-in-the-Loop", "0→1 Prototype"],
       "href": "https://babbel.shubhamsharan.co",
-      "external": true
+      "external": true,
+      "pdfHref": "/files/Babbel-Case-Study.pdf"
     },
     {
       "kicker": "Pricing",
