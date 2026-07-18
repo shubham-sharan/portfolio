@@ -15,6 +15,13 @@
       "demoHref": "https://cycle.shubhamsharan.co/"
     },
     {
+      "kicker": "AI Content Engine",
+      "title": "Babbel can write lessons with AI in seconds. Trust is the bottleneck.",
+      "tags": ["EdTech", "Human-in-the-Loop", "0→1 Prototype"],
+      "href": "https://babbel.shubhamsharan.co",
+      "external": true
+    },
+    {
       "kicker": "Pricing",
       "title": "\"GetYourGuide\" is built around the activity. Travellers think in trips.",
       "tags": ["Strategic Repositioning", "Travel Tech", "Growth Strategy"],

@@ -165,24 +165,24 @@ for (const m of Object.values(wpModules) as any[]) {
       <div class="case-carousel" data-carousel>
         <button type="button" class="carousel-arrow carousel-arrow--prev" aria-label="Previous case studies">←</button>
         <div class="case-carousel-viewport">
-          {otherCases.map((c) => (
-            <a class="case-card" href={c.href}>
+          {otherCases.map((c: any) => (
+            <a class="case-card" href={c.href} target={c.external ? '_blank' : undefined} rel={c.external ? 'noopener' : undefined}>
               <span class="case-kicker">{c.kicker}</span>
               <h3>{c.title}</h3>
               <div class="tag-row">
-                {c.tags.map((t) => <span class="tag">{t}</span>)}
+                {c.tags.map((t: string) => <span class="tag">{t}</span>)}
               </div>
-              <span class="text-link">Read the full case study →</span>
+              <span class="text-link">{c.external ? 'View the case study ↗' : 'Read the full case study →'}</span>
             </a>
           ))}
-          {otherCases.map((c) => (
-            <a class="case-card" href={c.href} aria-hidden="true" tabindex="-1">
+          {otherCases.map((c: any) => (
+            <a class="case-card" href={c.href} target={c.external ? '_blank' : undefined} rel={c.external ? 'noopener' : undefined} aria-hidden="true" tabindex="-1">
               <span class="case-kicker">{c.kicker}</span>
               <h3>{c.title}</h3>
               <div class="tag-row">
-                {c.tags.map((t) => <span class="tag">{t}</span>)}
+                {c.tags.map((t: string) => <span class="tag">{t}</span>)}
               </div>
-              <span class="text-link">Read the full case study →</span>
+              <span class="text-link">{c.external ? 'View the case study ↗' : 'Read the full case study →'}</span>
             </a>
           ))}
         </div>
