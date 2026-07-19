@@ -5,22 +5,30 @@
   "footnote": "More case studies publishing monthly.",
   "cards": [
     {
+      "featured": true,
       "kicker": "Product Strategy",
       "title": "CYCLE's fleet is already an ad network.",
-      "summary": "CYCLE operates 14,000 e-bikes across six countries, covering 200M km a year in the densest parts of major European cities — the same always-moving urban footprint that turned Uber and Lyft's ad businesses into billion-dollar revenue lines. Built as an unsolicited proposal for CYCLE's Product Manager role, this case study includes a full business case, a functional spec, and a working prototype for turning that fleet into a self-serve advertising network.",
+      "summary": "CYCLE operates 14,000 e-bikes across six countries, covering 200M km a year in the densest parts of major European cities — the same always-moving urban footprint that turned Uber and Lyft's ad businesses into billion-dollar revenue lines. Built as an unsolicited proposal for CYCLE's Product Manager role, this case study includes a full business case, a functional spec, and a working prototype.",
       "meta": "July 2026 · Deck + spec + working prototype · ~15 min read",
       "tags": ["New Revenue Models", "Marketplace Design", "0→1 Prototype"],
-      "accent": "#E3F3EB",
-      "href": "/case-studies/cycle-fleet-media/",
-      "demoHref": "https://cycle.shubhamsharan.co/"
+      "accent": "#D6EDDF",
+      "ctas": [
+        { "label": "Read the full case study →", "href": "/case-studies/cycle-fleet-media/" },
+        { "label": "Try the live demo ↗", "href": "https://cycle.shubhamsharan.co/", "external": true }
+      ]
     },
     {
+      "featured": true,
       "kicker": "AI Content Engine",
       "title": "Babbel can write lessons with AI in seconds. Trust is the bottleneck.",
+      "summary": "Babbel learners run out of lessons, and hand-writing one small pack takes about 35 hours. AI can draft them in seconds — but a wrong grammar rule or a joke that doesn't translate erodes trust, as Babbel's biggest competitor learned publicly. This case study proposes a quality gate that sorts every AI-written lesson into green, yellow, or red: safe drafts ship instantly, risky ones reach a human first. It comes with a business case and a working prototype.",
+      "meta": "July 2026 · Deck + working prototype · ~10 min read",
       "tags": ["EdTech", "Human-in-the-Loop", "0→1 Prototype"],
-      "href": "https://babbel.shubhamsharan.co",
-      "external": true,
-      "pdfHref": "/files/Babbel-Case-Study.pdf"
+      "accent": "#FBE0BE",
+      "ctas": [
+        { "label": "View the working prototype ↗", "href": "https://babbel.shubhamsharan.co", "external": true },
+        { "label": "Download the deck (PDF) →", "href": "/files/Babbel-Case-Study.pdf", "external": true }
+      ]
     },
     {
       "kicker": "Pricing",
