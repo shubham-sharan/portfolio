@@ -96,7 +96,7 @@ const colorList = Object.entries(colors).map(([key, c]: [string, any]) => ({
                   </div>
                 </div>
               )
-              : <a href={item.href}>{item.label}</a>
+              : <a href={item.href} class={item.highlight ? 'nav-highlight' : undefined} target={item.external ? '_blank' : undefined} rel={item.external ? 'noopener' : undefined}>{item.label}</a>
           ))}
           <a class="nav-cta" href="/contact/">Let's talk</a>
         </nav>

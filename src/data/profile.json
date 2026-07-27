@@ -102,6 +102,12 @@
         { "label": "Product Lifecycle", "href": "/product-lifecycle/" },
         { "label": "Interview Playbook", "href": "/interview-rounds/" }
       ]
+    },
+    {
+      "label": "AI Mock Interview",
+      "href": "https://mock.shubhamsharan.co/",
+      "external": true,
+      "highlight": true
     }
   ],
   "heroTagline": "",

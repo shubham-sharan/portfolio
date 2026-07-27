@@ -99,6 +99,11 @@ h1, h2, h3, .display {
   white-space: nowrap;
 }
 .site-nav a:hover { color: var(--heading); background: var(--bg-soft); }
+.site-nav a.nav-highlight { color: var(--accent); font-weight: 700; }
+.site-nav a.nav-highlight:hover { color: var(--accent); background: var(--bg-soft); }
+[data-theme="brutal"] .site-nav a.nav-highlight { border-color: var(--accent); color: var(--accent); }
+[data-theme="brutal"] .site-nav a.nav-highlight:hover { background: var(--accent); border-color: var(--accent); color: #fff; }
+[data-theme="deck"] .site-nav a.nav-highlight { border-bottom-color: var(--accent); }
 .nav-group { position: relative; display: inline-flex; align-items: center; }
 .nav-group-btn {
   font: inherit;
