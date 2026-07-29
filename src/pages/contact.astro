@@ -14,11 +14,8 @@ const topmate = (profile.socials || []).find((s: any) => s.label === 'Topmate')?
       <h1>{c.title}</h1>
       <p class="lede">{c.subtitle}</p>
 
-      <form class="contact-form" method="POST" action={`https://formsubmit.co/${c.email}`}>
-        <input type="hidden" name="_subject" value="New message from shubhamsharan.co" />
-        <input type="hidden" name="_template" value="table" />
-        <input type="hidden" name="_captcha" value="false" />
-        <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" />
+      <form class="contact-form" id="contact-form" method="POST" action="/api/contact">
+        <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" aria-hidden="true" />
         <input type="text" name="name" placeholder="Your name" required />
         <input type="email" name="email" placeholder="Your email" required />
         <select name="subject" required>
@@ -27,7 +24,42 @@ const topmate = (profile.socials || []).find((s: any) => s.label === 'Topmate')?
         </select>
         <textarea name="message" placeholder="Your message" required></textarea>
         <button class="btn btn-solid" type="submit">Send message</button>
+        <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
       </form>
+
+      <script>
+        const form = document.getElementById('contact-form');
+        const statusEl = document.getElementById('form-status');
+        form?.addEventListener('submit', async (e) => {
+          e.preventDefault();
+          const btn = form.querySelector('button[type="submit"]');
+          const payload = Object.fromEntries(new FormData(form).entries());
+          btn.disabled = true;
+          statusEl.className = 'form-status';
+          statusEl.textContent = 'Sending…';
+          try {
+            const r = await fetch('/api/contact', {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify(payload),
+            });
+            const data = await r.json().catch(() => ({}));
+            if (r.ok) {
+              form.reset();
+              statusEl.className = 'form-status ok';
+              statusEl.textContent = "Thanks — your message is on its way. I'll get back to you soon.";
+            } else {
+              statusEl.className = 'form-status err';
+              statusEl.textContent = data.error || 'Something went wrong. Please email hello@shubhamsharan.co directly.';
+            }
+          } catch {
+            statusEl.className = 'form-status err';
+            statusEl.textContent = 'Something went wrong. Please email hello@shubhamsharan.co directly.';
+          } finally {
+            btn.disabled = false;
+          }
+        });
+      </script>
 
       <div class="contact-alt">
         <p><svg class="contact-ico" viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg><a href={`mailto:${c.email}`}>{c.email}</a></p>
