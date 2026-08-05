@@ -102,8 +102,7 @@
         { "dir": "flat", "value": "4", "label": "Continents" },
         { "dir": "flat", "value": "20+", "label": "Team led" },
         { "dir": "flat", "value": "70+", "label": "Projects delivered" },
-        { "dir": "flat", "value": "25%", "label": "Repeat business" },
-  
+        { "dir": "flat", "value": "25%", "label": "Repeat business" }
       ],
       "extraParagraphs": [
         "Almost four years of running delivery for a global client base taught me the operator's version of product management: prioritize ruthlessly, measure everything, and build a team that doesn't need you in every room."
