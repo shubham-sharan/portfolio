@@ -3,12 +3,12 @@
   "order": 3,
   "eyebrow": "Experience - Digital Agency",
   "title": "Go Digital Lab - Digital Product & Marketing Agency",
-  "summary": "Co-founded and led a full-service digital consultancy for five and a half years - delivering software, web, marketing, and analytics for 50+ B2B and B2C clients across four continents. Where I learned to prioritize under constraint, lead cross-functional teams, and run delivery on data.",
+  "summary": "Co-founded and led a full-service digital consultancy for almost 4 years - delivering software, web, marketing, and analytics for 50+ B2B and B2C clients across four continents. Where I learned to prioritize under constraint, lead cross-functional teams, and run delivery on data.",
   "roleLabel": "Co-Founder & Head of Operations",
   "visitUrl": "",
   "facts": [
     { "label": "Role", "value": "Co-Founder & Head of Operations" },
-    { "label": "Timeline", "value": "Oct 2015 – Apr 2021" },
+    { "label": "Timeline", "value": "Oct 2015 – Jun 2019" },
     { "label": "Team", "value": "20+ (design, dev, content, marketing)" },
     { "label": "Clients", "value": "50+" },
     { "label": "Reach", "value": "Europe · US · Australia · India" },
@@ -103,10 +103,10 @@
         { "dir": "flat", "value": "20+", "label": "Team led" },
         { "dir": "flat", "value": "70+", "label": "Projects delivered" },
         { "dir": "flat", "value": "25%", "label": "Repeat business" },
-        { "dir": "flat", "value": "5.5 yrs", "label": "Operating" }
+  
       ],
       "extraParagraphs": [
-        "Five and a half years of running delivery for a global client base taught me the operator's version of product management: prioritize ruthlessly, measure everything, and build a team that doesn't need you in every room."
+        "Almost four years of running delivery for a global client base taught me the operator's version of product management: prioritize ruthlessly, measure everything, and build a team that doesn't need you in every room."
       ]
     }
   ],
