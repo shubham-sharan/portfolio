@@ -1,0 +1,179 @@
+{
+  "_howto": "Master list of mentorship/advisory services. `prices` are display strings per currency (INR, USD, EUR, GBP). Currency is auto-selected from the visitor's country at the edge (see `geo`); there is NO manual switcher — each visitor only ever sees their local currency. `defaultCurrency` is used when the country isn't matched. Cards show `duration` · price (matching the Topmate style). `cta`: 'pay' → the Razorpay payment link for the detected currency (paymentLinks); 'enquire' → the intro-call/contact CTA. `detailSlug` is for the future dedicated page per service (build later, one by one). Fill paymentLinks when the Razorpay links are ready.",
+  "eyebrow": "Mentorship & Advisory",
+  "title": "Work with me",
+  "intro": "1:1 mentorship, interview prep, portfolio building, and product advisory for people building a career in product — and teams building products. Pick a service, pay securely, book your slot, and we meet over Google Meet.",
+  "refundGuarantee": "100% money-back guarantee — if a session isn't useful, tell me and I'll refund it in full, no questions asked.",
+  "howItWorks": [
+    "Pick a service",
+    "Pay securely (prices shown in your local currency)",
+    "Book a time that suits you on Calendly",
+    "We meet over Google Meet"
+  ],
+  "currencies": ["INR", "USD", "EUR", "GBP"],
+  "defaultCurrency": "USD",
+  "geo": { "IN": "INR", "GB": "GBP", "US": "USD", "eurozone": "EUR" },
+  "groups": [
+    {
+      "label": "1:1 Sessions & Reviews",
+      "services": [
+        {
+          "slug": "ask-me-anything",
+          "name": "Ask me anything",
+          "unit": "async",
+          "duration": "3 days",
+          "cta": "pay",
+          "short": "Send one focused product, career, or interview question and get a thoughtful, specific written answer back — no call needed.",
+          "prices": { "INR": "₹199", "USD": "$5", "EUR": "€5", "GBP": "£5" },
+          "paymentLinks": { "INR": "", "USD": "", "EUR": "", "GBP": "" },
+          "detailSlug": ""
+        },
+        {
+          "slug": "priority-dm",
+          "name": "Priority DM",
+          "unit": "async",
+          "duration": "1 day",
+          "cta": "pay",
+          "short": "A short window of direct messaging with me — ask follow-ups, share a doc or draft, and get quick replies without booking a call.",
+          "prices": { "INR": "₹299", "USD": "$6", "EUR": "€6", "GBP": "£6" },
+          "paymentLinks": { "INR": "", "USD": "", "EUR": "", "GBP": "" },
+          "detailSlug": ""
+        },
+        {
+          "slug": "discovery-call",
+          "name": "Discovery Call",
+          "unit": "call",
+          "duration": "20 min",
+          "cta": "pay",
+          "short": "A short 1:1 to understand where you are, what would actually move the needle, and whether ongoing mentorship is worth it. You leave with clear next steps.",
+          "prices": { "INR": "₹1,500", "USD": "$30", "EUR": "€30", "GBP": "£30" },
+          "paymentLinks": { "INR": "", "USD": "", "EUR": "", "GBP": "" },
+          "detailSlug": ""
+        },
+        {
+          "slug": "career-guidance",
+          "name": "Career guidance",
+          "unit": "session",
+          "duration": "30 min",
+          "cta": "pay",
+          "short": "A focused session on your path — breaking into product, leveling up, weighing offers, or mapping your next 6–12 months. A concrete plan, not generic advice.",
+          "prices": { "INR": "₹2,000", "USD": "$45", "EUR": "€45", "GBP": "£45" },
+          "paymentLinks": { "INR": "", "USD": "", "EUR": "", "GBP": "" },
+          "detailSlug": ""
+        },
+        {
+          "slug": "1-1-mentorship",
+          "name": "1:1 Mentorship",
+          "badge": "Most popular",
+          "unit": "session",
+          "duration": "30 min",
+          "cta": "pay",
+          "short": "Bring whatever you're stuck on — a product decision, stakeholders, growth, interviews — and we work through it live. Best as a recurring touchpoint.",
+          "prices": { "INR": "₹2,000", "USD": "$45", "EUR": "€45", "GBP": "£45" },
+          "paymentLinks": { "INR": "", "USD": "", "EUR": "", "GBP": "" },
+          "detailSlug": ""
+        },
+        {
+          "slug": "mock-interview",
+          "name": "Mock interview",
+          "unit": "session",
+          "duration": "30 min",
+          "cta": "pay",
+          "short": "A realistic PM interview in the round of your choice — product sense, execution, strategy, or estimation — plus honest, specific feedback on exactly what to fix.",
+          "prices": { "INR": "₹2,000", "USD": "$45", "EUR": "€45", "GBP": "£45" },
+          "paymentLinks": { "INR": "", "USD": "", "EUR": "", "GBP": "" },
+          "detailSlug": ""
+        },
+        {
+          "slug": "resume-review-ats",
+          "name": "Resume Review & ATS Optimization",
+          "unit": "review",
+          "duration": "30 min",
+          "cta": "pay",
+          "short": "A line-by-line review of your PM resume — positioning, impact framing, and ATS-friendly formatting — so you clear the filters and the 10-second recruiter scan. Concrete rewrites, not vague notes.",
+          "prices": { "INR": "₹2,000", "USD": "$45", "EUR": "€45", "GBP": "£45" },
+          "paymentLinks": { "INR": "", "USD": "", "EUR": "", "GBP": "" },
+          "detailSlug": ""
+        }
+      ]
+    },
+    {
+      "label": "Deep Dives",
+      "services": [
+        {
+          "slug": "breaking-into-ai-pm",
+          "name": "Breaking into AI + Product Management",
+          "unit": "session",
+          "duration": "60 min",
+          "cta": "pay",
+          "short": "What moving into AI product roles really involves — the skills and vocabulary that matter, how to position your background, and where the real opportunities are, from someone doing it day to day.",
+          "prices": { "INR": "₹4,000", "USD": "$85", "EUR": "€85", "GBP": "£85" },
+          "paymentLinks": { "INR": "", "USD": "", "EUR": "", "GBP": "" },
+          "detailSlug": ""
+        },
+        {
+          "slug": "interview-prep-pm",
+          "name": "Interview Prep: Product Manager Roles",
+          "unit": "session",
+          "duration": "60 min",
+          "cta": "pay",
+          "short": "A structured prep plan tailored to your target companies — the rounds, the mental models, practice, and feedback — so you walk in genuinely ready, not just rehearsed.",
+          "prices": { "INR": "₹5,000", "USD": "$100", "EUR": "€100", "GBP": "£100" },
+          "paymentLinks": { "INR": "", "USD": "", "EUR": "", "GBP": "" },
+          "detailSlug": ""
+        },
+        {
+          "slug": "build-your-pm-portfolio",
+          "name": "Build Your PM Portfolio",
+          "unit": "session",
+          "duration": "90 min",
+          "cta": "pay",
+          "short": "The flagship. We build a standout PM portfolio together — the right case studies, the narrative, and a polished site that makes hiring managers take you seriously. A hands-on, high-touch deep dive.",
+          "prices": { "INR": "₹25,000", "USD": "$525", "EUR": "€525", "GBP": "£525" },
+          "paymentLinks": { "INR": "", "USD": "", "EUR": "", "GBP": "" },
+          "detailSlug": ""
+        }
+      ]
+    },
+    {
+      "label": "Advisory",
+      "services": [
+        {
+          "slug": "product-consultancy",
+          "name": "Product consultancy",
+          "unit": "per hour",
+          "duration": "60 min",
+          "cta": "pay",
+          "short": "Focused help on a specific product problem — strategy, positioning, monetization, AI product direction, or a review of what you're building. Book a one-hour block, or reach out to scope something larger.",
+          "prices": { "INR": "₹7,500", "USD": "$150", "EUR": "€150", "GBP": "£150" },
+          "paymentLinks": { "INR": "", "USD": "", "EUR": "", "GBP": "" },
+          "detailSlug": ""
+        },
+        {
+          "slug": "fractional-pm",
+          "name": "Fractional PM",
+          "unit": "per hour / per month",
+          "duration": "1–2 days/week",
+          "cta": "enquire",
+          "short": "Embedded, part-time product leadership for teams without a senior PM. I own a slice of your roadmap — discovery, prioritization, specs, execution — a day or two a week. Starts with a free intro call.",
+          "prices": { "INR": "₹7,500/hr", "USD": "$150/hr", "EUR": "€150/hr", "GBP": "£150/hr" },
+          "retainer": { "INR": "", "USD": "$3,500/mo", "EUR": "€3,500/mo", "GBP": "£3,500/mo" },
+          "retainerNote": "~25 hrs/month (about a day a week)",
+          "enquireHref": "/contact/",
+          "detailSlug": ""
+        }
+      ]
+    }
+  ],
+  "testimonials": {
+    "label": "From people I've mentored",
+    "mentoredCount": "",
+    "mentoredCountNote": "TODO: real number of people mentored",
+    "items": []
+  },
+  "resources": {
+    "label": "Resources & articles",
+    "note": "TODO: add articles later — one dedicated page per resource, same pattern as case studies.",
+    "items": []
+  }
+}

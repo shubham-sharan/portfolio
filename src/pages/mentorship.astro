@@ -1,0 +1,87 @@
+---
+import Base from '../layouts/Base.astro';
+import profile from '../data/profile.json';
+import m from '../data/mentorship.json';
+
+// Currency: uses defaultCurrency (USD) for the static build / localhost.
+// In production it's auto-selected from the visitor's country at the edge — no manual switcher.
+const cur: 'INR' | 'USD' | 'EUR' | 'GBP' = (m as any).defaultCurrency;
+const t: any = m.testimonials;
+const res: any = m.resources;
+---
+
+<Base title={`Mentorship & Advisory - ${profile.name}`} description={m.intro}>
+  <section class="page-hero">
+    <div class="container">
+      <a class="breadcrumb" href="/">← Home</a>
+      <span class="eyebrow">{m.eyebrow}</span>
+      <h1>{m.title}</h1>
+      <p class="lede">{m.intro}</p>
+    </div>
+  </section>
+
+  <section class="wp-section">
+    <div class="container">
+      <div class="mtr-steps">
+        {m.howItWorks.map((s, i) => (
+          <div class="mtr-step"><b>{String(i + 1).padStart(2, '0')}</b>{s}</div>
+        ))}
+      </div>
+
+      <div class="mtr-refund"><span aria-hidden="true">✓</span> {m.refundGuarantee}</div>
+
+      {m.groups.map((g: any) => (
+        <div class="mtr-group-wrap">
+          <div class="mtr-group">{g.label}</div>
+          <div class="mtr-grid">
+            {g.services.map((s: any) => (
+              <article class={`mtr-card${s.badge ? ' mtr-card--pop' : ''}`}>
+                <div class="mtr-card-top">
+                  <span class="mtr-time">{s.duration}</span>
+                  {s.badge && <span class="mtr-badge">{s.badge}</span>}
+                </div>
+                <h3>{s.name}</h3>
+                <p class="mtr-desc">{s.short}</p>
+                <div class="mtr-card-foot">
+                  <span class={s.cta === 'enquire' ? 'mtr-price mtr-price--sm' : 'mtr-price'}>{s.cta === 'enquire' ? `from ${s.prices[cur]}` : s.prices[cur]}</span>
+                  {s.cta === 'enquire' ? (
+                    <a class="mtr-book mtr-book--ghost" href={s.enquireHref || '/contact/'}>Enquire →</a>
+                  ) : (
+                    <a class="mtr-book" href={s.paymentLinks?.[cur] || '#'} target={s.paymentLinks?.[cur] ? '_blank' : undefined} rel={s.paymentLinks?.[cur] ? 'noopener' : undefined}>Book →</a>
+                  )}
+                </div>
+              </article>
+            ))}
+          </div>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <section class="wp-section">
+    <div class="container">
+      <h2>{t.label}</h2>
+      {t.mentoredCount && <p class="lede"><strong>{t.mentoredCount}</strong> mentees so far.</p>}
+      {t.items.length > 0 ? (
+        <div class="quote-grid-3">
+          {t.items.map((q: any) => (
+            <blockquote class="quote-card"><p>{q.quote}</p><footer>— {q.name}{q.role ? `, ${q.role}` : ''}</footer></blockquote>
+          ))}
+        </div>
+      ) : (
+        <p style="color:var(--muted)">Testimonials from people I've mentored will appear here.</p>
+      )}
+    </div>
+  </section>
+
+  <section class="wp-section">
+    <div class="container">
+      <h2>{res.label}</h2>
+      {res.items.length > 0 ? (
+        <ul class="wp-list">{res.items.map((r: any) => <li><a href={r.href}>{r.title} →</a></li>)}</ul>
+      ) : (
+        <p style="color:var(--muted)">Guides and articles — coming soon, each on its own page.</p>
+      )}
+    </div>
+  </section>
+</Base>

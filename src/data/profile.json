@@ -23,7 +23,6 @@
     }
   ],
   "resumeUrl": "/files/Shubham-Sharan-Resume.pdf",
-  "calendlyUrl": "https://calendly.com/sharan-shub/30min",
   "about": {
     "eyebrow": "About",
     "title": "Engineer turned founder turned product leader",
@@ -94,6 +93,10 @@
     {
       "label": "Case Studies",
       "href": "/#case-studies"
+    },
+    {
+      "label": "Mentorship",
+      "href": "/mentorship/"
     },
     {
       "label": "Resources",
