@@ -1,0 +1,63 @@
+{
+  "slug": "build-your-pm-portfolio",
+  "order": 3,
+  "category": "Resume & Portfolio",
+  "flow": "program",
+  "eyebrow": "Resume & Portfolio · Flagship program",
+  "name": "Build Your PM Portfolio",
+  "title": "Build a PM portfolio that makes hiring managers take you seriously.",
+  "lede": "A hands-on program where we build a standout product portfolio together — the right case studies, the narrative that ties them, and a polished site that proves you can think like a PM. High-touch, done with you, not handed to you.",
+  "priceLabel": "program",
+  "prices": { "INR": "₹25,000", "USD": "$525", "EUR": "€525", "GBP": "£525" },
+  "paymentLinks": { "INR": "", "USD": "", "EUR": "", "GBP": "" },
+  "reassure": "100% money-back guarantee — if the first session isn't worth it, tell me and I'll refund it in full.",
+  "cta": { "label": "Start the program" },
+  "summary": [
+    { "k": "Format", "v": "Multi-session program (done with you)" },
+    { "k": "Kickoff", "v": "90-min live working session" },
+    { "k": "Includes", "v": "Case-study builds + narrative + site" },
+    { "k": "Support", "v": "Async feedback between sessions" },
+    { "k": "Outcome", "v": "A live, shareable PM portfolio" },
+    { "k": "Best for", "v": "Aspiring & switching PMs" }
+  ],
+  "forYouLabel": "Book this if you are",
+  "forYou": [
+    "Applying to PM roles with nothing to show beyond a resume",
+    "Switching into product and needing proof you can do the work",
+    "Sitting on projects but unable to package them as case studies",
+    "Told your application is 'thin' and not sure how to fix it",
+    "Willing to put in real work — this is a build, not a template"
+  ],
+  "notForYou": [
+    "You want a portfolio written entirely for you overnight",
+    "You're not ready to invest a few weeks of focused effort",
+    "You only need a quick resume tune-up (start smaller)"
+  ],
+  "howItWorksLabel": "How it works",
+  "howItWorksTitle": "We build it together, step by step",
+  "howItWorks": [
+    { "t": "Pay & kick off", "d": "Checkout securely, then book your 90-minute kickoff. We map your target roles and choose the case studies that will land." },
+    { "t": "Build the case studies", "d": "We shape each case study — problem, decisions, trade-offs, outcome — into the narrative hiring managers actually look for." },
+    { "t": "Ship the site", "d": "We assemble it into a clean, polished portfolio site and tighten the story end to end." },
+    { "t": "Async feedback throughout", "d": "Between sessions you send drafts and I give specific feedback so momentum never stalls." }
+  ],
+  "deliverablesLabel": "What you walk away with",
+  "deliverables": [
+    "A live, shareable portfolio site",
+    "Two to three strong, well-structured PM case studies",
+    "A narrative that connects your work to the roles you want",
+    "A repeatable structure for writing future case studies",
+    "Direct, specific feedback at every step",
+    "A resume and LinkedIn that point to your portfolio"
+  ],
+  "testimonials": { "title": "What people say", "items": [] },
+  "faq": [
+    { "q": "How many sessions is this, and over how long?", "a": "It's a program built around a 90-minute kickoff plus working sessions and async feedback, typically spread across a few weeks depending on your pace and how many case studies we build." },
+    { "q": "What if I don't have 'real' PM projects yet?", "a": "That's common, and fine. We can build credible case studies from side projects, work you've shipped in another role, or a structured product proposal — the same way strong candidates do it." },
+    { "q": "Do you build the site for me?", "a": "We build it together. You come out able to maintain and extend it yourself, which matters more than a site you can't touch." },
+    { "q": "Is the price per session or for everything?", "a": "It's a single program price covering the kickoff, working sessions, and async feedback through to a shipped portfolio." },
+    { "q": "Can we focus on AI PM roles specifically?", "a": "Absolutely. We'll pick case studies and framing that position you for AI product roles if that's your target." }
+  ],
+  "finalCta": { "title": "Build the portfolio that gets you the interview.", "sub": "Start today and walk away with a live site and case studies you're proud to send." },
+  "next": { "label": "Discovery Call", "slug": "discovery-call" }
+}

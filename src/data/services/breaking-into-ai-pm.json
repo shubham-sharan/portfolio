@@ -1,0 +1,60 @@
+{
+  "slug": "breaking-into-ai-pm",
+  "order": 6,
+  "category": "Career Direction & Guidance",
+  "flow": "live",
+  "eyebrow": "Career Direction & Guidance",
+  "name": "Breaking into AI & Product Management",
+  "title": "What moving into AI product roles really takes — from someone doing it daily.",
+  "lede": "The honest version: the skills and vocabulary that actually matter, how to position your background, where the real opportunities are, and what to stop wasting time on. A focused session to turn 'I want to work in AI product' into a plan.",
+  "priceLabel": "per session",
+  "prices": { "INR": "₹4,000", "USD": "$85", "EUR": "€85", "GBP": "£85" },
+  "paymentLinks": { "INR": "", "USD": "", "EUR": "", "GBP": "" },
+  "reassure": "100% money-back guarantee — if the session isn't useful, tell me and I'll refund it in full.",
+  "cta": { "label": "Book a session" },
+  "summary": [
+    { "k": "Format", "v": "Live 1:1 — Google Meet" },
+    { "k": "Duration", "v": "60 minutes" },
+    { "k": "You bring", "v": "Your background & target roles" },
+    { "k": "You leave with", "v": "A positioning & skills plan" },
+    { "k": "Best for", "v": "PMs & switchers moving into AI" }
+  ],
+  "forYouLabel": "Book this if you are",
+  "forYou": [
+    "A PM wanting to move into AI product roles",
+    "Coming from engineering, data, ops, or consulting into AI product",
+    "Unsure which AI skills actually matter versus hype",
+    "Struggling to position your background for AI roles",
+    "Wanting a realistic map of where the opportunities are"
+  ],
+  "notForYou": [
+    "You want a deep technical ML course (this is product-focused)",
+    "You're after a mock interview specifically (book that instead)",
+    "You expect a guaranteed job placement"
+  ],
+  "howItWorksLabel": "How it works",
+  "howItWorksTitle": "Pay, book, and we meet",
+  "howItWorks": [
+    { "t": "Pay securely", "d": "Checkout in your local currency and you'll be handed straight to booking." },
+    { "t": "Book on Calendly", "d": "Pick a 60-minute slot and tell me your current role and where you want to land." },
+    { "t": "Meet on Google Meet", "d": "We map the skills, vocabulary, and positioning that get you taken seriously for AI product roles." },
+    { "t": "Leave with a plan", "d": "A concrete next-90-days plan: what to learn, what to build, and how to tell your story." }
+  ],
+  "deliverablesLabel": "What you walk away with",
+  "deliverables": [
+    "A clear read on the AI PM skills that actually matter",
+    "Positioning for your specific background and target roles",
+    "A map of where the real opportunities are right now",
+    "A prioritised next-90-days plan of what to learn and build",
+    "Honest answers to the questions you can't Google"
+  ],
+  "testimonials": { "title": "What people say", "items": [] },
+  "faq": [
+    { "q": "Do I need a technical background?", "a": "No. This is about product craft in an AI context — how AI changes discovery, evaluation, and decision-making. We'll figure out exactly which technical concepts you need for your target roles, not a full ML curriculum." },
+    { "q": "I'm already a PM — is this still useful?", "a": "Yes. A lot of experienced PMs know product but not how AI reshapes the role. We focus on the delta: what's genuinely different and how to position your existing experience." },
+    { "q": "Will you review my resume for AI roles?", "a": "We can talk positioning on the call, but a full rewrite is better handled by the Resume Review service, which I can point you to." },
+    { "q": "Can this lead to ongoing help?", "a": "Definitely. Many people start here and continue with recurring 1:1 Guidance as they make the move." }
+  ],
+  "finalCta": { "title": "Make the move into AI product — deliberately.", "sub": "Book a 60-minute session and leave with a real plan." },
+  "next": { "label": "PM Interview Strategy Session", "slug": "pm-interview-strategy-session" }
+}

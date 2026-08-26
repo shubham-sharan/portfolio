@@ -1,0 +1,58 @@
+{
+  "slug": "product-strategy-execution",
+  "order": 11,
+  "category": "Interview Preparation",
+  "flow": "live",
+  "eyebrow": "Interview Preparation · Round-specific",
+  "name": "Product Strategy & Execution",
+  "title": "The strategy round, drilled: business reasoning, prioritisation, and real execution.",
+  "lede": "A mock focused on the strategy and execution round — 'should the company build X', 'how would you grow Y', 'you have limited resources, what ships first'. We run a realistic prompt, then I show you how to reason about business goals, prioritise under constraints, and defend an execution plan.",
+  "priceLabel": "per session",
+  "prices": { "INR": "₹2,000", "USD": "$45", "EUR": "€45", "GBP": "£45" },
+  "paymentLinks": { "INR": "", "USD": "", "EUR": "", "GBP": "" },
+  "reassure": "100% money-back guarantee — if it isn't useful, tell me and I'll refund it in full.",
+  "cta": { "label": "Book this mock" },
+  "summary": [
+    { "k": "Format", "v": "Live mock — Google Meet" },
+    { "k": "Duration", "v": "45 minutes" },
+    { "k": "Focus", "v": "Strategy & execution round" },
+    { "k": "Structure", "v": "Timed mock + teaching debrief" },
+    { "k": "You leave with", "v": "A strategy framework + fixes" }
+  ],
+  "forYouLabel": "Book this if you are",
+  "forYou": [
+    "Facing a product strategy or execution round soon",
+    "Strong on features but shaky on business reasoning",
+    "Struggling to prioritise cleanly under constraints",
+    "Unsure how to connect a product decision to company goals",
+    "Wanting to sound like a PM who can actually ship"
+  ],
+  "notForYou": [
+    "You want a product sense or metrics round (book those instead)",
+    "You haven't mapped which rounds you need (start with a strategy session)",
+    "You want written feedback, not a live mock"
+  ],
+  "howItWorksLabel": "How it works",
+  "howItWorks": [
+    { "t": "Pay securely", "d": "Checkout in your local currency and you'll be handed straight to booking." },
+    { "t": "Book on Calendly", "d": "Pick a slot and share your target role and level." },
+    { "t": "Run the mock", "d": "A realistic strategy prompt, timed, on Google Meet — you answer as if it's the real round." },
+    { "t": "Teaching debrief", "d": "We break down your answer and I show you how to reason about goals, prioritise, and defend execution." }
+  ],
+  "deliverablesLabel": "What you walk away with",
+  "deliverables": [
+    "A structure for reasoning from company goals to a decision",
+    "A cleaner method for prioritising under real constraints",
+    "A way to defend an execution plan and its trade-offs",
+    "Honest feedback on where your reasoning got fuzzy",
+    "The specific fixes to practice before the real round"
+  ],
+  "testimonials": { "title": "What people say", "items": [] },
+  "faq": [
+    { "q": "What does this round test?", "a": "Whether you can connect a product decision to the business — reason about goals and trade-offs, prioritise under constraints, and lay out an execution plan you can defend." },
+    { "q": "How is this different from product sense?", "a": "Product sense is user-and-design led; strategy is business-and-execution led. This round cares more about why the company should do something and how it actually gets shipped." },
+    { "q": "Do I need startup or big-tech context?", "a": "We'll tailor the prompt to your target companies. The reasoning structure works across both; only the context and constraints change." }
+  ],
+  "finalCta": { "title": "Reason like a PM who ships.", "sub": "Book a focused mock and leave with a strategy structure that holds up." },
+  "next": { "label": "Behavioral Interviews", "slug": "behavioral-interviews" }
+}

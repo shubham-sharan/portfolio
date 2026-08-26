@@ -1,0 +1,200 @@
+---
+import Base from '../../layouts/Base.astro';
+import { marked } from 'marked';
+import mentorship from '../../data/mentorship.json';
+
+export async function getStaticPaths() {
+  const modules = import.meta.glob('../../data/services/*.json', { eager: true });
+  const pages = Object.values(modules)
+    .map((m: any) => m.default ?? m)
+    .sort((a: any, b: any) => (a.order ?? 99) - (b.order ?? 99));
+  return pages.map((page: any) => ({ params: { slug: page.slug }, props: { page } }));
+}
+
+const { page } = Astro.props;
+const inline = (s: string) => marked.parseInline(s) as string;
+
+// Currency: uses defaultCurrency for the static build; in production the
+// visitor's currency is selected at the edge (same model as /mentorship/).
+const cur: 'INR' | 'USD' | 'EUR' | 'GBP' = (mentorship as any).defaultCurrency;
+
+const isFree = page.flow === 'free';
+const priceStr = isFree ? 'Free' : (page.prices?.[cur] ?? '');
+const payHref = isFree
+  ? (page.calendlyUrl || '#')
+  : (page.paymentLinks?.[cur] || page.calendlyUrl || '#');
+const ctaLabel = page.cta?.label || (isFree ? 'Book a free call' : 'Book a session');
+const ctaExternal = /^https?:\/\//.test(payHref);
+---
+
+<Base title={`${page.name} - ${page.category} - Shubham Sharan`} description={page.lede}>
+  <!-- HERO -->
+  <section class="svc-hero">
+    <div class="container svc-hero-grid">
+      <div class="svc-hero-main">
+        <a class="svc-crumb" href="/mentorship/">← Mentorship</a>
+        <span class="svc-eyebrow">{page.eyebrow || page.category}</span>
+        <h1 class="svc-title" set:html={inline(page.title)} />
+        <p class="svc-lede" set:html={inline(page.lede)} />
+        <div class="svc-cta-row">
+          <a class="svc-btn" href={payHref} target={ctaExternal ? '_blank' : undefined} rel={ctaExternal ? 'noopener' : undefined}>
+            {ctaLabel}{!isFree && priceStr ? ` — ${priceStr}` : ''}
+          </a>
+          {page.cta?.secondary && (
+            <a class="svc-btn-ghost" href={page.cta.secondary.href}>{page.cta.secondary.label}</a>
+          )}
+        </div>
+        {page.reassure && <p class="svc-reassure"><span aria-hidden="true">✓</span> <span set:html={inline(page.reassure)} /></p>}
+      </div>
+
+      <aside class="svc-panel">
+        <span class="svc-panel-h">At a glance</span>
+        <dl class="svc-panel-list">
+          {page.summary?.map((row: any) => (
+            <div class="svc-panel-row">
+              <dt>{row.k}</dt>
+              <dd>{row.v}</dd>
+            </div>
+          ))}
+          <div class="svc-panel-row svc-panel-price">
+            <dt>Price</dt>
+            <dd>{priceStr}{page.priceLabel ? ` ${page.priceLabel}` : ''}</dd>
+          </div>
+        </dl>
+        <a class="svc-btn svc-btn--full" href={payHref} target={ctaExternal ? '_blank' : undefined} rel={ctaExternal ? 'noopener' : undefined}>{ctaLabel}</a>
+      </aside>
+    </div>
+  </section>
+
+  <!-- WHO IT'S FOR -->
+  {(page.forYou || page.notForYou) && (
+    <section class="svc-section svc-section--alt">
+      <div class="container svc-two">
+        {page.forYou && (
+          <div class="svc-for">
+            <h2 class="svc-h2">{page.forYouLabel || 'Book this if you are'}</h2>
+            <ul class="svc-check">
+              {page.forYou.map((it: string) => <li set:html={inline(it)} />)}
+            </ul>
+          </div>
+        )}
+        {page.notForYou && (
+          <div class="svc-notfor">
+            <h3 class="svc-h3-sm">This isn't for you if</h3>
+            <ul class="svc-cross">
+              {page.notForYou.map((it: string) => <li set:html={inline(it)} />)}
+            </ul>
+          </div>
+        )}
+      </div>
+    </section>
+  )}
+
+  <!-- HOW IT WORKS -->
+  {page.howItWorks && (
+    <section class="svc-section">
+      <div class="container">
+        <span class="svc-eyebrow">{page.howItWorksLabel || 'How it works'}</span>
+        <h2 class="svc-h2">{page.howItWorksTitle || 'What happens after you book'}</h2>
+        <ol class="svc-steps">
+          {page.howItWorks.map((s: any, i: number) => (
+            <li class="svc-step">
+              <span class="svc-step-n">{String(i + 1).padStart(2, '0')}</span>
+              <div>
+                <strong>{s.t}</strong>
+                <p set:html={inline(s.d)} />
+              </div>
+            </li>
+          ))}
+        </ol>
+      </div>
+    </section>
+  )}
+
+  <!-- DELIVERABLES -->
+  {page.deliverables && (
+    <section class="svc-section svc-section--alt">
+      <div class="container">
+        <span class="svc-eyebrow">{page.deliverablesLabel || 'What you walk away with'}</span>
+        <h2 class="svc-h2">{page.deliverablesTitle || 'You leave with something concrete'}</h2>
+        <ul class="svc-deliver">
+          {page.deliverables.map((d: string) => <li set:html={inline(d)} />)}
+        </ul>
+      </div>
+    </section>
+  )}
+
+  <!-- TESTIMONIALS -->
+  {page.testimonials?.items?.length > 0 && (
+    <section class="svc-section">
+      <div class="container">
+        <span class="svc-eyebrow">Results</span>
+        <h2 class="svc-h2">{page.testimonials.title || 'What people say'}</h2>
+        <div class="svc-tgrid">
+          {page.testimonials.items.slice(0, 1).map((q: any) => (
+            <figure class="svc-tfeat">
+              <blockquote set:html={inline(q.quote)} />
+              {q.result && <p class="svc-tresult">→ {q.result}</p>}
+              <figcaption class="svc-twho">
+                <span class="svc-tav">{(q.name || '?').split(' ').map((w: string) => w[0]).slice(0, 2).join('')}</span>
+                <span><span class="svc-tnm">{q.name}</span><br /><span class="svc-trl">{q.role}</span></span>
+                {q.linkedin && <a class="svc-tli" href={q.linkedin} target="_blank" rel="noopener">Verified ↗</a>}
+              </figcaption>
+            </figure>
+          ))}
+          <div class="svc-tside">
+            {page.testimonials.items.slice(1, 3).map((q: any) => (
+              <figure class="svc-tmini">
+                <blockquote set:html={inline(q.quote)} />
+                <figcaption class="svc-twho">
+                  <span class="svc-tav svc-tav--sm">{(q.name || '?').split(' ').map((w: string) => w[0]).slice(0, 2).join('')}</span>
+                  <span><span class="svc-tnm">{q.name}</span> · <span class="svc-trl">{q.role}</span></span>
+                </figcaption>
+              </figure>
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
+  )}
+
+  <!-- FAQ -->
+  {page.faq && (
+    <section class="svc-section svc-section--alt">
+      <div class="container svc-narrow">
+        <span class="svc-eyebrow">FAQ</span>
+        <h2 class="svc-h2">Questions, answered</h2>
+        <div class="svc-faq">
+          {page.faq.map((f: any, i: number) => (
+            <details class="svc-faq-item" open={i === 0}>
+              <summary>{f.q}<span class="svc-faq-mark" aria-hidden="true"></span></summary>
+              <div class="svc-faq-a" set:html={marked.parse(f.a)} />
+            </details>
+          ))}
+        </div>
+      </div>
+    </section>
+  )}
+
+  <!-- FINAL CTA -->
+  <section class="svc-final">
+    <div class="container svc-final-in">
+      <div>
+        <h2 class="svc-h2">{page.finalCta?.title || 'Ready when you are.'}</h2>
+        {page.finalCta?.sub && <p class="svc-final-sub" set:html={inline(page.finalCta.sub)} />}
+      </div>
+      <a class="svc-btn svc-btn--lg" href={payHref} target={ctaExternal ? '_blank' : undefined} rel={ctaExternal ? 'noopener' : undefined}>
+        {ctaLabel}{!isFree && priceStr ? ` — ${priceStr}` : ''}
+      </a>
+    </div>
+  </section>
+
+  {page.next && (
+    <div class="container">
+      <nav class="svc-pager">
+        <a href="/mentorship/">← All services</a>
+        {page.next.slug && <a href={`/services/${page.next.slug}/`}>Next · {page.next.label} →</a>}
+      </nav>
+    </div>
+  )}
+</Base>

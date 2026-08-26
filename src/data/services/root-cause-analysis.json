@@ -1,0 +1,58 @@
+{
+  "slug": "root-cause-analysis",
+  "order": 13,
+  "category": "Interview Preparation",
+  "flow": "live",
+  "eyebrow": "Interview Preparation · Round-specific",
+  "name": "Root Cause Analysis",
+  "title": "The RCA round, drilled: structured debugging under pressure, not lucky guesses.",
+  "lede": "A mock focused on root-cause questions — 'engagement dropped 15% overnight', 'users are churning, find out why'. We run a realistic prompt, then I show you how to isolate the problem with a clean hypothesis tree instead of scattering guesses.",
+  "priceLabel": "per session",
+  "prices": { "INR": "₹2,000", "USD": "$45", "EUR": "€45", "GBP": "£45" },
+  "paymentLinks": { "INR": "", "USD": "", "EUR": "", "GBP": "" },
+  "reassure": "100% money-back guarantee — if it isn't useful, tell me and I'll refund it in full.",
+  "cta": { "label": "Book this mock" },
+  "summary": [
+    { "k": "Format", "v": "Live mock — Google Meet" },
+    { "k": "Duration", "v": "45 minutes" },
+    { "k": "Focus", "v": "Root cause analysis round" },
+    { "k": "Structure", "v": "Timed mock + teaching debrief" },
+    { "k": "You leave with", "v": "A debugging framework + fixes" }
+  ],
+  "forYouLabel": "Book this if you are",
+  "forYou": [
+    "Facing a root-cause or 'diagnose the drop' round soon",
+    "Guessing randomly instead of narrowing systematically",
+    "Struggling to structure hypotheses under time pressure",
+    "Forgetting to separate internal from external causes",
+    "Wanting a repeatable method for any diagnosis prompt"
+  ],
+  "notForYou": [
+    "You want a product sense or strategy round instead",
+    "You haven't mapped which rounds you need (start with a strategy session)",
+    "You want written feedback, not a live mock"
+  ],
+  "howItWorksLabel": "How it works",
+  "howItWorks": [
+    { "t": "Pay securely", "d": "Checkout in your local currency and you'll be handed straight to booking." },
+    { "t": "Book on Calendly", "d": "Pick a slot and share your target role and level." },
+    { "t": "Run the mock", "d": "A realistic root-cause prompt, timed, on Google Meet — you diagnose as if it's the real round." },
+    { "t": "Teaching debrief", "d": "We break down your approach and I show you how to build and prune a clean hypothesis tree." }
+  ],
+  "deliverablesLabel": "What you walk away with",
+  "deliverables": [
+    "A repeatable structure for any 'why did this happen' prompt",
+    "A clean way to separate internal, external, and data causes",
+    "A method for narrowing hypotheses quickly and out loud",
+    "Honest feedback on where your diagnosis wandered",
+    "The specific fixes to practice before the real round"
+  ],
+  "testimonials": { "title": "What people say", "items": [] },
+  "faq": [
+    { "q": "What does this round test?", "a": "Whether you can take a vague 'something's wrong' prompt and drive to a likely cause methodically — forming hypotheses, isolating variables, and clarifying assumptions instead of guessing." },
+    { "q": "Isn't this the same as the metrics round?", "a": "They overlap, but RCA is specifically about diagnosis under ambiguity — the structured debugging process — while the metrics round leans more on defining and choosing measures. This session drills the diagnosis muscle." },
+    { "q": "Will you give me a framework?", "a": "You'll leave with a reusable structure for isolating causes, but the emphasis is on applying it flexibly and thinking out loud clearly, which is what interviewers score." }
+  ],
+  "finalCta": { "title": "Diagnose like an engineer, communicate like a PM.", "sub": "Book a focused mock and leave with a structure for any RCA prompt." },
+  "next": { "label": "AI Product Management Interviews", "slug": "ai-pm-interviews" }
+}

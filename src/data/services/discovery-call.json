@@ -1,0 +1,52 @@
+{
+  "slug": "discovery-call",
+  "order": 4,
+  "category": "Career Direction & Guidance",
+  "flow": "free",
+  "eyebrow": "Career Direction & Guidance",
+  "name": "Discovery Call",
+  "title": "Not sure what would actually move the needle? Let's find out — free.",
+  "lede": "A short, no-pressure 1:1 to understand where you are, what's really in your way, and whether working together makes sense. You leave with clear next steps either way.",
+  "priceLabel": "",
+  "prices": { "INR": "Free", "USD": "Free", "EUR": "Free", "GBP": "Free" },
+  "paymentLinks": { "INR": "", "USD": "", "EUR": "", "GBP": "" },
+  "calendlyUrl": "",
+  "reassure": "No pitch, no obligation — just a straight read on what would help most.",
+  "cta": { "label": "Book a free call" },
+  "summary": [
+    { "k": "Format", "v": "Live — Google Meet" },
+    { "k": "Duration", "v": "15 minutes" },
+    { "k": "Cost", "v": "Free" },
+    { "k": "Best for", "v": "Figuring out fit & next steps" },
+    { "k": "You leave with", "v": "A clear recommendation" }
+  ],
+  "forYouLabel": "Book this if you are",
+  "forYou": [
+    "Weighing whether mentorship or interview prep is worth it",
+    "Not sure which service fits your situation",
+    "At a crossroads and want a quick outside read",
+    "Curious how I work before committing to a paid session"
+  ],
+  "notForYou": [
+    "You already know what you need — book that service directly",
+    "You're looking for a full working session (this is a short intro)",
+    "You want detailed resume or portfolio feedback on the call"
+  ],
+  "howItWorksLabel": "How it works",
+  "howItWorksTitle": "Fifteen minutes, no friction",
+  "howItWorks": [
+    { "t": "Pick a time", "d": "Grab a slot on Calendly that works for you — no payment needed." },
+    { "t": "Get the link", "d": "You'll get a Google Meet invite automatically for the time you chose." },
+    { "t": "We talk", "d": "Tell me where you are and what you're aiming for; I'll ask a few sharp questions." },
+    { "t": "You leave with next steps", "d": "A clear recommendation on what would actually help — whether that's working together or not." }
+  ],
+  "testimonials": { "title": "What people say", "items": [] },
+  "faq": [
+    { "q": "Is it really free?", "a": "Yes. The discovery call is free and there's no obligation to book anything afterwards." },
+    { "q": "Will you try to sell me something?", "a": "No. If a paid service is genuinely the right next step I'll say so, but the goal is an honest read on what would help — even if that's advice you can act on alone." },
+    { "q": "Can I get resume or interview feedback on this call?", "a": "Not in depth — 15 minutes is for orientation and next steps. For hands-on work, we'd book the relevant session." },
+    { "q": "What should I come prepared with?", "a": "Just a clear sense of where you are and what you're trying to achieve. That's enough for a useful conversation." }
+  ],
+  "finalCta": { "title": "Let's figure out the right next step.", "sub": "Grab a free 15-minute slot — no payment, no pressure." },
+  "next": { "label": "1:1 Guidance", "slug": "1-1-guidance" }
+}

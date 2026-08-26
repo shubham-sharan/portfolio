@@ -1,0 +1,58 @@
+{
+  "slug": "ai-pm-interviews",
+  "order": 14,
+  "category": "Interview Preparation",
+  "flow": "live",
+  "eyebrow": "Interview Preparation · Round-specific",
+  "name": "AI Product Management Interviews",
+  "title": "The AI PM round, drilled: designing with models, uncertainty, and feedback loops.",
+  "lede": "A mock for the AI-specific round — 'design an AI feature for X', 'how would you evaluate this model in production', 'how do you handle hallucinations and edge cases'. We run a realistic prompt, then I show you how to reason about data, evaluation, guardrails, and the trade-offs unique to AI products.",
+  "priceLabel": "per session",
+  "prices": { "INR": "₹2,000", "USD": "$45", "EUR": "€45", "GBP": "£45" },
+  "paymentLinks": { "INR": "", "USD": "", "EUR": "", "GBP": "" },
+  "reassure": "100% money-back guarantee — if it isn't useful, tell me and I'll refund it in full.",
+  "cta": { "label": "Book this mock" },
+  "summary": [
+    { "k": "Format", "v": "Live mock — Google Meet" },
+    { "k": "Duration", "v": "45 minutes" },
+    { "k": "Focus", "v": "AI PM interview round" },
+    { "k": "Structure", "v": "Timed mock + teaching debrief" },
+    { "k": "You leave with", "v": "An AI product framework + fixes" }
+  ],
+  "forYouLabel": "Book this if you are",
+  "forYou": [
+    "Interviewing for AI or ML product roles",
+    "Comfortable with classic PM rounds but new to AI-specific ones",
+    "Unsure how to reason about evaluation, data, and feedback loops",
+    "Struggling to handle uncertainty, hallucination, and edge cases in answers",
+    "Wanting to sound credible on AI product trade-offs"
+  ],
+  "notForYou": [
+    "You want a deep ML engineering interview (this is product-focused)",
+    "You need general PM rounds first (book those instead)",
+    "You want written feedback, not a live mock"
+  ],
+  "howItWorksLabel": "How it works",
+  "howItWorks": [
+    { "t": "Pay securely", "d": "Checkout in your local currency and you'll be handed straight to booking." },
+    { "t": "Book on Calendly", "d": "Pick a slot and share your target role and level." },
+    { "t": "Run the mock", "d": "A realistic AI product prompt, timed, on Google Meet — you answer as if it's the real round." },
+    { "t": "Teaching debrief", "d": "We break down your answer and I show you how to reason about data, evaluation, guardrails, and AI-specific trade-offs." }
+  ],
+  "deliverablesLabel": "What you walk away with",
+  "deliverables": [
+    "A structure for designing and scoping AI features",
+    "A way to reason about evaluation and success in production",
+    "Clear thinking on data, feedback loops, and guardrails",
+    "Honest feedback on where you sounded vague on AI",
+    "The specific fixes to practice before the real round"
+  ],
+  "testimonials": { "title": "What people say", "items": [] },
+  "faq": [
+    { "q": "What does this round test?", "a": "Whether you can design and reason about products built on AI — handling uncertainty, evaluation, data and feedback loops, failure modes like hallucination, and the trade-offs that don't exist in deterministic software." },
+    { "q": "Do I need to be technical?", "a": "You need product-level fluency in how AI systems behave, not the ability to train a model. We focus on the concepts interviewers expect an AI PM to reason about clearly." },
+    { "q": "I'm moving into AI product — should I also book the career session?", "a": "Yes, many people pair this mock with 'Breaking into AI & Product Management' — one drills the interview, the other plans the move." }
+  ],
+  "finalCta": { "title": "Sound credible on AI product — because you are.", "sub": "Book a focused mock and leave with a framework for the AI-specific round." },
+  "next": { "label": "", "slug": "" }
+}

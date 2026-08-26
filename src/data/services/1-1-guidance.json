@@ -1,0 +1,69 @@
+{
+  "slug": "1-1-guidance",
+  "order": 5,
+  "category": "Career Direction & Guidance",
+  "flow": "live",
+  "eyebrow": "Career Direction & Guidance",
+  "name": "1:1 Guidance",
+  "title": "A senior product partner in your corner — for whatever you're stuck on.",
+  "lede": "Bring the real thing you're wrestling with — a product decision, a stakeholder mess, a growth problem, a career fork — and we work through it live. Best as a recurring touchpoint, not a one-off pep talk.",
+  "priceLabel": "per session",
+  "prices": { "INR": "₹2,000", "USD": "$45", "EUR": "€45", "GBP": "£45" },
+  "paymentLinks": { "INR": "", "USD": "", "EUR": "", "GBP": "" },
+  "reassure": "100% money-back guarantee — if a session isn't useful, tell me and I'll refund it in full.",
+  "cta": { "label": "Book a session" },
+  "summary": [
+    { "k": "Format", "v": "Live 1:1 — Google Meet" },
+    { "k": "Duration", "v": "60 minutes" },
+    { "k": "Cadence", "v": "One-off or recurring" },
+    { "k": "You bring", "v": "A real problem or decision" },
+    { "k": "You leave with", "v": "A concrete plan of action" },
+    { "k": "Between sessions", "v": "Async follow-ups welcome" }
+  ],
+  "forYouLabel": "Book this if you are",
+  "forYou": [
+    "Facing a product or career decision you keep going in circles on",
+    "A newer PM who wants a steady, senior sounding board",
+    "Weighing offers, a promotion case, or your next 6–12 months",
+    "Navigating stakeholders, prioritisation, or a stalled roadmap",
+    "Looking for an ongoing mentor, not a single conversation"
+  ],
+  "notForYou": [
+    "You want a mock interview (book Interview Preparation instead)",
+    "You're after a written resume review, not a live session",
+    "You want someone to make the decision for you"
+  ],
+  "howItWorksLabel": "How it works",
+  "howItWorksTitle": "Pay, book, and we meet",
+  "howItWorks": [
+    { "t": "Pay securely", "d": "Checkout in your local currency and you'll be handed straight to booking." },
+    { "t": "Book on Calendly", "d": "Pick a 60-minute slot that suits you; add a line on what you'd like to cover." },
+    { "t": "Meet on Google Meet", "d": "We go deep on your actual situation — no generic advice, just your problem." },
+    { "t": "Leave with a plan", "d": "You walk away with concrete next steps, and async follow-ups between sessions if you keep going." }
+  ],
+  "deliverablesLabel": "What you walk away with",
+  "deliverables": [
+    "A clear, prioritised plan for the problem you brought",
+    "Honest, senior perspective from someone who's shipped and hired",
+    "Frameworks you can reuse the next time it comes up",
+    "Optional async follow-up between sessions"
+  ],
+  "testimonials": {
+    "title": "What people say",
+    "items": [
+      {
+        "quote": "You were very patient and very explanatory, very easy to understand — making me remember even simple concepts I didn't. It made a total difference in my studies. Thank you very much.",
+        "name": "Marcos Dos Santos",
+        "role": "Mentee, Brazil"
+      }
+    ]
+  },
+  "faq": [
+    { "q": "Can I book these regularly?", "a": "Yes — most people get the most value from a recurring cadence. Book a single session to start, and we can settle into a regular rhythm if it's working." },
+    { "q": "What can I bring to a session?", "a": "Anything real: a product decision, a roadmap you're unsure about, stakeholder tension, a career move, interview nerves. Come with the actual situation and we'll work it live." },
+    { "q": "Do you help between sessions?", "a": "If you're meeting regularly, quick async follow-ups are welcome so momentum doesn't stall between calls." },
+    { "q": "Is this different from a mock interview?", "a": "Yes. This is open guidance on whatever you're facing. If you specifically want interview practice, book the Interview Preparation services." }
+  ],
+  "finalCta": { "title": "Get a senior sounding board in your corner.", "sub": "Book a 60-minute session and leave with a plan you can act on." },
+  "next": { "label": "Breaking into AI & Product Management", "slug": "breaking-into-ai-pm" }
+}

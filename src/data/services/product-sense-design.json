@@ -1,0 +1,58 @@
+{
+  "slug": "product-sense-design",
+  "order": 9,
+  "category": "Interview Preparation",
+  "flow": "live",
+  "eyebrow": "Interview Preparation · Round-specific",
+  "name": "Product Sense & Design",
+  "title": "Product sense, drilled: user empathy, structure, and sharp design trade-offs.",
+  "lede": "A mock focused entirely on the product sense round — 'design a product for X', 'improve Y', 'what's your favourite product and why'. We run a realistic prompt, then I show you how to segment users, find the real pain, prioritise, and articulate trade-offs like a strong PM.",
+  "priceLabel": "per session",
+  "prices": { "INR": "₹2,000", "USD": "$45", "EUR": "€45", "GBP": "£45" },
+  "paymentLinks": { "INR": "", "USD": "", "EUR": "", "GBP": "" },
+  "reassure": "100% money-back guarantee — if it isn't useful, tell me and I'll refund it in full.",
+  "cta": { "label": "Book this mock" },
+  "summary": [
+    { "k": "Format", "v": "Live mock — Google Meet" },
+    { "k": "Duration", "v": "45 minutes" },
+    { "k": "Focus", "v": "Product sense & design round" },
+    { "k": "Structure", "v": "Timed mock + teaching debrief" },
+    { "k": "You leave with", "v": "A repeatable approach + fixes" }
+  ],
+  "forYouLabel": "Book this if you are",
+  "forYou": [
+    "Facing a product sense or product design round soon",
+    "Freezing on open-ended 'design a product for X' prompts",
+    "Jumping to features before nailing the user and the problem",
+    "Struggling to structure answers under time pressure",
+    "Wanting a reusable framework, not a memorised script"
+  ],
+  "notForYou": [
+    "You want a metrics or strategy round (book those instead)",
+    "You haven't decided which rounds you need (start with a strategy session)",
+    "You want written feedback, not a live mock"
+  ],
+  "howItWorksLabel": "How it works",
+  "howItWorks": [
+    { "t": "Pay securely", "d": "Checkout in your local currency and you'll be handed straight to booking." },
+    { "t": "Book on Calendly", "d": "Pick a slot and share your target role and level." },
+    { "t": "Run the mock", "d": "A realistic product sense prompt, timed, on Google Meet — you answer as if it's the real round." },
+    { "t": "Teaching debrief", "d": "We break down your answer and I show you the structure, segmentation, and trade-off framing that lands." }
+  ],
+  "deliverablesLabel": "What you walk away with",
+  "deliverables": [
+    "A repeatable structure for any product sense prompt",
+    "A cleaner way to segment users and locate real pain",
+    "Sharper prioritisation and trade-off articulation",
+    "Honest feedback on where you lost the interviewer",
+    "The specific fixes to practice before the real round"
+  ],
+  "testimonials": { "title": "What people say", "items": [] },
+  "faq": [
+    { "q": "What exactly does this round test?", "a": "Whether you can take an ambiguous prompt, zero in on a user and their real problem, and design a thoughtful solution with clear trade-offs — communicated in a structure the interviewer can follow." },
+    { "q": "Do you give me a framework to memorise?", "a": "I give you a structure to think with, not a script to recite. Interviewers can spot a memorised framework instantly; the goal is flexible, genuine product thinking." },
+    { "q": "Can we do more than one prompt?", "a": "We prioritise one realistic prompt done properly plus a thorough debrief. If time allows we'll rapid-fire a second." }
+  ],
+  "finalCta": { "title": "Walk into your product sense round ready.", "sub": "Book a focused mock and leave with a structure that works under pressure." },
+  "next": { "label": "Product Metrics", "slug": "product-metrics" }
+}

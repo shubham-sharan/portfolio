@@ -1,0 +1,60 @@
+{
+  "slug": "pm-interview-strategy-session",
+  "order": 7,
+  "category": "Interview Preparation",
+  "flow": "live",
+  "eyebrow": "Interview Preparation",
+  "name": "PM Interview Strategy Session",
+  "title": "A prep plan built around your target companies — not a generic checklist.",
+  "lede": "Before you grind hundreds of practice questions, get the map. A live planning session to break down the rounds you'll actually face, the mental models each one tests, where you're weakest, and exactly how to spend your prep time. This is strategy, not a mock.",
+  "priceLabel": "per session",
+  "prices": { "INR": "₹5,000", "USD": "$100", "EUR": "€100", "GBP": "£100" },
+  "paymentLinks": { "INR": "", "USD": "", "EUR": "", "GBP": "" },
+  "reassure": "100% money-back guarantee — if the session isn't useful, tell me and I'll refund it in full.",
+  "cta": { "label": "Book a session" },
+  "summary": [
+    { "k": "Format", "v": "Live 1:1 — Google Meet" },
+    { "k": "Duration", "v": "60 minutes" },
+    { "k": "Type", "v": "Planning session (not a mock)" },
+    { "k": "You bring", "v": "Target companies & timeline" },
+    { "k": "You leave with", "v": "A personalised prep plan" }
+  ],
+  "forYouLabel": "Book this if you are",
+  "forYou": [
+    "Starting a PM job search and unsure where to focus",
+    "Interviewing at specific companies and want to reverse-engineer their loops",
+    "Overwhelmed by the volume of PM interview content out there",
+    "Strong in some rounds and shaky in others, without a clear plan",
+    "Weeks out from interviews and need a time-boxed prep strategy"
+  ],
+  "notForYou": [
+    "You want live practice right now (book a mock interview instead)",
+    "You're not actively interviewing or planning to soon",
+    "You expect the session to cover a full mock and detailed strategy"
+  ],
+  "howItWorksLabel": "How it works",
+  "howItWorksTitle": "Pay, book, and we build your plan",
+  "howItWorks": [
+    { "t": "Pay securely", "d": "Checkout in your local currency and you'll be handed straight to booking." },
+    { "t": "Book on Calendly", "d": "Pick a 60-minute slot and share your target companies, level, and timeline." },
+    { "t": "Meet on Google Meet", "d": "We break down your loops round by round, diagnose your weak spots, and prioritise your prep." },
+    { "t": "Leave with a plan", "d": "A personalised, time-boxed prep roadmap — what to practice, in what order, and which mocks to book." }
+  ],
+  "deliverablesLabel": "What you walk away with",
+  "deliverables": [
+    "A round-by-round breakdown of the loops you'll face",
+    "An honest diagnosis of your strongest and weakest rounds",
+    "A time-boxed prep plan mapped to your timeline",
+    "The mental models each round is really testing",
+    "A recommended sequence of mocks to book next"
+  ],
+  "testimonials": { "title": "What people say", "items": [] },
+  "faq": [
+    { "q": "How is this different from a mock interview?", "a": "A mock is live practice on one round. This session is the plan around all of them — what to prep, in what order, and where to spend your limited time. Many people book this first, then book mocks to execute the plan." },
+    { "q": "Do you know specific companies' interview loops?", "a": "I'll work from what's known about your target companies' PM loops and from patterns across the industry, then tailor the plan to your level and timeline." },
+    { "q": "I have interviews in two weeks — is it too late?", "a": "No — that's exactly when a focused plan matters most. We'll ruthlessly prioritise what moves the needle in the time you have." },
+    { "q": "Should I book mocks as well?", "a": "Usually yes. The strategy session tells you which rounds to drill; the mock and round-specific sessions are where you practice them." }
+  ],
+  "finalCta": { "title": "Stop prepping blind.", "sub": "Book a strategy session and walk away knowing exactly how to spend your prep time." },
+  "next": { "label": "General PM Mock Interview", "slug": "general-pm-mock-interview" }
+}

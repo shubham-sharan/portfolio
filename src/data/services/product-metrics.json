@@ -1,0 +1,58 @@
+{
+  "slug": "product-metrics",
+  "order": 10,
+  "category": "Interview Preparation",
+  "flow": "live",
+  "eyebrow": "Interview Preparation · Round-specific",
+  "name": "Product Metrics",
+  "title": "The metrics round, drilled: define success, diagnose the drop, defend the trade-off.",
+  "lede": "A mock focused on the analytical round — 'what metrics for X', 'DAU dropped 10%, why', 'how would you measure success'. We run a realistic prompt, then I show you how to build a clean metric tree, pick a north star, reason about guardrails, and structure a diagnosis.",
+  "priceLabel": "per session",
+  "prices": { "INR": "₹2,000", "USD": "$45", "EUR": "€45", "GBP": "£45" },
+  "paymentLinks": { "INR": "", "USD": "", "EUR": "", "GBP": "" },
+  "reassure": "100% money-back guarantee — if it isn't useful, tell me and I'll refund it in full.",
+  "cta": { "label": "Book this mock" },
+  "summary": [
+    { "k": "Format", "v": "Live mock — Google Meet" },
+    { "k": "Duration", "v": "45 minutes" },
+    { "k": "Focus", "v": "Metrics & analytical round" },
+    { "k": "Structure", "v": "Timed mock + teaching debrief" },
+    { "k": "You leave with", "v": "A metrics framework + fixes" }
+  ],
+  "forYouLabel": "Book this if you are",
+  "forYou": [
+    "Facing a metrics or analytical PM round soon",
+    "Listing random metrics instead of building a clean tree",
+    "Unsure how to reason about a north star and guardrails",
+    "Stumbling on 'a metric dropped — why' diagnosis prompts",
+    "Wanting structure for measuring feature success"
+  ],
+  "notForYou": [
+    "You want a product sense or strategy round (book those instead)",
+    "You need a deep SQL or data-engineering tutorial",
+    "You want written feedback, not a live mock"
+  ],
+  "howItWorksLabel": "How it works",
+  "howItWorks": [
+    { "t": "Pay securely", "d": "Checkout in your local currency and you'll be handed straight to booking." },
+    { "t": "Book on Calendly", "d": "Pick a slot and share your target role and level." },
+    { "t": "Run the mock", "d": "A realistic metrics prompt, timed, on Google Meet — you answer as if it's the real round." },
+    { "t": "Teaching debrief", "d": "We break down your answer and I show you how to build metric trees and structure diagnoses cleanly." }
+  ],
+  "deliverablesLabel": "What you walk away with",
+  "deliverables": [
+    "A repeatable way to build a metric tree from any prompt",
+    "A clear approach to north-star and guardrail reasoning",
+    "A structured method for 'why did this metric move' diagnoses",
+    "Honest feedback on where your analysis got loose",
+    "The specific fixes to practice before the real round"
+  ],
+  "testimonials": { "title": "What people say", "items": [] },
+  "faq": [
+    { "q": "What does this round test?", "a": "Whether you can define what success means for a product, choose the right metrics and guardrails, and reason clearly when a number moves — with structure, not a guessing spree." },
+    { "q": "Do I need to be great at math?", "a": "No. This is about structured analytical thinking, not arithmetic. We focus on how you frame and reason, which is what interviewers actually score." },
+    { "q": "Will we cover diagnosing a metric drop?", "a": "Yes — 'a metric dropped, why?' is one of the most common formats and we'll practice a clean, hypothesis-driven approach to it." }
+  ],
+  "finalCta": { "title": "Own the metrics round.", "sub": "Book a focused mock and leave with a framework you can apply to any prompt." },
+  "next": { "label": "Product Strategy & Execution", "slug": "product-strategy-execution" }
+}

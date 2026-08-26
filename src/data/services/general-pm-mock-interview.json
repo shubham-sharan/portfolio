@@ -1,0 +1,60 @@
+{
+  "slug": "general-pm-mock-interview",
+  "order": 8,
+  "category": "Interview Preparation",
+  "flow": "live",
+  "eyebrow": "Interview Preparation",
+  "name": "General PM Mock Interview",
+  "title": "A realistic PM mock interview — then honest feedback on exactly what to fix.",
+  "lede": "A proper, timed mock in the round of your choice, run the way a real interviewer would. Then we stop the clock and I tell you what worked, what didn't, and the specific things to change before the real thing. No sugar-coating.",
+  "priceLabel": "per session",
+  "prices": { "INR": "₹2,000", "USD": "$45", "EUR": "€45", "GBP": "£45" },
+  "paymentLinks": { "INR": "", "USD": "", "EUR": "", "GBP": "" },
+  "reassure": "100% money-back guarantee — if the mock isn't useful, tell me and I'll refund it in full.",
+  "cta": { "label": "Book a mock" },
+  "summary": [
+    { "k": "Format", "v": "Live mock — Google Meet" },
+    { "k": "Duration", "v": "45–60 minutes" },
+    { "k": "Structure", "v": "Timed mock + feedback debrief" },
+    { "k": "Round", "v": "Your choice, or interviewer's pick" },
+    { "k": "You leave with", "v": "A scorecard + fix list" }
+  ],
+  "forYouLabel": "Book this if you are",
+  "forYou": [
+    "Interviewing soon and want realistic practice under pressure",
+    "Getting to final rounds but not converting them",
+    "Unsure how you actually come across to an interviewer",
+    "Wanting honest, specific feedback rather than reassurance",
+    "Preparing for a specific round and want a dry run"
+  ],
+  "notForYou": [
+    "You haven't done any prep yet (start with a strategy session)",
+    "You want a written resume review, not live practice",
+    "You only want reassurance, not candid feedback"
+  ],
+  "howItWorksLabel": "How it works",
+  "howItWorksTitle": "Pay, book, and we run the mock",
+  "howItWorks": [
+    { "t": "Pay securely", "d": "Checkout in your local currency and you'll be handed straight to booking." },
+    { "t": "Book on Calendly", "d": "Pick a slot and tell me your target role, level, and which round you want to practice." },
+    { "t": "Run the mock", "d": "We do a realistic, timed interview on Google Meet — I play the interviewer, you perform as if it's real." },
+    { "t": "Get the debrief", "d": "We stop and I give you a candid scorecard and a prioritised list of exactly what to fix." }
+  ],
+  "deliverablesLabel": "What you walk away with",
+  "deliverables": [
+    "A realistic, pressure-tested run at your target round",
+    "An honest scorecard on structure, communication, and substance",
+    "The two or three fixes that will move you most",
+    "A stronger approach for answering that round type",
+    "Follow-up notes you can review before the real interview"
+  ],
+  "testimonials": { "title": "What people say", "items": [] },
+  "faq": [
+    { "q": "Which round can I practice?", "a": "Whichever you choose — product sense, execution, strategy, estimation, behavioural, or a mix. Tell me when you book. If you'd rather be surprised the way a real loop does it, I can pick." },
+    { "q": "How honest is the feedback, really?", "a": "Honest enough to be useful. The point is to hear the hard parts from me now, not the panel later. It's candid but specific and actionable, never vague." },
+    { "q": "Should I book more than one?", "a": "Many people book a general mock first, then round-specific sessions to drill their weakest area. We can plan that together in the debrief." },
+    { "q": "What if I want to focus on one specific round?", "a": "Then book the matching round-specific session — same mock format, but the whole time goes deep on that one round." }
+  ],
+  "finalCta": { "title": "Practice under real pressure — before it counts.", "sub": "Book a mock and get the candid feedback that changes your next interview." },
+  "next": { "label": "Product Sense & Design", "slug": "product-sense-design" }
+}

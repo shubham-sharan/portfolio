@@ -1,0 +1,63 @@
+{
+  "slug": "resume-review-ats",
+  "order": 1,
+  "category": "Resume & Portfolio",
+  "flow": "async",
+  "eyebrow": "Resume & Portfolio",
+  "name": "Resume Review & ATS Optimization",
+  "title": "Your PM resume, rebuilt to clear the filters — and the recruiter's 10-second scan.",
+  "lede": "A line-by-line rewrite of your product resume: sharper positioning, impact framed in numbers, and clean ATS-friendly formatting — so you stop getting screened out before a human ever reads it. Concrete rewrites, not vague notes.",
+  "priceLabel": "one-off",
+  "prices": { "INR": "₹2,000", "USD": "$45", "EUR": "€45", "GBP": "£45" },
+  "paymentLinks": { "INR": "", "USD": "", "EUR": "", "GBP": "" },
+  "reassure": "100% money-back guarantee — if the review isn't useful, tell me and I'll refund it in full.",
+  "cta": { "label": "Start my review" },
+  "summary": [
+    { "k": "Format", "v": "Async — written review" },
+    { "k": "Turnaround", "v": "Within 3 days" },
+    { "k": "You send", "v": "Resume + target role / JD" },
+    { "k": "You get", "v": "Line-by-line rewrites + ATS score" },
+    { "k": "Revisions", "v": "One follow-up round included" },
+    { "k": "Delivery", "v": "Annotated Google Doc + short Loom" }
+  ],
+  "forYouLabel": "Book this if you are",
+  "forYou": [
+    "Applying to PM roles and getting silence instead of callbacks",
+    "Sitting on real impact but struggling to frame it in one crisp line",
+    "Not sure your resume survives the ATS keyword filter",
+    "Switching into product from engineering, ops, consulting, or founding",
+    "About to start a serious job search and want the resume right first"
+  ],
+  "notForYou": [
+    "You want someone to invent experience you don't have",
+    "You need a full LinkedIn rewrite (that's a separate service)",
+    "You're looking for live interview coaching, not a written review"
+  ],
+  "howItWorksLabel": "How it works",
+  "howItWorksTitle": "A written review, turned around fast",
+  "howItWorks": [
+    { "t": "Pay & send", "d": "Checkout securely, then upload your current resume and the role or job description you're targeting." },
+    { "t": "I review it end to end", "d": "I rewrite bullet by bullet — positioning, impact, verbs, metrics — and run it against ATS parsing and keyword rules." },
+    { "t": "You get the report", "d": "Within 3 days: an annotated doc with concrete rewrites, an ATS readiness score, and the three things to fix first, plus a short Loom walkthrough." },
+    { "t": "One follow-up round", "d": "Send your revised version back and I'll do a final pass so you ship it with confidence." }
+  ],
+  "deliverablesLabel": "What you walk away with",
+  "deliverables": [
+    "A rewritten resume with specific, copy-paste-ready bullet improvements",
+    "An ATS readiness score with the exact fixes to raise it",
+    "Positioning that frames your background for your target role",
+    "A prioritised shortlist: the 3 changes that matter most",
+    "A short Loom walking you through the why behind each edit",
+    "One follow-up review of your updated draft"
+  ],
+  "testimonials": { "title": "What people say", "items": [] },
+  "faq": [
+    { "q": "What do you need from me to start?", "a": "Your current resume (PDF or Doc) and one or two target roles or job descriptions. The more specific the target, the sharper the rewrite." },
+    { "q": "How is this different from a template or an AI resume tool?", "a": "Templates fix formatting; they can't tell whether your impact is framed the way a hiring manager reads it. This is a human review from someone who has hired and mentored PMs — focused on positioning and evidence, not just layout." },
+    { "q": "Will it actually pass ATS systems?", "a": "Yes. I check parsing, section structure, and keyword coverage against your target role so the resume reads cleanly for both the software and the recruiter behind it." },
+    { "q": "Do you rewrite the bullets for me, or just comment?", "a": "I rewrite. You get concrete, ready-to-use language for your key bullets — not just 'make this stronger.'" },
+    { "q": "What if I need more than one round?", "a": "One follow-up pass on your revised draft is included. If you want ongoing help, we can move to a 1:1 guidance session." }
+  ],
+  "finalCta": { "title": "Stop getting screened out.", "sub": "Send your resume today and get it back sharper in three days." },
+  "next": { "label": "LinkedIn Optimisation", "slug": "linkedin-optimisation" }
+}

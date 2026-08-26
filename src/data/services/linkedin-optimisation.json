@@ -1,0 +1,62 @@
+{
+  "slug": "linkedin-optimisation",
+  "order": 2,
+  "category": "Resume & Portfolio",
+  "flow": "async",
+  "eyebrow": "Resume & Portfolio",
+  "name": "LinkedIn Optimisation",
+  "title": "A LinkedIn profile that recruiters actually find — and want to reply to.",
+  "lede": "Your headline, About, and experience rewritten so you show up in recruiter searches and read like a product person worth a conversation. Keyword-aware, story-driven, and tailored to the roles you actually want.",
+  "priceLabel": "one-off",
+  "prices": { "INR": "₹1,500", "USD": "$30", "EUR": "€30", "GBP": "£30" },
+  "paymentLinks": { "INR": "", "USD": "", "EUR": "", "GBP": "" },
+  "reassure": "100% money-back guarantee — if it isn't useful, tell me and I'll refund it in full.",
+  "cta": { "label": "Optimise my profile" },
+  "summary": [
+    { "k": "Format", "v": "Async — written rewrite" },
+    { "k": "Turnaround", "v": "Within 3 days" },
+    { "k": "You send", "v": "Profile link + target roles" },
+    { "k": "You get", "v": "New headline, About & experience copy" },
+    { "k": "Revisions", "v": "One follow-up round included" },
+    { "k": "Delivery", "v": "Copy doc + short Loom" }
+  ],
+  "forYouLabel": "Book this if you are",
+  "forYou": [
+    "Not showing up when recruiters search for PMs in your space",
+    "Sitting on a headline that just says your job title",
+    "Struggling to tell your product story in the About section",
+    "Moving into product and need your profile to reflect the shift",
+    "Getting profile views but no messages"
+  ],
+  "notForYou": [
+    "You want followers or an engagement-farming content strategy",
+    "You need a resume rewrite (book Resume Review instead)",
+    "You're expecting guaranteed inbound from recruiters"
+  ],
+  "howItWorksLabel": "How it works",
+  "howItWorksTitle": "A written rewrite, turned around fast",
+  "howItWorks": [
+    { "t": "Pay & share", "d": "Checkout securely, then send your profile link and the kinds of roles you want to attract." },
+    { "t": "I rework the profile", "d": "Headline, About, and key experience entries rewritten for search visibility and a strong first impression — plus skills and keyword guidance." },
+    { "t": "You get the copy", "d": "Within 3 days: ready-to-paste text for each section, plus notes on photo, banner, and settings, with a short Loom." },
+    { "t": "One follow-up round", "d": "Tweak anything and send it back; I'll do a final polish." }
+  ],
+  "deliverablesLabel": "What you walk away with",
+  "deliverables": [
+    "A recruiter-searchable headline that does more than name your title",
+    "A rewritten About section that tells your product story",
+    "Reframed experience entries with impact and keywords",
+    "A skills and keyword list matched to your target roles",
+    "Quick wins on photo, banner, and profile settings",
+    "One follow-up review of your updated profile"
+  ],
+  "testimonials": { "title": "What people say", "items": [] },
+  "faq": [
+    { "q": "Do you update the profile for me or give me the copy?", "a": "I give you ready-to-paste copy for each section plus clear instructions, so you stay in full control of your account. I don't need your login." },
+    { "q": "Can this be bundled with a resume review?", "a": "Yes — many people do both. Book both services and I'll keep your resume and LinkedIn positioning consistent." },
+    { "q": "Will I show up in more recruiter searches?", "a": "The rewrite targets the keywords and skills recruiters filter on for your roles, which is the main lever for search visibility. I can't guarantee specific inbound, but I optimise everything you control." },
+    { "q": "I'm switching into product — can you help reposition me?", "a": "That's one of the most common reasons people book this. We reframe your prior experience so it reads as relevant product evidence." }
+  ],
+  "finalCta": { "title": "Get found by the right recruiters.", "sub": "Send your profile today and get it back optimised in three days." },
+  "next": { "label": "Build Your PM Portfolio", "slug": "build-your-pm-portfolio" }
+}

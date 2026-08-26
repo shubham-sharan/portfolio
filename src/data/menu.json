@@ -1,0 +1,83 @@
+{
+  "_howto": "Mega menu opened from the 'Mentorship' nav trigger. Two-panel layout: left rail = categories, right = the hovered category's services (each with a one-line descriptor). Items link to /services/{slug}/ — build the service pages to match these slugs. `featured` is the helper pinned in the menu.",
+  "trigger": "Mentorship",
+  "featured": {
+    "text": "Not sure which fits?",
+    "ctaLabel": "Book a free Discovery Call →",
+    "slug": "discovery-call"
+  },
+  "categories": [
+    {
+      "label": "Executive AI Advisory",
+      "subtitle": "For product leaders and executives shipping AI.",
+      "groups": [
+        { "items": [
+          { "name": "AI Product Advisory Session", "slug": "ai-product-advisory-session" },
+          { "name": "Fractional AI Product Advisor", "slug": "fractional-ai-product-advisor" }
+        ] }
+      ]
+    },
+    {
+      "label": "PM Interview Preparation",
+      "subtitle": "For candidates preparing for PM interviews.",
+      "groups": [
+        { "label": "General", "items": [
+          { "name": "Mock Interview", "slug": "mock-interview" },
+          { "name": "PM Interview Preparation", "slug": "pm-interview-preparation" },
+          { "name": "Full PM Interview Preparation", "slug": "full-pm-interview-preparation" }
+        ] },
+        { "label": "Specialized", "items": [
+          { "name": "AI PM Interview Preparation", "slug": "ai-pm-interview-preparation" },
+          { "name": "Product Sense & Design", "slug": "product-sense-design" },
+          { "name": "Product Metrics", "slug": "product-metrics" },
+          { "name": "Product Strategy & Execution", "slug": "product-strategy-execution" },
+          { "name": "Behavioral Interviews", "slug": "behavioral-interviews" },
+          { "name": "Root Cause Analysis", "slug": "root-cause-analysis" }
+        ] }
+      ]
+    },
+    {
+      "label": "Career Direction & Guidance",
+      "subtitle": "For clarity, career transitions or ongoing support.",
+      "groups": [
+        { "items": [
+          { "name": "Discovery Call", "slug": "discovery-call" },
+          { "name": "Career Guidance", "slug": "career-guidance" },
+          { "name": "Ongoing 1:1 Guidance", "slug": "ongoing-1-1-guidance" },
+          { "name": "Breaking into AI & Product Management", "slug": "breaking-into-ai-pm" },
+          { "name": "Beginner's PM Preparation", "slug": "beginners-pm-preparation" }
+        ] }
+      ]
+    },
+    {
+      "label": "Resume & Portfolio",
+      "subtitle": "Stronger application assets and proof of skills.",
+      "groups": [
+        { "items": [
+          { "name": "Resume Review & ATS Optimization", "slug": "resume-review-ats" },
+          { "name": "Build Your PM Portfolio", "slug": "build-your-pm-portfolio" }
+        ] }
+      ]
+    },
+    {
+      "label": "Product Consulting",
+      "subtitle": "For founders, startups and businesses.",
+      "groups": [
+        { "items": [
+          { "name": "Product Consultancy", "slug": "product-consultancy" },
+          { "name": "Fractional Product Leadership", "slug": "fractional-product-leadership" }
+        ] }
+      ]
+    },
+    {
+      "label": "Quick Support",
+      "subtitle": "Short, focused or async guidance.",
+      "groups": [
+        { "items": [
+          { "name": "Ask Me Anything", "slug": "ask-me-anything" },
+          { "name": "Priority DM", "slug": "priority-dm" }
+        ] }
+      ]
+    }
+  ]
+}

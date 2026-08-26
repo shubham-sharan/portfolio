@@ -1,0 +1,58 @@
+{
+  "slug": "behavioral-interviews",
+  "order": 12,
+  "category": "Interview Preparation",
+  "flow": "live",
+  "eyebrow": "Interview Preparation · Round-specific",
+  "name": "Behavioral Interviews",
+  "title": "The behavioural round, drilled: real stories, clean structure, unmistakable signal.",
+  "lede": "A mock focused on the behavioural round — leadership, conflict, influence, failure, ownership. We run realistic prompts, then I help you shape your experiences into tight, high-signal stories that show the seniority interviewers are actually listening for.",
+  "priceLabel": "per session",
+  "prices": { "INR": "₹2,000", "USD": "$45", "EUR": "€45", "GBP": "£45" },
+  "paymentLinks": { "INR": "", "USD": "", "EUR": "", "GBP": "" },
+  "reassure": "100% money-back guarantee — if it isn't useful, tell me and I'll refund it in full.",
+  "cta": { "label": "Book this mock" },
+  "summary": [
+    { "k": "Format", "v": "Live mock — Google Meet" },
+    { "k": "Duration", "v": "45 minutes" },
+    { "k": "Focus", "v": "Behavioural / leadership round" },
+    { "k": "Structure", "v": "Timed mock + teaching debrief" },
+    { "k": "You leave with", "v": "A story bank + fixes" }
+  ],
+  "forYouLabel": "Book this if you are",
+  "forYou": [
+    "Facing a behavioural or leadership round soon",
+    "Rambling through stories without a clear point",
+    "Unsure which experiences send the strongest signal",
+    "Underselling your impact and ownership",
+    "Preparing for values-based interviews at big tech"
+  ],
+  "notForYou": [
+    "You want a product sense, metrics, or strategy round instead",
+    "You want a full resume rewrite (book Resume Review)",
+    "You want written feedback, not a live mock"
+  ],
+  "howItWorksLabel": "How it works",
+  "howItWorks": [
+    { "t": "Pay securely", "d": "Checkout in your local currency and you'll be handed straight to booking." },
+    { "t": "Book on Calendly", "d": "Pick a slot and share your target role, level, and any values or competencies to focus on." },
+    { "t": "Run the mock", "d": "Realistic behavioural prompts, on Google Meet — you answer as if it's the real round." },
+    { "t": "Teaching debrief", "d": "We reshape your stories into tight, high-signal answers and build a small, reusable story bank." }
+  ],
+  "deliverablesLabel": "What you walk away with",
+  "deliverables": [
+    "A structure that keeps stories tight and on-point",
+    "A small story bank mapped to common competencies",
+    "Sharper framing of your impact, ownership, and judgement",
+    "Honest feedback on where your answers lost signal",
+    "The specific fixes to practice before the real round"
+  ],
+  "testimonials": { "title": "What people say", "items": [] },
+  "faq": [
+    { "q": "What does this round test?", "a": "Your judgement, leadership, and how you operate with others — drawn from real past experiences. Interviewers listen for specific signal: ownership, influence, handling conflict, learning from failure." },
+    { "q": "Is this just STAR practice?", "a": "STAR is a starting point, but strong answers go beyond a rigid template. We focus on choosing the right story and telling it with the signal a senior interviewer is scoring for." },
+    { "q": "What if my experience feels thin?", "a": "Most people have far more material than they realise. Part of the session is mining your background for stories you're overlooking and framing them well." }
+  ],
+  "finalCta": { "title": "Tell stories that land.", "sub": "Book a focused mock and leave with a story bank and a structure that works." },
+  "next": { "label": "Root Cause Analysis", "slug": "root-cause-analysis" }
+}

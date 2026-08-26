@@ -95,10 +95,6 @@
       "href": "/#case-studies"
     },
     {
-      "label": "Mentorship",
-      "href": "/mentorship/"
-    },
-    {
       "label": "Resources",
       "children": [
         { "label": "Frameworks", "href": "/frameworks/" },
