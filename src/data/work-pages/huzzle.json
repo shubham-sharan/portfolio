@@ -110,7 +110,7 @@
       "paragraphs": [
         "I proposed replacing the human-interview bottleneck with an AI-led interview, and partnered directly with the CTO and Head of Engineering to build it. The outcome was Luna, the AI interviewer that conducts structured interviews at scale - the evaluation engine inside Huzzle's AI recruiter, which runs sourcing, screening, and matching end to end.",
         "The judgment call that mattered: I kept a human-interview path any candidate could request if they weren't comfortable with AI. Automating the default while preserving a human option protected fairness and candidate trust - and removed bias from first-pass screening without making the experience feel impersonal.",
-        "The most direct measure of Luna's impact is raw interview throughput. The human-run process topped out at roughly 800 to 1,000 full interviews a month; Luna now conducts around 12,000 a month, each a full 20 to 30 minute structured interview, a step change no amount of recruiter hiring could have matched."
+        "The most direct measure of Luna's impact is raw interview throughput. The human-run process topped out at roughly 800 to 1,000 full interviews a month; Luna now conducts around 8,000 a month, each a full 20 to 30 minute structured interview, a step change no amount of recruiter hiring could have matched."
       ]
     },
     {

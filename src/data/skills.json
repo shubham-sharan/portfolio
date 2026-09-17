@@ -27,7 +27,7 @@
   "tools": {
     "label": "Tools I use",
     "items": [
-      "Figma", "Linear", "Google Analytics", "Mixpanel", "Hotjar", "Google Ads",
+      "Figma", "Linear", "Google Analytics", "Mixpanel", "Google Ads",
       "Google Search Console", "Data Studio", "SQL", "Notion", "Canva", "Claude",
       "ChatGPT", "OpenAI & Anthropic APIs", "Perplexity", "Lovable", "HeyGen"
     ]
